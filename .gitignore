@@ -1,0 +1,13 @@
+.git
+.sass-cache
+.svn
+.idea
+*.iml
+*.ipr
+*.tar.gz
+build
+node_modules
+experiment
+data
+www
+www.zip

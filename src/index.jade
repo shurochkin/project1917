@@ -1,0 +1,38 @@
+//
+   Created by shurochkin on 02/04/17.
+
+doctype html
+html
+  head
+    meta(name='viewport', content='user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1')
+    meta(charset='utf-8')
+    link(href='app.css', rel='stylesheet', type='text/css')
+    script(src='http://ariutta.github.io/svg-pan-zoom/dist/svg-pan-zoom.js')
+    script(src='http://ariutta.github.io/svg-pan-zoom/demo/hammer.js')
+    script(src='https://code.jquery.com/jquery-3.2.0.min.js')
+    script(src='https://cdn.anychart.com/js/latest/graphics.min.js')
+  body
+    #mobile-div(style='')
+      //include _svg.jade
+    #panel
+      form
+        ul#land-switcher
+          li
+            label
+              input(type='radio', name='land', value='en')
+              |  Великобритания
+          li
+            label
+              input(type='radio', name='land', value='de')
+              |  Германия
+          li
+            label
+              input(type='radio', name='land', value='ru')
+              |  Россия
+          li
+            label
+              input(type='radio', name='land', value='gr')
+              |  Дания и Греция
+        button#clear-selection(type='reset') Очистить выбор
+    #debug
+    script(src='app.js')

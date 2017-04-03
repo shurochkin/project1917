@@ -1,0 +1,31 @@
+{
+  "name": "project197",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrey Aleksandrov",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "~1.5.8",
+    "canvas-particle-network": "~1.5.0",
+    "ds-gulp-builder": "~0.2.3",
+    "ds-gulp-builder-browser-sync": "~0.2.1",
+    "ds-gulp-builder-browserify": "~0.2.1",
+    "ds-gulp-builder-jade": "~0.2.2",
+    "ds-gulp-builder-pug": "~0.2.1",
+    "ds-gulp-builder-sass": "~0.2.2",
+    "graphlib-dot": "~0.6.2",
+    "gulp": "~3.9.1",
+    "gulp-changed": "~1.3.2",
+    "gulp-include": "~2.3.1",
+    "gulp-jade": "~1.1.0",
+    "gulp-notify": "~2.2.0",
+    "gulp-rename": "~1.2.2",
+    "gulp-uglify": "~2.0.0",
+    "jquery": "~3.1.1",
+    "path": "~0.12.7"
+  }
+}
