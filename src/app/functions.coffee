@@ -160,11 +160,11 @@ window.parseSVG = (s) ->
 # ==============================================
 
 window.personMinimize = ->
-  elem = $('.person-mini.flag-0')
+  elem = $('[id^="person-"].person-mini.flag-0')
 
   elem.each ()->
     el = $(@)
-    console.log 'image', el.find('image').length
+#    console.log 'image', el.find('image').length
 
 
     if el.find('image').length > 0
@@ -173,8 +173,30 @@ window.personMinimize = ->
       x = 62
       y = 41
       el.find('g[id^="flag"]').attr('transform', "translate(#{x} #{y})")
+      w1 = el.find('[id="{name}"]').width()
 
-    console.log 'translate', translate, x, y
+      el.find('[id="{name}"]').attr('font-size', 10).attr('fill', '#4a4a4a')
+      w2 = el.find('[id="{name}"]').width()
+
+      delta = (w1-w2)/2
+      el.find('[id="{name}"] > tspan').each ->
+        el = $(@)
+        el.attr('x', parseInt(el.attr('x')) + delta)
+        el.attr('y', parseInt(el.attr('y')) - 24)
+        return
+      ut = el.find('#under-text')
+      console.log if ut? and ut.length > 0 then ut.attr('y')
+      ut.attr('y', parseInt(ut.attr('y')) - 12 )
+#      el.find('[id="{name}"] > tspan').attr('y', '75')
+
+      #      console.log 'text[id="{title}"]', el.find('text[id="{title}"]').length
+    el.find('text[id="{title}"]').hide()
+
+
+
+
+
+#    console.log 'translate', translate, x, y
 
   elem
     .find('g#Oval-2')
@@ -208,8 +230,21 @@ window.personMaximize = ->
       y = 9
       el.find('g[id^="flag"]').attr('transform', "translate(#{x}, #{y})")
 
+      w1 = el.find('[id="{name}"]').width()
+#
+      el.find('[id="{name}"]').attr('font-size', 12).attr('fill', '#000000')
+      w2 = el.find('[id="{name}"]').width()
+      delta = (w2-w1)/2
 
-    console.log 'translate', translate, x, y
+      el.find('[id="{name}"] > tspan').each ->
+        el = $(@)
+        el.attr('x', parseInt(el.attr('x')) - delta)
+        el.attr('y', parseInt(el.attr('y')) + 24)
+        return
+      el.find('[id="{title}"]').show()
+
+
+#    console.log 'translate', translate, x, y
 
   return
 
@@ -338,11 +373,17 @@ window.initZoom = ->
   window.panZoom = svgPanZoom('#mobile-div > svg',
     zoomEnabled: true
     controlIconsEnabled: true
-    fit: 1
+    fit: false
+    contain: true
     center: 1
-    customEventsHandler: eventsHandler)
-  panZoom.zoom 0.9
+    customEventsHandler: eventsHandler
+    minZoom: .6
+    maxZoom: 3
+  )
+  panZoom.zoom 1
+
   init()
+  $('#preloader').hide()
 
   return
 
