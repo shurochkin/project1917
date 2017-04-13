@@ -1,7 +1,7 @@
 [
-  {"name": "", "color": "#DEDEDE"},
-  {"name": "en", "color": "#F66E6E"},
-  {"name": "gr", "color": "#A0E159"},
-  {"name": "ru", "color": "#4990E2"},
-  {"name": "de", "color": "F8C449"}
+  {"id": 0, "name": "", "color": "#DEDEDE"},
+  {"id": 1, "name": "en", "color": "#F66E6E"},
+  {"id": 2, "name": "gr", "color": "#A0E159"},
+  {"id": 3, "name": "ru", "color": "#4990E2"},
+  {"id": 4, "name": "de", "color": "F8C449"}
 ]
