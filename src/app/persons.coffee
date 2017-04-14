@@ -251,14 +251,18 @@ window.getPersonChildren = (pid)->
 
 # ==============================================
 
-window.getPersonFatherLine = (pid)->
+window.getPersonFatherLine = (pid) ->
   id = parseInt(pid)
-  line = []
+  line = [id]
   cur = getPersonData(id)
+  brozters = getPersonBrozters(id)
+
+  $('#debug').text(JSON.stringify(brozters))
+
   if cur.father > 0
-    if cur.mother
+    if cur.mother and pid is line[0]
       line.push cur.mother
-      showDownLine(cur.mother)
+#      showDownLine(cur.mother)
     if cur.father then line.push cur.father
 
 
@@ -269,22 +273,76 @@ window.getPersonFatherLine = (pid)->
 
 # ==============================================
 
+window.getPersonBrozters = (pid) ->
+  id = parseInt(pid)
+  line = [id]
+  cur = getPersonData(id)
+  cid = cur.id
+
+  broz = persons_data.filter (e)->
+    if e.mother > 0 and e.father > 0 and e.id isnt cid
+      if e.mother is parseInt(cur.mother) and e.father is parseInt(cur.father)  then true else false
+
+  brozNames = broz.map (el)->
+    return el.name
+
+  children = getPersonChildren(cid)
+#  console.log 'children', children
+
+  childrenNames = children.map (id)->
+    name = getPersonName(id)
+    return name
+
+  fatherOf = persons_data.filter (e)->
+    if e.father is parseInt(cur.id)  then true else false
+
+  fatherOfNames = fatherOf.map (el)->
+    return el.name
+
+  motherOf = persons_data.filter (e)->
+    if e.mother is parseInt(cur.id)  then true else false
+
+  motherOfNames = motherOf.map (el)->
+    return el.name
+  ft = if fatherOfNames.length > 0 then "father of (#{fatherOfNames})" else '';
+  mt = if motherOfNames.length > 0 then "mother of (#{motherOfNames})" else '';
+
+  showParentsRelations(id, cur.id)
+
+#  showParentsLinks()
+  #  console.log curLinks
+
+
+
+  return { fatherOfNames, motherOfNames, broz  }
+
+
+
+
+  return "#{cur.name}, #{if cur.sex then 'son' else 'daughter'} of (#{getPersonName(cur.mother)} and #{getPersonName(cur.father)}),  #{ft}, #{mt} have #{broz.length} brozters (#{brozNames}), children (#{childrenNames})"
+
+window. showParentsRelations = (id1, id2)->
+  $('#lines > g[id*="-' + id1 + '-' + id2 + '"], #lines > g[id*="-' + id1 + '-' + id2 + '"]').show()
+  $('#lines > g[id*="-' + id2 + '-' + id1 + '"], #lines > g[id*="-' + id2 + '-' + id1 + '"]').show()
+
+
+
 window.getPersonFamily = (pid)->
   p = getPersonData(pid)
   children = getPersonChildren(p.id)
   parents = getPersonFatherLine(p.id)
-  console.log 'person: ', p, children, parents
+#  console.log 'person: ', p, children, parents
 
   window.personLinks = [].concat(children, parents)
   if p.couple > 0 then window.personLinks.push p.couple
 
 
-  console.log 'personLinks: ', personLinks
+#  console.log 'personLinks: ', personLinks
 
   $(personLinks).each ->
     $('#person-'+@).show().removeClass('flag-0')
 #    $('#lines > g[id^="' + getFlag(p).name + '-"]').show()
-    showLine(@)
+#    showLine(@)
 
 
   return
@@ -295,6 +353,20 @@ window.getPersonData = (pid)->
   return persons_data.find (e)->
     return if e.id is parseInt(pid) then true else false
 
+window.getPersonName = (pid)->
+#  console.log 'getPersonName', pid
+  if pid is 0 then return null
+  p = getPersonData(pid)
+  return p.name
+
+window.getPersonTitle = (pid)->
+  p = getPersonData(pid)
+  return p.title
+
+window.getPersonID = (pid)->
+  p = getPersonData(pid)
+  return p.id
+
 window.getFlag = (data)->
   return flags.find (e)->
     return if e.id is parseInt(data.family) then true else false
@@ -302,7 +374,7 @@ window.getFlag = (data)->
 window.showLine = (id1, id2 = null) ->
   if id2 is null
     showUpLine(id1)
-#    showDownLine(id1)
+    showDownLine(id1)
   else
     $('#lines > g[id*="-' + id1 + '-' + id2 + '"], #lines > g[id*="-' + id2 + '-' + id1 + '"]').show()
 
@@ -311,3 +383,9 @@ window.showUpLine = (id)->
 
 window.showDownLine = (id)->
   $('#lines > g[id*="-' + id + '-"]').show()
+
+window.showParentsLinks = (broz)->
+  $(broz).each ()->
+    id = @.id
+    $('#lines > g[id*="-' + id + '-' + cur.father + '"], #lines > g[id*="-' + id + '-' + cur.mother + '"]').show()
+    $('#lines > g[id*="-' + cur.father + '-' + id + '"], #lines > g[id*="-' + cur.mother + '-' + id + '"]').show()

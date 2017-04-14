@@ -141,7 +141,7 @@ window.initZoom = ->
     contain: true
     center: 1
     customEventsHandler: eventsHandler
-    minZoom: .6
+    minZoom: 1
     maxZoom: 3
   )
   panZoom.zoom 1
