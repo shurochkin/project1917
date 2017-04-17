@@ -3,6 +3,7 @@
 # functions.coffee
 
 window.svgPath = 'data/1917-work-default-5.svg'
+#window.svgPath = 'data/1917-work-default-LAST_ORIG.svg'
 window.flags = require './../../data/flags.json'
 window.persons_data = require './../../data/persons.json'
 window.personSelected = null

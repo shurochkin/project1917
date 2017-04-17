@@ -106,12 +106,12 @@ window.bindEvents = (persons)->
 #    name = elem.find('text[id="{name}"] tspan').text().trim()
 #    title = elem.find('text[id="{title}"] tspan').text().trim()
     pid = parseInt elem.attr('id').split('-')[1]
-    #    console.log 'name: ', name, 'title: ', title
 
     if personSelected is pid then return
     window.personSelected = pid
 
     data = getPersonData(pid)
+    console.log 'pid: ', pid, 'data: ', data
 
     hideDinastySelector()
 
@@ -256,7 +256,7 @@ window.getPersonFatherLine = (pid) ->
   id = parseInt(pid)
   line = [id]
   cur = getPersonData(id)
-#  brozters = getPersonBrozters(id, true)
+  brozters = getPersonBrozters(id, true)
 
 
 
@@ -271,10 +271,13 @@ window.getPersonFatherLine = (pid) ->
     line = line.concat getPersonBrozters(id, true)
 
 
-  text = 'Мама: '+ getPersonName(cur.mother)+"<br>"
-  text += 'Папа: '+ getPersonName(cur.father)+"\n"
+  text = 'Мама: '+ getPersonName(cur.mother)+'<br>'
+  text += 'Папа: '+ getPersonName(cur.father)+'<br>'
+  text += 'Братья/сестры: <br>'
+  broz = $(brozters).each ()->
+    getPersonName(@.id)
 
-
+  console.log 'getPersonFatherLine broz', broz
   $('#debug').html(text)
   return line
 
@@ -353,13 +356,15 @@ window.getPersonFamily = (pid)->
 
 
 window.getPersonData = (pid)->
+  if pid is undefined then return false
+#  console.log 'getPersonData', pid
   return persons_data.find (e)->
     return if e.id is parseInt(pid) then true else false
 
 window.getPersonName = (pid)->
-#  console.log 'getPersonName', pid
   if pid is 0 then return null
   p = getPersonData(pid)
+#  console.log 'getPersonName', p
   return p.name
 
 window.getPersonTitle = (pid)->
