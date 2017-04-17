@@ -1,27 +1,95 @@
-<svg width="147px" height="138px" viewBox="-3 -2 147 138" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+
+<svg width="1391px" height="711px" viewBox="0 0 1391 711" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M850,1555 L1115.00425,1555 C1132.67502,1555 1147,1569.32102 1147,1587.00917 L1147,1621" id="path-1"></path>
+        <path d="M910,1255 L953.006727,1255 C970.679805,1255 985.006666,1269.31801 985.006666,1286.99694 L985.006666,1462.41753" id="path-2"></path>
+        <path d="M443,914 L1010.00693,914 C1027.67621,914 1042,928.331089 1042,945.99682 L1042,1455" id="path-3"></path>
+        <path d="M235,1052 L1590.00794,1052 C1607.67667,1052 1622,1066.32102 1622,1084.00917 L1622,1118" id="path-4"></path>
+        <path d="M830.996774,1143 L984.49083,1143" id="path-5"></path>
+        <path d="M904.996774,1456 L1041.51153,1456" id="path-6"></path>
+        <path d="M683,1335 L1373.52891,1335" id="path-7"></path>
+    </defs>
+    <g id="Work-Connectors" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1917-work-default" transform="translate(-320.000000, -993.000000)">
+            <g id="lines" transform="translate(85.000000, 83.000000)">
+                <g id="en-98-124">
+                    <use stroke="#FFFFFF" stroke-width="8" xlink:href="#path-1"></use>
+                    <use stroke="#F66E6E" stroke-width="4" xlink:href="#path-1"></use>
+                </g>
+                <g id="en-139-95" transform="translate(947.503333, 1358.708766) scale(-1, 1) translate(-947.503333, -1358.708766) ">
+                    <use stroke="#FFFFFF" stroke-width="8" xlink:href="#path-2"></use>
+                    <use stroke="#F66E6E" stroke-width="4" xlink:href="#path-2"></use>
+                </g>
+                <g id="gr-45-44">
+                    <use stroke="#FFFFFF" stroke-width="8" xlink:href="#path-3"></use>
+                    <use stroke="#A0E159" stroke-width="4" xlink:href="#path-3"></use>
+                </g>
+                <g id="gr-26-112">
+                    <use stroke="#FFFFFF" stroke-width="8" xlink:href="#path-4"></use>
+                    <use stroke="#A0E159" stroke-width="4" xlink:href="#path-4"></use>
+                </g>
+                <g id="en-91-92">
+                    <use stroke="#FFFFFF" stroke-width="8" xlink:href="#path-5"></use>
+                    <use stroke="#F66E6E" stroke-width="4" xlink:href="#path-5"></use>
+                </g>
+                <g id="gr-95-46">
+                    <use stroke="#FFFFFF" stroke-width="8" xlink:href="#path-6"></use>
+                    <use stroke="#A0E159" stroke-width="4" xlink:href="#path-6"></use>
+                </g>
+                <g id="en-86-87">
+                    <use stroke="#FFFFFF" stroke-width="8" xlink:href="#path-7"></use>
+                    <use stroke="#4990E2" stroke-width="4" xlink:href="#path-7"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+<svg width="1391px" height="711px" viewBox="0 0 1391 711" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
 <desc>Created with Sketch.</desc>
 <defs>
-    <circle id="path-1" cx="33" cy="33" r="33"></circle>
-    <rect x="-3" y="-2" width="70" height="70" id="rect-3"></rect>
-    <pattern id="pattern-4" patternUnits="objectBoundingBox" x="0" width="100%" height="100%">
-        <use xlink:href="#image-5" transform="scale(1,1)"></use>
-    </pattern>
-    <image id="image-5" width="0" height="0"></image>
+    <path d="M850,1555 L1115.00425,1555 C1132.67502,1555 1147,1569.32102 1147,1587.00917 L1147,1621" id="path-1"></path>
+    <path d="M910,1255 L953.006727,1255 C970.679805,1255 985.006666,1269.31801 985.006666,1286.99694 L985.006666,1462.41753" id="path-2"></path>
+    <path d="M443,914 L1010.00693,914 C1027.67621,914 1042,928.331089 1042,945.99682 L1042,1455" id="path-3"></path>
+    <path d="M235,1052 L1590.00794,1052 C1607.67667,1052 1622,1066.32102 1622,1084.00917 L1622,1118" id="path-4"></path>
+    <path d="M830.996774,1143 L984.49083,1143" id="path-5"></path>
+    <path d="M904.996774,1456 L1041.51153,1456" id="path-6"></path>
+    <path d="M683,1335 L1373.52891,1335" id="path-7"></path>
 </defs>
-<rect id="under-text" stroke="none" fill="#bbbbbb" fill-rule="evenodd" x="63" y="82" width="18" height="21"></rect>
-<mask id="mask-2" fill="white">
-    <use xlink:href="#path-1"></use>
-</mask>
-<g id="Mask" stroke="none" fill="none"></g>
-<g id="{img}" stroke="none" fill="none" mask="url(#mask-2)">
-    <image x="-3" y="-2" width="70" height="70" xlink:href="data:image/png;base64,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"></image>
-    <use fill="url(#pattern-4)" fill-rule="evenodd" xlink:href="#rect-3"></use>
+<g id="Work-Connectors" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="1917-work-default" transform="translate(-320.000000, -993.000000)">
+        <g id="lines" transform="translate(85.000000, 83.000000)">
+            <g id="en-98-124">
+                <use stroke="#FFFFFF" stroke-width="8" xlink:href="#path-1"></use>
+                <use stroke="#F66E6E" stroke-width="4" xlink:href="#path-1"></use>
+            </g>
+            <g id="en-139-95" transform="translate(947.503333, 1358.708766) scale(-1, 1) translate(-947.503333, -1358.708766) ">
+                <use stroke="#FFFFFF" stroke-width="8" xlink:href="#path-2"></use>
+                <use stroke="#F66E6E" stroke-width="4" xlink:href="#path-2"></use>
+            </g>
+            <g id="gr-45-44">
+                <use stroke="#FFFFFF" stroke-width="8" xlink:href="#path-3"></use>
+                <use stroke="#A0E159" stroke-width="4" xlink:href="#path-3"></use>
+            </g>
+            <g id="gr-26-112">
+                <use stroke="#FFFFFF" stroke-width="8" xlink:href="#path-4"></use>
+                <use stroke="#A0E159" stroke-width="4" xlink:href="#path-4"></use>
+            </g>
+            <g id="en-91-92">
+                <use stroke="#FFFFFF" stroke-width="8" xlink:href="#path-5"></use>
+                <use stroke="#F66E6E" stroke-width="4" xlink:href="#path-5"></use>
+            </g>
+            <g id="gr-95-46">
+                <use stroke="#FFFFFF" stroke-width="8" xlink:href="#path-6"></use>
+                <use stroke="#A0E159" stroke-width="4" xlink:href="#path-6"></use>
+            </g>
+            <g id="en-86-87">
+                <use stroke="#FFFFFF" stroke-width="8" xlink:href="#path-7"></use>
+                <use stroke="#4990E2" stroke-width="4" xlink:href="#path-7"></use>
+            </g>
+        </g>
+    </g>
 </g>
-<text id="{name}" stroke="#000000" fill="none" mask="url(#mask-2)" font-family="Helvetica" font-size="12" font-weight="normal">
-    <tspan x="56.9912109" y="99" fill="#000000">name</tspan>
-</text>
-<text id="{title}" stroke="#000000" fill="none" mask="url(#mask-2)" font-family="Helvetica" font-size="10" font-weight="normal">
-    <tspan x="64.2192383" y="111" fill="#4A4A4A">title</tspan>
-</text>
 </svg>

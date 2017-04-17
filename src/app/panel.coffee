@@ -15,8 +15,14 @@ window.dinastyInit = () ->
       $('g[class^="person-'+land+'"]').show().removeClass('person-mini flag-0')
       personMinimize()
 
-      $('#lines > g[id^="' + land + '-"]').show()
-      return
+      lines = $('#lines > g[id^="' + land + '-"]')
+#      console.log lines
+#      lines.show()
+      lines.each ()->
+        ids = $(@).attr('id').split('-')
+        $('#person-'+ids[1]).show()
+        $('#person-'+ids[2]).show()
+
     return
 
 # Сброс к начальному виду

@@ -2,6 +2,7 @@
 
 # functions.coffee
 
+window.svgPath = 'data/1917-work-default-5.svg'
 window.flags = require './../../data/flags.json'
 window.persons_data = require './../../data/persons.json'
 window.personSelected = null
@@ -58,7 +59,7 @@ window.init = ->
 
 
 window.globalInit = (data)->
-  $.get 'data/1917-work-default-5.svg', (data) ->
+  $.get svgPath, (data) ->
     dom = $(data)
 #    persons = dom.find('svg > g:last-child > g:last-child')
 
