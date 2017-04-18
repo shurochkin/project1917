@@ -6,11 +6,8 @@ html
   head
     meta(name='viewport', content='user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1')
     meta(charset='utf-8')
-    link(href='app.css', rel='stylesheet', type='text/css')
-    script(src='http://ariutta.github.io/svg-pan-zoom/dist/svg-pan-zoom.js')
-    script(src='http://ariutta.github.io/svg-pan-zoom/demo/hammer.js')
-    script(src='https://code.jquery.com/jquery-3.2.0.min.js')
-    script(src='https://cdn.anychart.com/js/latest/graphics.min.js')
+    link(href='https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic', rel='stylesheet')
+    link(href='app.min.css', rel='stylesheet', type='text/css')
   body
     #preloader
       img(src="img/default.svg")
@@ -22,32 +19,37 @@ html
         #dinasty
           h3 Династии
           ul#land-switcher
-            li
+            li.en
               label
                 input(type='radio', name='land', value='en')
                 |  Великобритания
-            li
+            li.de
               label
                 input(type='radio', name='land', value='de')
                 |  Германия
-            li
+            li.ru
               label
                 input(type='radio', name='land', value='ru')
                 |  Россия
-            li
+            li.gr
               label
                 input(type='radio', name='land', value='gr')
                 |  Дания и Греция
         #description
           h3 Кто кому кем приходится
 
+          img.img(src='')
           p.name
           p.title
           p.born
           p.description
 
         button#clear-selection(type='reset') Очистить выбор
-        hr
-        #debug
+      #debug
 
+    script(src='http://ariutta.github.io/svg-pan-zoom/dist/svg-pan-zoom.js')
+    script(src='http://ariutta.github.io/svg-pan-zoom/demo/hammer.js')
+    script(src='https://code.jquery.com/jquery-3.2.0.min.js')
+    script(src='https://cdn.anychart.com/js/latest/graphics.min.js')
+    //script(src='app.min.js')
     script(src='app.js')

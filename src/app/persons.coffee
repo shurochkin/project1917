@@ -111,7 +111,7 @@ window.bindEvents = (persons)->
     window.personSelected = pid
 
     data = getPersonData(pid)
-    console.log 'pid: ', pid, 'data: ', data
+#    console.log 'pid: ', pid, 'data: ', data
 
     hideDinastySelector()
 
@@ -163,36 +163,41 @@ window.personMinimize = ->
   elem = $('[id^="person-"].person-mini')
 
   elem.each ()->
-    el = $(@)
+    onePersonMinimize(@)
 
-    if el.find('image').length > 0
-      transform = el.find('g[id^="flag"]').attr('transform')
-      translate = (if transform? then transform else '').replace('translate(', '').replace(')', '').split(' ')
-      x = 62
-      y = 41
-      el.find('g[id^="flag"]').attr('transform', "translate(#{x} #{y})")
+  return
 
-      rect = el.find('rect')
-      y1 = parseInt(rect.attr('y'))
-      rect.attr('y', y1 - 20)
-
-
-      el.find('[id="{name}"]').attr('font-size', 10).attr('fill', '#4a4a4a')
-
-      el.find('[id="{name}"] > tspan').each ->
-        e = $(@)
-        e.attr('x', parseInt(e.attr('x')) + 7)
-        e.attr('y', parseInt(e.attr('y')) - 24)
-        return
-
-    t = el.find('[id="{title}"]')
-    t.hide()
-
-  elem
+window.onePersonMinimize = (e)->
+  if !e? then return
+  el = $(e)
+  t = el.find('[id="{title}"]')
+  t.hide()
+  el
     .find('g#Oval-2')
     .children()
     .attr('xlink:href', '#path-person-mini')
-  return
+  if el.find('image').length > 0
+#    console.log getPersonName(el.attr('id').split('-')[1])
+    transform = el.find('g[id^="flag"]').attr('transform')
+    translate = (if transform? then transform else '').replace('translate(', '').replace(')', '').split(' ')
+    x = 62
+    y = 41
+    el.find('g[id^="flag"]').attr('transform', "translate(#{x} #{y})")
+
+    rect = el.find('rect')
+    y1 = parseInt(rect.attr('y'))
+    rect.attr('y', y1 - 20)
+
+
+    el.find('[id="{name}"]').attr('font-size', 10).attr('fill', '#4a4a4a')
+
+    el.find('[id="{name}"] > tspan').each ->
+      e = $(@)
+      e.attr('x', parseInt(e.attr('x')) + 7)
+      e.attr('y', parseInt(e.attr('y')) - 24)
+      return
+
+
 
 # ==============================================
 
@@ -201,42 +206,46 @@ window.personMaximize = ->
   elem = $('.person-mini')
 
   elem.each ()->
-    el = $(@)
-    el.removeClass('flag-0')
-    #    console.log 'image', el.find('image').length
+    onePersonMaximize(@)
+  return
 
+window.onePersonMaximize = (e) ->
+  if !e? then return
+  el = $(e)
+  el.removeClass('flag-0')
 
-    if el.find('#img').length > 0
-      el
-        .removeClass('person-mini')
-        .find('g#Oval-2')
-        .children()
-        .attr('xlink:href', '#path-person-standard')
-      #    .attr('transform', 'translate(62, 40)')
+  if el.find('#img').length > 0
+    el
+      .removeClass('person-mini')
+      .find('g#Oval-2')
+      .children()
+      .attr('xlink:href', '#path-person-standard')
+    #    .attr('transform', 'translate(62, 40)')
+#    console.log getPersonName(el.attr('id').split('-')[1]), el.attr('class'), window.land
 
-      transform = el.find('g[id^="flag"]').attr('transform')
-      translate = (if transform? then transform else '').replace('translate(', '').replace(')', '').split(', ')
-      x = 31
-      y = 9
-      el.find('g[id^="flag"]').attr('transform', "translate(#{x}, #{y})")
+    transform = el.find('g[id^="flag"]').attr('transform')
+    translate = (if transform? then transform else '').replace('translate(', '').replace(')', '').split(', ')
+    x = 31
+    y = 9
+    el.find('g[id^="flag"]').attr('transform', "translate(#{x}, #{y})")
 
-      rect = el.find('rect')
-      y1 = parseInt(rect.attr('y'))
-      rect.attr('y', y1 + 20)
+    rect = el.find('rect')
+    y1 = parseInt(rect.attr('y'))
+    rect.attr('y', y1 + 20)
 
-      el.find('[id="{name}"]').attr('font-size', 12).attr('fill', '#4a4a4a')
+    el.find('[id="{name}"]').attr('font-size', 12).attr('fill', '#4a4a4a')
 
-      el.find('[id="{name}"] > tspan').each ->
-        e = $(@)
-        e.attr('x', parseInt(e.attr('x')) - 7)
-        e.attr('y', parseInt(e.attr('y')) + 24)
-        return
-      el.find('[id="{title}"]').show()
+#    if !el.hasClass('person-'+land)
+    el.find('[id="{name}"] > tspan').each ->
+      e = $(@)
+      e.attr('x', parseInt(e.attr('x')) - 7)
+      e.attr('y', parseInt(e.attr('y')) + 24)
+      return
+    el.find('[id="{title}"]').show()
 
 
   #    console.log 'translate', translate, x, y
 
-  return
 
 # ==============================================
 
@@ -273,11 +282,8 @@ window.getPersonFatherLine = (pid) ->
 
   text = 'Мама: '+ getPersonName(cur.mother)+'<br>'
   text += 'Папа: '+ getPersonName(cur.father)+'<br>'
-  text += 'Братья/сестры: <br>'
-  broz = $(brozters).each ()->
-    getPersonName(@.id)
 
-  console.log 'getPersonFatherLine broz', broz
+#  console.log 'getPersonFatherLine broz', broz
   $('#debug').html(text)
   return line
 
@@ -326,24 +332,35 @@ window.getPersonBrozters = (pid, older) ->
 
   return "#{cur.name}, #{if cur.sex then 'son' else 'daughter'} of (#{getPersonName(cur.mother)} and #{getPersonName(cur.father)}),  #{ft}, #{mt} have #{brozters.length} brozters (#{broztersNames}), children (#{childrenNames})"
 
+# ==============================================
+
 window. showParentsRelations = (id1, id2)->
-  $('#lines > g[id*="-' + id1 + '-' + id2 + '"], #lines > g[id*="-' + id1 + '-' + id2 + '"]').show()
-  $('#lines > g[id*="-' + id2 + '-' + id1 + '"], #lines > g[id*="-' + id2 + '-' + id1 + '"]').show()
+#  $('#lines > g[id*="-' + id1 + '-' + id2 + '"], #lines > g[id*="-' + id1 + '-' + id2 + '"]').show()
+#  $('#lines > g[id*="-' + id2 + '-' + id1 + '"], #lines > g[id*="-' + id2 + '-' + id1 + '"]').show()
 
 
+# ==============================================
 
 window.getPersonFamily = (pid)->
   p = getPersonData(pid)
   children = getPersonChildren(p.id)
   parents = getPersonFatherLine(p.id)
   brozters = getPersonBrozters(p.id)
-#  console.log 'person: ', p, children, parents, brozters #
+  if pid = 86
+    console.log 'person: ', p, children, parents, brozters #
 
   window.personLinks = [].concat(children, parents)
-  if p.couple > 0 then window.personLinks.push p.couple
+
+  if typeof p.couple is 'string'
+    couples = p.couple.split(',')
+    console.log couples
+    $(couples).each ()->
+      window.personLinks.push parseInt(@)
+  else
+    window.personLinks.push p.couple
 
 
-#  console.log 'personLinks: ', personLinks
+  console.log 'personLinks: ', personLinks
 
   $(personLinks).each ->
     $('#person-'+@).show().removeClass('flag-0')
@@ -354,30 +371,36 @@ window.getPersonFamily = (pid)->
   return
 
 
+# ==============================================
 
 window.getPersonData = (pid)->
   if pid is undefined then return false
 #  console.log 'getPersonData', pid
   return persons_data.find (e)->
     return if e.id is parseInt(pid) then true else false
+# ==============================================
 
 window.getPersonName = (pid)->
   if pid is 0 then return null
   p = getPersonData(pid)
 #  console.log 'getPersonName', p
   return p.name
+# ==============================================
 
 window.getPersonTitle = (pid)->
   p = getPersonData(pid)
   return p.title
+# ==============================================
 
 window.getPersonID = (pid)->
   p = getPersonData(pid)
   return p.id
+# ==============================================
 
 window.getFlag = (data)->
   return flags.find (e)->
     return if e.id is parseInt(data.family) then true else false
+# ==============================================
 
 window.showLine = (id1, id2 = null, brozt = []) ->
   if id2 is null
@@ -385,6 +408,7 @@ window.showLine = (id1, id2 = null, brozt = []) ->
 #    showDownLine(id1)
   else
     $('#lines > g[id*="-' + id1 + '-' + id2 + '"], #lines > g[id*="-' + id2 + '-' + id1 + '"]').show()
+# ==============================================
 
 window.showUpLine = (id, brozters)->
   els = $('#lines > g[id$="-' + id + '"]')
@@ -396,15 +420,18 @@ window.showUpLine = (id, brozters)->
       els.each ()->
 #        console.log 'each showSegment: ', @
         showSegment($(@), brozters)
+# ==============================================
 
 window.showDownLine = (id)->
   $('#lines > g[id*="-' + id + '-"]').show()
+# ==============================================
 
 window.showParentsLinks = (broz)->
   $(broz).each ()->
     id = @.id
     $('#lines > g[id*="-' + id + '-' + cur.father + '"], #lines > g[id*="-' + id + '-' + cur.mother + '"]').show()
     $('#lines > g[id*="-' + cur.father + '-' + id + '"], #lines > g[id*="-' + cur.mother + '-' + id + '"]')
+# ==============================================
 
 
 window.showSegment = (els, broz)->
