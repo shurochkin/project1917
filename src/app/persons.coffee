@@ -261,11 +261,13 @@ window.getPersonChildren = (pid)->
 # ==============================================
 
 # Получаем ID-шники по отцовской линии, кого надо показывать
-window.getPersonFatherLine = (pid) ->
+window.getPersonFatherLine = (pid, recurs = false) ->
   id = parseInt(pid)
   line = [id]
   cur = getPersonData(id)
-  brozters = getPersonBrozters(id, true)
+  if recurs is false
+    brozters = getPersonBrozters(id, false)
+    line = line.concat(brozters)
 
 
 
@@ -275,43 +277,43 @@ window.getPersonFatherLine = (pid) ->
 #      showDownLine(cur.mother)
     if cur.father then line.push cur.father
 
-
-    line = line.concat getPersonFatherLine(cur.father)
+    if recurs is false
+      line = line.concat getPersonFatherLine(cur.father, true)
     line = line.concat getPersonBrozters(id, true)
 
 
-  text = 'Мама: '+ getPersonName(cur.mother)+'<br>'
-  text += 'Папа: '+ getPersonName(cur.father)+'<br>'
+#  text = 'Мама: '+ getPersonName(cur.mother)+'<br>'
+#  text += 'Папа: '+ getPersonName(cur.father)+'<br>'
 
 #  console.log 'getPersonFatherLine broz', broz
-  $('#debug').html(text)
+#  $('#debug').html(text)
   return line
 
 # ==============================================
 
 # Получаем ID-шники братьев/сестер, если older == true, то только страших
-window.getPersonBrozters = (pid, older) ->
+window.getPersonBrozters = (pid, older = false, rec = false) ->
   id = parseInt(pid)
   line = [id]
   cur = getPersonData(id)
   cid = cur.id
-  cur.born = new Date(cur.born)
 
-#  console.log cur.name, cur.born
+  console.log cur.name, cur.id, older, rec
 
   broztersObj = persons_data.filter (e)->
     if e.mother > 0 and e.father > 0 and e.id isnt cid
       if e.mother is parseInt(cur.mother) and e.father is parseInt(cur.father) # then true else false
-        e.born = new Date(e.born)
         if older is true
-          if cur.posinbroz > e.posinbroz then return true else false
+          console.log 'older is true', e
+          if cur.posinbroz > e.posinbroz then return true
         else
+          console.log 'older is false', e
           return true
 
 #  console.log 'getPersonBrozters('+cur.name+', older = ', older, ')-> brozters: ',  broztersObj
 
-  broztersNames = broztersObj.map (el)->
-    return el.name
+#  broztersNames = broztersObj.map (el)->
+#    return el.name
 
   broztersIDs = broztersObj.map (el)->
     return el.id
@@ -346,8 +348,6 @@ window.getPersonFamily = (pid)->
   children = getPersonChildren(p.id)
   parents = getPersonFatherLine(p.id)
   brozters = getPersonBrozters(p.id)
-  if pid = 86
-    console.log 'person: ', p, children, parents, brozters #
 
   window.personLinks = [].concat(children, parents)
 
@@ -407,7 +407,7 @@ window.showLine = (id1, id2 = null, brozt = []) ->
     showUpLine(id1, brozt)
 #    showDownLine(id1)
   else
-    $('#lines > g[id*="-' + id1 + '-' + id2 + '"], #lines > g[id*="-' + id2 + '-' + id1 + '"]').show()
+    $('#lines > g[id*="'+ land +'-' + id1 + '-' + id2 + '"], #lines > g[id*="'+ land +'-' + id2 + '-' + id1 + '"]').show()
 # ==============================================
 
 window.showUpLine = (id, brozters)->
@@ -423,14 +423,14 @@ window.showUpLine = (id, brozters)->
 # ==============================================
 
 window.showDownLine = (id)->
-  $('#lines > g[id*="-' + id + '-"]').show()
+  $('#lines > g[id*="'+land+'-' + id + '-"]').show()
 # ==============================================
 
 window.showParentsLinks = (broz)->
   $(broz).each ()->
     id = @.id
-    $('#lines > g[id*="-' + id + '-' + cur.father + '"], #lines > g[id*="-' + id + '-' + cur.mother + '"]').show()
-    $('#lines > g[id*="-' + cur.father + '-' + id + '"], #lines > g[id*="-' + cur.mother + '-' + id + '"]')
+    $('#lines > g[id*="'+ land +'-' + id + '-' + cur.father + '"], #lines > g[id*="'+ land +'-' + id + '-' + cur.mother + '"]').show()
+    $('#lines > g[id*="'+ land +'-' + cur.father + '-' + id + '"], #lines > g[id*="'+ land +'-' + cur.mother + '-' + id + '"]')
 # ==============================================
 
 

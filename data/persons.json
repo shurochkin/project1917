@@ -1132,7 +1132,7 @@
     "id": 83,
     "name": "Эрнст Людвиг",
     "father": 9,
-    "couple": 86,
+    "couple": "86, 104",
     "sex": 1,
     "value": 1,
     "img": "img/83.png",
