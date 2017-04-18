@@ -23,6 +23,8 @@ h1, h2, h3
 
 #mobile-div
   width: calc(100vw - 360px)
+  +breakpoint($mobile)
+    width: 100vw
   height: 100vh
   border-right: 1px solid rgba(black, .12)
   overflow: hidden
@@ -39,6 +41,7 @@ h1, h2, h3
   vertical-align: top
   padding: 0
   background-color: #FAFAFA
+  overflow: scroll
   form
     padding: 10px 30px 30px
     border-bottom: 1px solid rgba(black, .12)
@@ -46,6 +49,9 @@ h1, h2, h3
     font-weight: 400
     margin-top: 0
     +vr-baseline(20px, 28px)
+  +breakpoint($mobile)
+    position: relative
+    right: -360px
 
 #dinasty, #description
   height: 300px
@@ -157,3 +163,5 @@ h1, h2, h3
 #debug
   padding: 10px
   display: none
+
+#person

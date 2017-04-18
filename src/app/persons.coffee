@@ -357,12 +357,13 @@ window.getPersonFamily = (pid)->
     $(couples).each ()->
       window.personLinks.push parseInt(@)
   else
-    window.personLinks.push p.couple
+    window.personLinks.push parseInt(p.couple)
 
 
   console.log 'personLinks: ', personLinks
 
-  $(personLinks).each ->
+  $(personLinks).each ()->
+#    console.log @
     $('#person-'+@).show().removeClass('flag-0')
 #    $('#lines > g[id^="' + getFlag(p).name + '-"]').show()
     showLine(@, null, personLinks)
