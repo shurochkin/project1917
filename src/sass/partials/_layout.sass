@@ -1,11 +1,8 @@
-
-
-
 *, :before, :after
   box-sizing: border-box
 
 body
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif
   +vr-baseline(14px, 20px)
   //font-family: "Helvetica Neue", Helvetica, sans-serif
 
@@ -17,6 +14,7 @@ h1, h2, h3
   width: 100vw
   background: white
   text-align: center
+  z-index: 100
   img
     margin: 37vh auto
 
@@ -54,7 +52,10 @@ h1, h2, h3
     right: -360px
 
 #dinasty, #description
-  height: 300px
+  min-height: 300px
+
+#pair-desc
+  margin-bottom: 20px
 
 #land-switcher
   list-style-type: none
@@ -121,7 +122,7 @@ h1, h2, h3
         top: 2px
         left: 10px
 
-    @each $land, $color in (en, '#F66E6E'), (gr, '#A0E159'), (ru, '#4990E2'), (de, '#F8C449')
+    @each $land, $color in $flags
       &.#{$land}
         &:after
           background-color: #{$color}
@@ -146,6 +147,140 @@ h1, h2, h3
 
 #description
   display: none
+  &.show-link
+    position: relative
+    &:before
+      position: absolute
+      display: block
+      content: ''
+      width: 8px
+      height: 38px
+      top: 96px
+      left: 24px
+      background: #dedede
+      border: 2px solid white
+  #person1, #person2
+    clear: both
+    display: block
+    overflow: hidden
+  #person1
+    margin: 0 0 22px
+
+  p
+    margin: 0
+    &.name
+      +vr-baseline(16px, 34px)
+    &.title
+      +vr-baseline(10px, 12px)
+  .img
+    position: relative
+    margin-right: 10px
+    float: left
+    width: 56px
+    height: 56px
+    img
+      width: 40px
+      height: 40px
+      border-radius: 50%
+      z-index: 1
+      position: absolute
+      top: 8px
+      left: 8px
+    &:before, &:after
+      position: absolute
+      display: block
+      content: ''
+      z-index: 2
+      top: 0
+      left: 0
+    &:before
+      width: 56px
+      height: 56px
+      border: 8px solid white
+      border-radius: 50%
+    &:after
+      width: 52px
+      height: 52px
+      border: 4px solid #dedede
+      border-radius: 50%
+      top: 2px
+      left: 2px
+    @each $land, $color in $flags
+      &.#{$land}
+        &:after
+          border-color: #{$color}
+
+#interes
+  h4
+    padding: 0 20px
+    +vr-baseline(16px, 34px)
+    font-weight: normal
+    margin: 10px 0 20px
+
+  .pair
+    position: relative
+    margin-bottom: 20px
+    cursor: pointer
+  .person
+    display: inline-block
+    vertical-align: top
+    text-align: center
+    width: 50%
+    &:before
+      position: absolute
+      display: block
+      content: ''
+      width: 50%
+      height: 8px
+      top: 38px
+      left: 25%
+      background: #dedede
+      border: 2px solid white
+  p
+    margin: 0
+    &.name
+      +vr-baseline(12px, 14px)
+    &.title
+      +vr-baseline(10px, 12px)
+      color: #4A4A4A
+  .img
+    position: relative
+    margin: 0 auto
+    width: 82px
+    height: 82px
+    img
+      width: 66px
+      height: 66px
+      border-radius: 50%
+      z-index: 2
+      position: absolute
+      top: 8px
+      left: 8px
+    &:before, &:after
+      position: absolute
+      display: block
+      content: ''
+      z-index: 2
+      top: 0
+      left: 0
+    &:before
+      width: 82px
+      height: 82px
+      border: 8px solid white
+      border-radius: 50%
+      background: white
+    &:after
+      width: 78px
+      height: 78px
+      border: 4px solid #dedede
+      border-radius: 50%
+      top: 2px
+      left: 2px
+    @each $land, $color in $flags
+      &.#{$land}
+        &:after
+          border-color: #{$color}
+
 
 [id^="person-"]
   transition: matrix 1s ease
@@ -164,4 +299,3 @@ h1, h2, h3
   padding: 10px
   display: none
 
-#person

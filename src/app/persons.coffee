@@ -30,11 +30,26 @@ window.preparePerson = (el)->
 
   name_el = $(text[0])
 
+  id = $(el).find('text:last-child > tspan').text().trim()
   n_x = $($(name_el).html()).attr('x')
   n_y = $($(name_el).html()).attr('y')
-  name  = {x: n_x, y: n_y, name: name_el.text().trim()}
+  name  = {
+    x: n_x,
+    y: n_y,
+    name: getPersonName(id)
+  } # name_el.text().trim()
+  nspan = name_el.find('tspan')
+  if nspan.length > 1
+    io = name.name.split(' ')
+    $(nspan[0]).text(io[0])
+    $(nspan[1]).text(io[1])
+  else
+    $(nspan).text(name.name)
+# TODO: доделать правильное позиционирование, для англ языка
+
+#  console.log name, name_el, name_el.attr('x'), name_el.attr('y')
+
   title_el = if text.length > 2 then $(text[1]) else null
-  id = $(el).find('text:last-child > tspan').text().trim()
 
   # PERSON ID
   el.attr('id', 'person-'+id)
@@ -54,6 +69,8 @@ window.preparePerson = (el)->
       y: $($(title_el).html()).attr('y')
       title: title_el.text().trim()
     }
+    title_el.find('tspan').text(getPersonTitle(id))
+
 
   translate = (if transform? then transform else '').replace('translate(', '').replace(')', '').split(' ')
   person = {id: id, translate: translate, name: name, title: title}
@@ -106,16 +123,34 @@ window.bindEvents = (persons)->
 #    name = elem.find('text[id="{name}"] tspan').text().trim()
 #    title = elem.find('text[id="{title}"] tspan').text().trim()
     pid = parseInt elem.attr('id').split('-')[1]
+    personLinks = []
+    $('#panel').scrollTop(0)
 
-    if personSelected is pid then return
-    window.personSelected = pid
 
-    data = getPersonData(pid)
-#    console.log 'pid: ', pid, 'data: ', data
+    #    console.log 'start:', 'id:', pid, personSelected, personSelected2
+    if personSelected isnt null and personSelected2 isnt null
+      window.personSelected = window.personSelected2 = null
+
+
+    if personSelected isnt null and personSelected is pid and personSelected2 is null then return
+
+    if personSelected is null
+      window.personSelected = pid
+      window.personSelected2 = null
+
+    if personSelected isnt null and personSelected isnt pid
+      window.personSelected2 = pid
+
+
+
+    data1 = getPersonData(personSelected)
+    data2 = getPersonData(personSelected2)
+#    console.log 'data1: ', data1
+#    console.log 'data2: ', data2
 
     hideDinastySelector()
 
-    showPersonDescription(data)
+    showPersonDescription(data1, data2)
 
     personMaximize()
     $('#lines > g').hide()
@@ -123,13 +158,22 @@ window.bindEvents = (persons)->
 
     #      $('g[id^="person-"]').hide()
     $('g[id^="person-"]').addClass('person-mini flag-0')
-    $('g#person-'+pid).show().removeClass('person-mini flag-0')
+    $('g#person-'+personSelected).show().removeClass('person-mini flag-0')
+    $('g#person-'+personSelected2).show().removeClass('person-mini flag-0')
     #    $('g.person-'+land).removeClass('flag-0')
     personMinimize()
 
-    family = getPersonFamily(pid)
-#    console.log 'family:', family
-    #    $('#lines > g[id^="' + land + '-"]').show()
+#    family = getPersonFamily(personSelected)
+    links = findPath(personSelected, personSelected2)
+
+#    console.log 'links', links
+
+    if links isnt undefined
+      showLine links[i], links[i+1] for link, i in links
+
+
+#    console.log 'family', family
+#    $('#lines > g[id^="' + land + '-"]').show()
     return
 
 # ----------------
@@ -297,17 +341,17 @@ window.getPersonBrozters = (pid, older = false, rec = false) ->
   line = [id]
   cur = getPersonData(id)
   cid = cur.id
-
-  console.log cur.name, cur.id, older, rec
+#  curname = if lang is 'ru' then cur.nameru else cur.nameen
+  console.log 'getPersonBrozters', cur, cur.id, older, rec
 
   broztersObj = persons_data.filter (e)->
     if e.mother > 0 and e.father > 0 and e.id isnt cid
       if e.mother is parseInt(cur.mother) and e.father is parseInt(cur.father) # then true else false
         if older is true
-          console.log 'older is true', e
+#          console.log 'older is true', e
           if cur.posinbroz > e.posinbroz then return true
         else
-          console.log 'older is false', e
+#          console.log 'older is false', e
           return true
 
 #  console.log 'getPersonBrozters('+cur.name+', older = ', older, ')-> brozters: ',  broztersObj
@@ -360,13 +404,15 @@ window.getPersonFamily = (pid)->
     window.personLinks.push parseInt(p.couple)
 
 
-  console.log 'personLinks: ', personLinks
+  console.log 'personLinks: ', personLinks.map (i)->
+    if i isnt NaN
+      getPersonName(i)
 
-  $(personLinks).each ()->
-#    console.log @
-    $('#person-'+@).show().removeClass('flag-0')
-#    $('#lines > g[id^="' + getFlag(p).name + '-"]').show()
-    showLine(@, null, personLinks)
+#  $(personLinks).each ()->
+##    console.log @
+#    $('#person-'+@).show().removeClass('flag-0')
+##    $('#lines > g[id^="' + getFlag(p).name + '-"]').show()
+#    showLine(@, null, personLinks)
 
 
   return
@@ -375,22 +421,27 @@ window.getPersonFamily = (pid)->
 # ==============================================
 
 window.getPersonData = (pid)->
-  if pid is undefined then return false
+  if pid is undefined or pid is null then return false
 #  console.log 'getPersonData', pid
   return persons_data.find (e)->
     return if e.id is parseInt(pid) then true else false
 # ==============================================
 
 window.getPersonName = (pid)->
+#  console.log 'getPersonName', pid
   if pid is 0 then return null
   p = getPersonData(pid)
-#  console.log 'getPersonName', p
-  return p.name
+  return if lang is 'ru' then p.nameru else p.nameen
 # ==============================================
 
 window.getPersonTitle = (pid)->
   p = getPersonData(pid)
-  return p.title
+  return if lang is 'ru' then p.titleru else p.titleen
+# ==============================================
+
+window.getPersonDescription = (pid)->
+  p = getPersonData(pid)
+  return if lang is 'ru' then p.descriptionru else p.descriptionen
 # ==============================================
 
 window.getPersonID = (pid)->
@@ -404,11 +455,17 @@ window.getFlag = (data)->
 # ==============================================
 
 window.showLine = (id1, id2 = null, brozt = []) ->
+#  console.log('showLine', id1, id2)
+
+  if id1 is null and id2 is null
+    $('#lines > g[id*="' + id1 + '-' + id2 + '"], #lines > g[id*="' + id2 + '-' + id1 + '"]').show()
+
+
   if id2 is null
+#    console.log('showUpLine', id1, id2, brozt.length)
     showUpLine(id1, brozt)
 #    showDownLine(id1)
-  else
-    $('#lines > g[id*="'+ land +'-' + id1 + '-' + id2 + '"], #lines > g[id*="'+ land +'-' + id2 + '-' + id1 + '"]').show()
+
 # ==============================================
 
 window.showUpLine = (id, brozters)->
