@@ -397,7 +397,7 @@ window.getPersonFamily = (pid)->
   p = getPersonData(pid)
   children = getPersonChildren(p.id)
   parents = getPersonFatherLine(p.id)
-  brozters = getPersonBrozters(p.id)
+#  brozters = getPersonBrozters(p.id)
 
 #  console.log children, parents
 
