@@ -399,7 +399,7 @@ window.getPersonFamily = (pid)->
   parents = getPersonFatherLine(p.id)
   brozters = getPersonBrozters(p.id)
 
-  console.log children, parents
+#  console.log children, parents
 
 
   window.personLinks = []
@@ -407,18 +407,18 @@ window.getPersonFamily = (pid)->
 
   if typeof p.couple is 'string'
     couples = p.couple.split(',')
-    console.log couples
+#    console.log couples
     $(couples).each ()->
       window.personLinks.push parseInt(@)
   else
     window.personLinks.push parseInt(p.couple)
 
 
-  console.log 'personLinks: ', personLinks.map (i)->
-    if i isnt NaN
+  personLinks = window.personLinks.map (i)->
+    if i isnt NaN then return i
 #      getPersonName(i)
-      return i
 
+#  console.log 'personLinks:', personLinks
   $(personLinks).each ()->
     $('#person-'+@).show().removeClass('flag-0')
 #    $('#lines > g[id^="' + getFlag(p).name + '-"]').show()
@@ -466,11 +466,12 @@ window.getFlag = (data)->
 # ==============================================
 
 window.showLine = (id1, id2 = null, brozt = []) ->
-  console.log('showLine', id1, id2)
+#  console.log('showLine', id1, id2, brozt)
+
 
   if id1 isnt null and id2 isnt null
-    selector = '#lines > g[id*="' + id1 + '-' + id2 + '"], #lines > g[id*="' + id2 + '-' + id1 + '"]'
-    console.log selector
+    selector = '#lines > g[id$="' + id1 + '-' + id2 + '"], #lines > g[id$="' + id2 + '-' + id1 + '"]'
+#    console.log selector
     $(selector).show()
 
 
@@ -482,10 +483,12 @@ window.showLine = (id1, id2 = null, brozt = []) ->
 # ==============================================
 
 window.showUpLine = (id, brozters)->
+
   els = $('#lines > g[id$="-' + id + '"]')
 #  console.log 'showUpLine brozters:', brozters
   if els?
     if els.length is 1
+#      console.log 'els showSegment: ', els
       showSegment(els, brozters)
     else if els.length > 1
       els.each ()->
@@ -508,9 +511,9 @@ window.showParentsLinks = (broz)->
 window.showSegment = (els, broz)->
   elems = $(els).attr('id')
   elements = elems.split('-')
-#  console.log elems, elements, elements[1], broz
+  #  console.log elems, elements, elements[1], broz
   ret = $.inArray(parseInt(elements[1]), broz)
-#  console.log ret
+#  console.log 'showSegment:', elems
   if ret isnt -1 then $(els).show()
 
 
