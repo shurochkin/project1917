@@ -123,7 +123,7 @@ window.bindEvents = (persons)->
 #    name = elem.find('text[id="{name}"] tspan').text().trim()
 #    title = elem.find('text[id="{title}"] tspan').text().trim()
     pid = parseInt elem.attr('id').split('-')[1]
-    personLinks = []
+    window.personLinks = []
     $('#panel').scrollTop(0)
 
 
@@ -140,6 +140,7 @@ window.bindEvents = (persons)->
 
     if personSelected isnt null and personSelected isnt pid
       window.personSelected2 = pid
+      $('#lines > g').hide()
 
 
 
@@ -161,17 +162,22 @@ window.bindEvents = (persons)->
     $('g#person-'+personSelected).show().removeClass('person-mini flag-0')
     $('g#person-'+personSelected2).show().removeClass('person-mini flag-0')
     #    $('g.person-'+land).removeClass('flag-0')
+
+    links = findPath(personSelected, personSelected2)
+#    console.log 'links', links
+    if links isnt undefined
+      links.forEach (i)->
+        $('g#person-'+i).show().removeClass('person-mini flag-0')
     personMinimize()
 
-#    family = getPersonFamily(personSelected)
-    links = findPath(personSelected, personSelected2)
-
-#    console.log 'links', links
 
     if links isnt undefined
       showLine links[i], links[i+1] for link, i in links
+    else
+      showLine pid, null
 
-
+    if personSelected isnt null and personSelected2 is null
+      getPersonFamily(personSelected)
 #    console.log 'family', family
 #    $('#lines > g[id^="' + land + '-"]').show()
     return
@@ -342,7 +348,7 @@ window.getPersonBrozters = (pid, older = false, rec = false) ->
   cur = getPersonData(id)
   cid = cur.id
 #  curname = if lang is 'ru' then cur.nameru else cur.nameen
-  console.log 'getPersonBrozters', cur, cur.id, older, rec
+#  console.log 'getPersonBrozters', cur, cur.id, older, rec
 
   broztersObj = persons_data.filter (e)->
     if e.mother > 0 and e.father > 0 and e.id isnt cid
@@ -393,6 +399,10 @@ window.getPersonFamily = (pid)->
   parents = getPersonFatherLine(p.id)
   brozters = getPersonBrozters(p.id)
 
+  console.log children, parents
+
+
+  window.personLinks = []
   window.personLinks = [].concat(children, parents)
 
   if typeof p.couple is 'string'
@@ -406,13 +416,13 @@ window.getPersonFamily = (pid)->
 
   console.log 'personLinks: ', personLinks.map (i)->
     if i isnt NaN
-      getPersonName(i)
+#      getPersonName(i)
+      return i
 
-#  $(personLinks).each ()->
-##    console.log @
-#    $('#person-'+@).show().removeClass('flag-0')
-##    $('#lines > g[id^="' + getFlag(p).name + '-"]').show()
-#    showLine(@, null, personLinks)
+  $(personLinks).each ()->
+    $('#person-'+@).show().removeClass('flag-0')
+#    $('#lines > g[id^="' + getFlag(p).name + '-"]').show()
+    showLine(parseInt(@), null, window.personLinks)
 
 
   return
@@ -431,7 +441,8 @@ window.getPersonName = (pid)->
 #  console.log 'getPersonName', pid
   if pid is 0 then return null
   p = getPersonData(pid)
-  return if lang is 'ru' then p.nameru else p.nameen
+#  console.log 'getPersonName: p', p
+  return if p and lang is 'ru' then p.nameru else p.nameen
 # ==============================================
 
 window.getPersonTitle = (pid)->
@@ -455,10 +466,12 @@ window.getFlag = (data)->
 # ==============================================
 
 window.showLine = (id1, id2 = null, brozt = []) ->
-#  console.log('showLine', id1, id2)
+  console.log('showLine', id1, id2)
 
-  if id1 is null and id2 is null
-    $('#lines > g[id*="' + id1 + '-' + id2 + '"], #lines > g[id*="' + id2 + '-' + id1 + '"]').show()
+  if id1 isnt null and id2 isnt null
+    selector = '#lines > g[id*="' + id1 + '-' + id2 + '"], #lines > g[id*="' + id2 + '-' + id1 + '"]'
+    console.log selector
+    $(selector).show()
 
 
   if id2 is null

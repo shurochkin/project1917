@@ -15,6 +15,7 @@ window.personSelected = null
 window.personSelected2 = null
 window.land = null
 window.graph = {}
+window.personLinks = []
 
 # ==============================================
 
