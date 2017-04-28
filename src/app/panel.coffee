@@ -57,17 +57,18 @@ window.dinastyInit = () ->
 window.interesInit = ()->
   int = $('#interes')
   interes_data.forEach (i)->
-    data1 = getPersonData(i.id1)
-    data2 = getPersonData(i.id2)
-#    console.log i, data1, data2
-    pair = $('<div>').addClass('pair')
-    pair.append(showOnePerson(data1))
-    pair.append(showOnePerson(data2))
-    pair.on 'click', ()->
-      window.personSelected = window.personSelected2 = null
-      $('#person-'+i.id1).trigger('click')
-      $('#person-'+i.id2).trigger('click')
-    int.append(pair)
+    if i.show?
+      data1 = getPersonData(i.id1)
+      data2 = getPersonData(i.id2)
+  #    console.log i, data1, data2
+      pair = $('<div>').addClass('pair')
+      pair.append(showOnePerson(data1))
+      pair.append(showOnePerson(data2))
+      pair.on 'click', ()->
+        window.personSelected = window.personSelected2 = null
+        $('#person-'+i.id1).trigger('click')
+        $('#person-'+i.id2).trigger('click')
+      int.append(pair)
 
 
 # Сброс к начальному виду
