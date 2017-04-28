@@ -47,6 +47,10 @@ window.dinastyInit = () ->
 
 #        if $.inArray(id2, prsnsIDs)
 #          $('#person-'+id2).show()
+      setTimeout () ->
+        $('#panel').removeClass('open')
+      , 300
+      panZoom.resetZoom()
 
     return
 
@@ -94,7 +98,10 @@ window.showPersonDescription = (data1, data2)->
     pers2.append(showOnePerson(data2))
     desc.addClass('show-link')
   else
-    pair.text(if lang is 'ru' then data1.descriptionru else data1.descriptionen)
+    pers2.text(if lang is 'ru' then data1.descriptionru else data1.descriptionen)
+    note = $('<p>').addClass('note').text('Выберите еще одного персонажа на карте, чтобы узнать как они связаны')
+    pair.append(note)
+
 
 
   if data1 and data2

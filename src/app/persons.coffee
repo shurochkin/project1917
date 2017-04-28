@@ -38,13 +38,6 @@ window.preparePerson = (el)->
     y: n_y,
     name: getPersonName(id)
   } # name_el.text().trim()
-  nspan = name_el.find('tspan')
-  if nspan.length > 1
-    io = name.name.split(' ')
-    $(nspan[0]).text(io[0])
-    $(nspan[1]).text(io[1])
-  else
-    $(nspan).text(name.name)
 # TODO: доделать правильное позиционирование, для англ языка
 
 #  console.log name, name_el, name_el.attr('x'), name_el.attr('y')
@@ -78,11 +71,18 @@ window.preparePerson = (el)->
 
   #   Replace ALL circles to mini/gray
 
-  if $(el).find('g[id^="{img}"]').length is 0
+  if $(el).find('[id^="{img}"]').length is 0
     $(el).find('g#Oval-2').children().attr('xlink:href', '#path-person-mini')
     #    $(el).find('g#Oval-2 > use:last-child').attr('stroke', '#dedede')
     #    flag = $(el).find('g[id^="flag"]').attr('transform', 'translate(62, 40)')
     t = $(el).find('text')
+    nspan = name_el.find('tspan')
+    if nspan.length > 1
+      io = name.name.split(' ')
+      $(nspan[0]).text(io[0]).attr('x', parseFloat($(nspan[0]).attr('x'))+10)
+      $(nspan[1]).text(io[1]).attr('x', parseFloat($(nspan[1]).attr('x'))+10)
+    else
+      $(nspan).text(name.name).attr('x', parseFloat($(nspan).attr('x'))+10)
 
 
     t.find('tspan').each ()->
@@ -99,7 +99,7 @@ window.preparePerson = (el)->
         else doShowDefault(el, fs)
   else
     $(el).addClass('has-image')
-    $(el).find('g[id="{img}"] > image').attr('xlink:href', 'img/'+id+'.png')
+    $(el).find('[id="{img}"]').attr('xlink:href', 'img/'+id+'.png')
     $(el).find('g#Oval-2').children().attr('xlink:href', '#path-person-standard')
 
 
@@ -120,8 +120,8 @@ window.bindEvents = (persons)->
   persons.on 'click', (e)->
     e.preventDefault()
     elem = $(e.currentTarget)
-#    name = elem.find('text[id="{name}"] tspan').text().trim()
-#    title = elem.find('text[id="{title}"] tspan').text().trim()
+#    name = elem.find('text[id="{'+name_id+'}"] tspan').text().trim()
+#    title = elem.find('text[id="{'+title_id+'}"] tspan').text().trim()
     pid = parseInt elem.attr('id').split('-')[1]
     window.personLinks = []
     $('#panel').scrollTop(0)
@@ -140,8 +140,14 @@ window.bindEvents = (persons)->
 
     if personSelected isnt null and personSelected isnt pid
       window.personSelected2 = pid
-      $('#lines > g').hide()
+      $('#lines > g, #m-lines > g').hide()
+      if ua.type.toLowerCase() is 'mobile' then $('#panel').addClass('open')
 
+
+    if personSelected isnt null and personSelected2 is null
+      note = $('<p>').addClass('note').text('Выберите еще одного персонажа на карте, чтобы узнать как они связаны')
+      $('#person2').html('').append(note)
+      if ua.type.toLowerCase() is 'mobile' then $('#panel').removeClass('open')
 
 
     data1 = getPersonData(personSelected)
@@ -154,7 +160,7 @@ window.bindEvents = (persons)->
     showPersonDescription(data1, data2)
 
     personMaximize()
-    $('#lines > g').hide()
+    $('#lines > g, #m-lines > g').hide()
 
 
     #      $('g[id^="person-"]').hide()
@@ -168,42 +174,46 @@ window.bindEvents = (persons)->
     if links isnt undefined
       links.forEach (i)->
         $('g#person-'+i).show().removeClass('person-mini flag-0')
-    personMinimize()
 
+    showPath(links)
+    #    if links isnt undefined
+    #      showLine links[i], links[i+1] for link, i in links
+    #    else
+    #      showLine pid, null
 
-    if links isnt undefined
-      showLine links[i], links[i+1] for link, i in links
-    else
-      showLine pid, null
 
     if personSelected isnt null and personSelected2 is null
       getPersonFamily(personSelected)
-#    console.log 'family', family
-#    $('#lines > g[id^="' + land + '-"]').show()
+    #    console.log 'family', family
+    #    $('#lines > g[id^="' + land + '-"]').show()
+
+
+    personMinimize()
+
     return
 
 # ----------------
 # Person hover
 
-  persons.on 'mouseover', (e)->
-    e.preventDefault()
-    elem = $(e.currentTarget)
-    if elem.hasClass('has-image')
-      css = elem.css('transform').replace('matrix(', '').replace(')', '').split(', ')
-      elem.css('transform', 'matrix(1.2, 0, 0, 1.2, '+(parseFloat(css[4])-sdvig)+', '+(parseFloat(css[5])-sdvig)+')')
-    return
-
-
-# ----------------
-# Person out
-
-  persons.on 'mouseout', (e)->
-    e.preventDefault()
-    elem = $(e.currentTarget)
-    if elem.hasClass('has-image')
-      css = elem.css('transform').replace('matrix(', '').replace(')', '').split(', ')
-      elem.css('transform', 'matrix(1, 0, 0, 1, '+(parseFloat(css[4])+sdvig)+', '+(parseFloat(css[5])+sdvig)+')')
-    return
+#  persons.on 'mouseover', (e)->
+#    e.preventDefault()
+#    elem = $(e.currentTarget)
+#    if elem.hasClass('has-image')
+#      css = elem.css('transform').replace('matrix(', '').replace(')', '').split(', ')
+#      elem.css('transform', 'matrix(1.2, 0, 0, 1.2, '+(parseFloat(css[4])-sdvig)+', '+(parseFloat(css[5])-sdvig)+')')
+#    return
+#
+#
+## ----------------
+## Person out
+#
+#  persons.on 'mouseout', (e)->
+#    e.preventDefault()
+#    elem = $(e.currentTarget)
+#    if elem.hasClass('has-image')
+#      css = elem.css('transform').replace('matrix(', '').replace(')', '').split(', ')
+#      elem.css('transform', 'matrix(1, 0, 0, 1, '+(parseFloat(css[4])+sdvig)+', '+(parseFloat(css[5])+sdvig)+')')
+#    return
 
 # ==============================================
 
@@ -220,7 +230,7 @@ window.personMinimize = ->
 window.onePersonMinimize = (e)->
   if !e? then return
   el = $(e)
-  t = el.find('[id="{title}"]')
+  t = el.find('[id="{'+title_id+'}"]')
   t.hide()
   el
     .find('g#Oval-2')
@@ -239,9 +249,9 @@ window.onePersonMinimize = (e)->
     rect.attr('y', y1 - 20)
 
 
-    el.find('[id="{name}"]').attr('font-size', 10).attr('fill', '#4a4a4a')
+    el.find('[id="{'+name_id+'}"]').attr('font-size', 10).attr('fill', '#4a4a4a')
 
-    el.find('[id="{name}"] > tspan').each ->
+    el.find('[id="{'+name_id+'}"] > tspan').each ->
       e = $(@)
       e.attr('x', parseInt(e.attr('x')) + 7)
       e.attr('y', parseInt(e.attr('y')) - 24)
@@ -283,15 +293,15 @@ window.onePersonMaximize = (e) ->
     y1 = parseInt(rect.attr('y'))
     rect.attr('y', y1 + 20)
 
-    el.find('[id="{name}"]').attr('font-size', 12).attr('fill', '#4a4a4a')
+    el.find('[id="{'+name_id+'}"]').attr('font-size', 12).attr('fill', '#4a4a4a')
 
 #    if !el.hasClass('person-'+land)
-    el.find('[id="{name}"] > tspan').each ->
+    el.find('[id="{'+name_id+'}"] > tspan').each ->
       e = $(@)
       e.attr('x', parseInt(e.attr('x')) - 7)
       e.attr('y', parseInt(e.attr('y')) + 24)
       return
-    el.find('[id="{title}"]').show()
+    el.find('[id="{'+title_id+'}"]').show()
 
 
   #    console.log 'translate', translate, x, y

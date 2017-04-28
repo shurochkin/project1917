@@ -6,8 +6,8 @@ window.Hammer = require 'hammerjs'
 
 window.lang = 'ru'
 #window.lang = 'en'
-window.svgPath = 'data/1917-work-default-5.svg'
-#window.svgPath = 'data/1917-work-default-LAST_ORIG.svg'
+#window.svgPath = 'data/1917-work-default-5.svg'
+window.svgPath = 'data/export-scheme-ru.svg'
 window.flags = require './../../data/flags.json'
 window.persons_data = require './../../data/persons.json'
 window.interes_data = require './../../data/interes.json'
@@ -16,6 +16,8 @@ window.personSelected2 = null
 window.land = null
 window.graph = {}
 window.personLinks = []
+window.name_id = if lang is 'ru' then 'nameru' else 'nameen'
+window.title_id = if lang is 'ru' then 'titleru' else 'titleen'
 
 # ==============================================
 
@@ -26,18 +28,18 @@ window.doShowName = (el, fs, y) ->
 #    console.log el, 'name', fs, y
     $(el).find('rect').attr('y', y - 40)
 
-    if $(el).find('text[id="{name}"][font-size="12"] tspan').length > 1
-      $(el).find('text[id="{name}"][font-size="12"] tspan').each ->
+    if $(el).find('text[id="{'+name_id+'}"][font-size="12"] tspan').length > 1
+      $(el).find('text[id="{'+name_id+'}"][font-size="12"] tspan').each ->
         y = $(@).attr('y')
         $(@).attr('y', y - 12)
       $(el).find('rect').attr('height', parseInt($(el).find('rect').attr('height')) + 7)
 
     else
-      $(el).find('text[id="{name}"][font-size="12"] tspan').attr('y', y - 25)
+      $(el).find('text[id="{'+name_id+'}"][font-size="12"] tspan').attr('y', y - 25)
 
-    $(el).find('text[id="{title}"] tspan').attr('y', y - 10)
+    $(el).find('text[id="{'+title_id+'}"] tspan').attr('y', y - 10)
 
-    if $(el).find('text[id="{title}"] tspan').text().length > 0
+    if $(el).find('text[id="{'+title_id+'}"] tspan').text().length > 0
       $(el).find('rect').attr('height', parseInt($(el).find('rect').attr('height')) + 15)
 
 
@@ -56,29 +58,7 @@ window.doShowDefault = (el, fs) ->
 #  console.log el, 'default', fs
   return
 
-#  Обратный путь.
-#  Просто ищем среди членов семьи любого, у кого цвет равен цвету from минус шаг.
-#  Запоминаем индекс. Продолжаем поиск с той персоны, которую нашли.
-#  Если на входе graph[from].color == 4, то сначала ищем любого родственника с color == 3,
-#  Затем у этого родственника ищем родственника с color == 2 и, наконец, с color == 1.
-#  Это та персона, от которой нужно построить путь.
-#
-#  Если цвет отрицательный, то идём до -1 и оказываемся в персоне, к которой нужно строить путь.
-#  Поскольку в обоих случаях путь собирается от середины к краю, то для положительного пути
-#  его нужно развернуть, чтобы он был от начала до середины. Путь от середины до конца не меняем.
-
-
-window.mkPath = (from) ->
-  path = [from]
-  step = if graph[from].color > 0 then +1 else -1
-  while graph[from].color != step
-    color = graph[from].color - step
-    from = graph[from].links.find((id) ->
-      graph[id].color == color
-    )
-    path.push from
-  # Positive part must be in the reverse order.
-  if step > 0 then path.reverse() else path
+# ==============================================
 
 # Поиск пути от персоны id1 к персоне id2.
 # 1. Обнуляем цвета у всех персон;
@@ -136,6 +116,93 @@ window.findPath = (id1, id2) ->
     ++step
   ret
 
+# ==============================================
+
+#  Обратный путь.
+#  Просто ищем среди членов семьи любого, у кого цвет равен цвету from минус шаг.
+#  Запоминаем индекс. Продолжаем поиск с той персоны, которую нашли.
+#  Если на входе graph[from].color == 4, то сначала ищем любого родственника с color == 3,
+#  Затем у этого родственника ищем родственника с color == 2 и, наконец, с color == 1.
+#  Это та персона, от которой нужно построить путь.
+#
+#  Если цвет отрицательный, то идём до -1 и оказываемся в персоне, к которой нужно строить путь.
+#  Поскольку в обоих случаях путь собирается от середины к краю, то для положительного пути
+#  его нужно развернуть, чтобы он был от начала до середины. Путь от середины до конца не меняем.
+
+
+window.mkPath = (from) ->
+  path = [from]
+  step = if graph[from].color > 0 then +1 else -1
+  while graph[from].color != step
+    color = graph[from].color - step
+    from = graph[from].links.find((id) ->
+      graph[id].color == color
+    )
+    path.push from
+  # Positive part must be in the reverse order.
+  if step > 0 then path.reverse() else path
+
+
+window.showPath = (path) ->
+  if !path
+    return
+
+  showLine = (id1, id2) ->
+    $('#lines > g[id$=-' + id1 + '-' + id2 + '], #lines > g[id$=-' + id2 + '-' + id1 + ']').show().length
+
+
+  birthOrder = (a, b) ->
+    a.posinbroz - (b.posinbroz)
+
+  i = 1
+  while i < path.length
+    id1 = path[i]
+    id2 = path[i - 1]
+    # Если есть линия, соединяющая обе персоны, то ничего больше не нужно.
+    if showLine(id1, id2)
+      ++i
+      continue
+    p1 = getPersonData(id1)
+    p2 = getPersonData(id2)
+    extra = undefined
+    if p1.father == id2 or p1.mother == id2
+# Потомок и предок. Добавляем всех сиблингов от первого до нужного.
+      console.log id1 + ' is ancestor of ' + id2
+      extra = [ p2 ].concat(persons_data.filter((e) ->
+        (e.father == id2 or e.mother == id2) and e.posinbroz <= p1.posinbroz
+      ).sort(birthOrder))
+    else if p2.father == id1 or p2.mother == id1
+# Предок и потомок. Аналогично предыдущему.
+      console.log id2 + ' is ancestor of ' + id1
+      extra = [ p1 ].concat(persons_data.filter((e) ->
+        (e.father == id1 or e.mother == id1) and e.posinbroz <= p2.posinbroz
+      ).sort(birthOrder))
+    else if p1.father > 0 and p1.father == p2.father or p1.mother > 0 and p1.mother == p2.mother
+# Сиблинги. Берём этих двух и всех, кто между ними.
+      console.log id1 + ' is sibling of ' + id2
+      minPos = Math.min(p1.posinbroz, p2.posinbroz)
+      maxPos = Math.max(p1.posinbroz, p2.posinbroz)
+      extra = persons_data.filter((e) ->
+        (e.father == p1.father or e.mother == p1.mother) and e.posinbroz >= minPos and e.posinbroz <= maxPos
+      ).sort(birthOrder)
+    else
+# Тут не очень красивое соединение через первого ребёнка. Но непонятно, как сделать лучше.
+      console.log id1 + ' is spouse of ' + id2
+      $('#m-lines > g[id$=-' + id1 + '-' + id2 + '], #m-lines > g[id$=-' + id2 + '-' + id1 + ']').show()
+      extra = []
+#      extra = [ p1 ].concat(persons_data.filter((e) ->
+#        (e.father == id1 or e.mother == id1) and e.posinbroz == 0
+#      ), [ p2 ])
+    e = 1
+    while e < extra.length
+      showLine extra[e - 1].id, extra[e].id
+      $('g#person-'+extra[e - 1].id).show().removeClass('person-mini flag-0')
+      $('g#person-'+extra[e].id).show().removeClass('person-mini flag-0')
+      ++e
+    ++i
+  return
+
+# ==============================================
 
 window.init = ->
   console.log 'init()'
@@ -175,6 +242,7 @@ window.init = ->
     siblings = persons_data.filter((child) ->
       child.id != e.id and (e.father > 0 and child.father == e.father or e.mother > 0 and child.mother == e.mother)
     ).map(getId)
+#    console.log e.id, e.nameru, siblings
     graph[e.id] =
       color: 0
       links: links.concat(children, siblings)
@@ -187,6 +255,7 @@ window.init = ->
 #    console.log 'Path ' + pair + ' [' + findPath(ids[0] * 1, ids[1] * 1) + ']'
 #    return
 
+#  console.log graph
   return
 
 # ==============================================
@@ -272,7 +341,7 @@ window.initZoom = ->
   # Expose to window namespace for testing purposes
   window.panZoom = svgPanZoom('#mobile-div > svg',
     zoomEnabled: true
-    controlIconsEnabled: true
+    controlIconsEnabled: false
     fit: true
     contain: true
     center: 1
@@ -281,6 +350,27 @@ window.initZoom = ->
     maxZoom: 3
   )
   panZoom.zoom 1
+
+  $(window).resize ()->
+    panZoom.resize()
+    panZoom.fit()
+    panZoom.center()
+
+  $('#zoom-in').on 'click', (ev)->
+    ev.preventDefault()
+    panZoom.zoomIn()
+
+
+  $('#zoom-out').on 'click', (ev)->
+    ev.preventDefault()
+    panZoom.zoomOut()
+
+  $('#zoom-reset').on 'click', (ev)->
+    ev.preventDefault()
+    panZoom.resetZoom()
+
+  $('[id^="zoom-"').on 'click', ()->
+    $('#panel').removeClass('open')
 
   init()
   $('#preloader').hide()

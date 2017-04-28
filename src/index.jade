@@ -13,9 +13,16 @@ html
       img(src="img/default.svg")
 
     #mobile-div(style='')
-      //include _svg.jade
+    #zoom-in: div +
+    #zoom-out: div &ndash;
+    #zoom-reset: img(src='img/reset.svg')
+
+    #toggle-open
+      img(src='img/menu.svg')
     #panel
       form
+        #toggle-close
+          img(src='img/close.svg')
         #dinasty
           h3 Династии
           ul#land-switcher
