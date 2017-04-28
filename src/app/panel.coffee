@@ -16,7 +16,7 @@ window.dinastyInit = () ->
       prsns = $('g[class^="person-'+land+'"]')
 #      console.log prsns
       prsnsIDs = prsns.map ()->
-        parseInt($(@).attr('id').split('-')[1])
+        toInt($(@).attr('id').split('-')[1])
 
 #      console.log 'prsnsIDs', prsnsIDs, 'prsns', prsns
 
@@ -27,8 +27,8 @@ window.dinastyInit = () ->
 #      console.log lines
       lines.show()
       $(lines).each ()->
-        id1 = parseInt($(@).attr('id').split('-')[1])
-        id2 = parseInt($(@).attr('id').split('-')[2])
+        id1 = toInt($(@).attr('id').split('-')[1])
+        id2 = toInt($(@).attr('id').split('-')[2])
 #        console.log @, 'id1: ', id1, $.inArray(id1, prsnsIDs), 'id2: ', id2, $.inArray(id2, prsnsIDs)
         if $.inArray(id1, prsnsIDs) isnt -1 # or $.inArray(id2, prsnsIDs) isnt -1
           $('#person-'+id1).show()
@@ -106,7 +106,7 @@ window.showPersonDescription = (data1, data2)->
 
   if data1 and data2
     int_data = interes_data.find (item)->
-      if item.id1 is data1.id and item.id1 is data1.id then true else false
+      if item.id1 is data1.id and item.id2 is data2.id then true else false
     if int_data
       pair.text(int_data.description)
 

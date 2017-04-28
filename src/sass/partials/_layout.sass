@@ -8,6 +8,7 @@ html, body
 body
   font-family: 'Roboto', sans-serif
   +vr-baseline(14px, 20px)
+  overflow: hidden
   //font-family: "Helvetica Neue", Helvetica, sans-serif
 
 
@@ -33,7 +34,7 @@ body
     float: left
     margin: -6px 30px 0 -15px
     position: relative
-    z-index: 100
+    z-index: 10
   &[id$='open']
     position: absolute
     top: 20px
@@ -81,6 +82,21 @@ body
   &[id$='out']
     bottom: 20px
 
+#share-social
+  position: absolute
+  left: 100px
+  bottom: 20px
+  & > div
+    display: inline-block
+    border: 1px solid #979797
+    width: 80px
+    height: 40px
+    &:not(:first-child)
+      border-left: none
+  @each $ss in $socnet
+    ##{$ss}
+      background: white url('/img/#{$ss}.svg') no-repeat center center
+
 #panel
   width: 360px
   height: 100vh
@@ -88,7 +104,7 @@ body
   vertical-align: top
   padding: 0
   background-color: #FAFAFA
-  overflow: scroll
+  overflow-y: scroll
   form
     padding: 20px 30px 30px
     border-bottom: 1px solid rgba(black, .12)

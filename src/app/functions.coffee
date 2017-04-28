@@ -4,7 +4,8 @@ window.svgPanZoom = require 'svg-pan-zoom'
 window.Hammer = require 'hammerjs'
 
 
-window.lang = 'ru'
+
+window.lang = if window.serverlang? then window.serverlang else if document.location.hostname.search(/\.com/) is -1 then 'ru' else 'en'
 #window.lang = 'en'
 #window.svgPath = 'data/1917-work-default-5.svg'
 window.svgPath = 'data/export-scheme-ru.svg'
@@ -19,6 +20,19 @@ window.personLinks = []
 window.name_id = if lang is 'ru' then 'nameru' else 'nameen'
 window.title_id = if lang is 'ru' then 'titleru' else 'titleen'
 
+window.social_meta = {
+  text:
+    ru: 'ru-text'
+    en: 'en-text'
+  title:
+    ru: 'ru-title'
+    en: 'en-title'
+  image:
+    ru: 'ru-img'
+    en: 'en-img'
+
+}
+
 # ==============================================
 
 
@@ -32,7 +46,7 @@ window.doShowName = (el, fs, y) ->
       $(el).find('text[id="{'+name_id+'}"][font-size="12"] tspan').each ->
         y = $(@).attr('y')
         $(@).attr('y', y - 12)
-      $(el).find('rect').attr('height', parseInt($(el).find('rect').attr('height')) + 7)
+      $(el).find('rect').attr('height', toInt($(el).find('rect').attr('height')) + 7)
 
     else
       $(el).find('text[id="{'+name_id+'}"][font-size="12"] tspan').attr('y', y - 25)
@@ -40,7 +54,7 @@ window.doShowName = (el, fs, y) ->
     $(el).find('text[id="{'+title_id+'}"] tspan').attr('y', y - 10)
 
     if $(el).find('text[id="{'+title_id+'}"] tspan').text().length > 0
-      $(el).find('rect').attr('height', parseInt($(el).find('rect').attr('height')) + 15)
+      $(el).find('rect').attr('height', toInt($(el).find('rect').attr('height')) + 15)
 
 
   #    $(el).attr('y', y-20)
@@ -147,9 +161,16 @@ window.showPath = (path) ->
   if !path
     return
 
-  showLine = (id1, id2) ->
-    $('#lines > g[id$=-' + id1 + '-' + id2 + '], #lines > g[id$=-' + id2 + '-' + id1 + ']').show().length
+  console.log path
 
+  showLine = (id1, id2) ->
+    selector = '#lines > g[id$="-' + id1 + '-' + id2 + '"], #lines > g[id$="-' + id2 + '-' + id1 + '"]'
+    console.log selector
+    l = $(selector).show().length
+    if l is 0
+      return $('#m-lines > g[id$="-' + id1 + '-' + id2 + '"], #m-lines > g[id$="-' + id2 + '-' + id1 + ']"').show().length
+
+    return l
 
   birthOrder = (a, b) ->
     a.posinbroz - (b.posinbroz)
@@ -164,7 +185,7 @@ window.showPath = (path) ->
       continue
     p1 = getPersonData(id1)
     p2 = getPersonData(id2)
-    extra = undefined
+    extra = []
     if p1.father == id2 or p1.mother == id2
 # Потомок и предок. Добавляем всех сиблингов от первого до нужного.
       console.log id1 + ' is ancestor of ' + id2
@@ -188,8 +209,10 @@ window.showPath = (path) ->
     else
 # Тут не очень красивое соединение через первого ребёнка. Но непонятно, как сделать лучше.
       console.log id1 + ' is spouse of ' + id2
-      $('#m-lines > g[id$=-' + id1 + '-' + id2 + '], #m-lines > g[id$=-' + id2 + '-' + id1 + ']').show()
-      extra = []
+#      console.log 'showLine:', showLine(id1, id2)
+      showLine(id1, id2)
+
+#      extra = []
 #      extra = [ p1 ].concat(persons_data.filter((e) ->
 #        (e.father == id1 or e.mother == id1) and e.posinbroz == 0
 #      ), [ p2 ])
@@ -214,15 +237,6 @@ window.init = ->
 
   persons_data.forEach (e) ->
     links = []
-
-    toInt = (s) ->
-      parseInt s
-
-    getParent = (s) ->
-      if typeof s == 'string' then toInt(s.replace(/~/g, '')) else s
-
-    getId = (p) ->
-      p.id
 
     # Parents
     e.father and links.push(getParent(e.father))
@@ -369,8 +383,23 @@ window.initZoom = ->
     ev.preventDefault()
     panZoom.resetZoom()
 
-  $('[id^="zoom-"').on 'click', ()->
+  $('[id^="zoom-"]').on 'click', ()->
     $('#panel').removeClass('open')
+
+  $('#share-social > div').each ()->
+    id = $(@).attr('id')
+    url = document.location.href
+    title = if lang is 'ru' then social_meta.title.ru else social_meta.title.en
+    text = if lang is 'ru' then social_meta.text.ru else social_meta.text.en
+    image = if lang is 'ru' then social_meta.image.ru else social_meta.image.en
+    $(@).on 'click', ()->
+      switch id
+        when 'vk' then window.open 'https://vk.com/share.php?url=' + url + '&title=' + title + '&description=' + text + '&image=' + image, '_blank'
+        when 'fb' then window.open 'https://www.facebook.com/sharer.php?src=sp&u=' + url + '&r=' + Math.random(), '_blank'
+        when 'tw' then window.open 'http://twitter.com/share?&url=' + url, '_blank'
+        else return false
+
+
 
   init()
   $('#preloader').hide()
@@ -387,3 +416,17 @@ window.parseSVG = (s) ->
     frag.appendChild div.firstChild.firstChild
   frag
 
+# ==============================================
+
+window.toInt = (s) ->
+  parseInt s
+
+# ==============================================
+
+window.getParent = (s) ->
+  if typeof s == 'string' then toInt(s.replace(/~/g, '')) else s
+
+# ==============================================
+
+window.getId = (p) ->
+  p.id

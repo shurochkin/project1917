@@ -122,7 +122,7 @@ window.bindEvents = (persons)->
     elem = $(e.currentTarget)
 #    name = elem.find('text[id="{'+name_id+'}"] tspan').text().trim()
 #    title = elem.find('text[id="{'+title_id+'}"] tspan').text().trim()
-    pid = parseInt elem.attr('id').split('-')[1]
+    pid = toInt elem.attr('id').split('-')[1]
     window.personLinks = []
     $('#panel').scrollTop(0)
 
@@ -245,7 +245,7 @@ window.onePersonMinimize = (e)->
     el.find('g[id^="flag"]').attr('transform', "translate(#{x} #{y})")
 
     rect = el.find('rect')
-    y1 = parseInt(rect.attr('y'))
+    y1 = toInt(rect.attr('y'))
     rect.attr('y', y1 - 20)
 
 
@@ -253,8 +253,8 @@ window.onePersonMinimize = (e)->
 
     el.find('[id="{'+name_id+'}"] > tspan').each ->
       e = $(@)
-      e.attr('x', parseInt(e.attr('x')) + 7)
-      e.attr('y', parseInt(e.attr('y')) - 24)
+      e.attr('x', toInt(e.attr('x')) + 7)
+      e.attr('y', toInt(e.attr('y')) - 24)
       return
 
 
@@ -290,7 +290,7 @@ window.onePersonMaximize = (e) ->
     el.find('g[id^="flag"]').attr('transform', "translate(#{x}, #{y})")
 
     rect = el.find('rect')
-    y1 = parseInt(rect.attr('y'))
+    y1 = toInt(rect.attr('y'))
     rect.attr('y', y1 + 20)
 
     el.find('[id="{'+name_id+'}"]').attr('font-size', 12).attr('fill', '#4a4a4a')
@@ -298,8 +298,8 @@ window.onePersonMaximize = (e) ->
 #    if !el.hasClass('person-'+land)
     el.find('[id="{'+name_id+'}"] > tspan').each ->
       e = $(@)
-      e.attr('x', parseInt(e.attr('x')) - 7)
-      e.attr('y', parseInt(e.attr('y')) + 24)
+      e.attr('x', toInt(e.attr('x')) - 7)
+      e.attr('y', toInt(e.attr('y')) + 24)
       return
     el.find('[id="{'+title_id+'}"]').show()
 
@@ -311,7 +311,9 @@ window.onePersonMaximize = (e) ->
 
 window.getPersonChildren = (pid)->
   res =  persons_data.filter (e)->
-    parent = if e.mother is parseInt(pid) then e.mother else if e.father is parseInt(pid) then e.father else 0
+
+    parent = if e.mother is toInt(pid) then e.mother else if e.father is toInt(pid) then e.father else 0
+
     return if parent > 0 then true else false
   return res.map (p)->
     return p.id
@@ -322,14 +324,15 @@ window.getPersonChildren = (pid)->
 
 # Получаем ID-шники по отцовской линии, кого надо показывать
 window.getPersonFatherLine = (pid, recurs = false) ->
-  id = parseInt(pid)
+  id = toInt(pid)
   line = [id]
   cur = getPersonData(id)
   if recurs is false
     brozters = getPersonBrozters(id, false)
     line = line.concat(brozters)
 
-
+#  cur.father = getParent(cur.father)
+#  cur.mother = getParent(cur.mother)
 
   if cur.father > 0
     if cur.mother and pid is line[0]
@@ -353,7 +356,7 @@ window.getPersonFatherLine = (pid, recurs = false) ->
 
 # Получаем ID-шники братьев/сестер, если older == true, то только страших
 window.getPersonBrozters = (pid, older = false, rec = false) ->
-  id = parseInt(pid)
+  id = toInt(pid)
   line = [id]
   cur = getPersonData(id)
   cid = cur.id
@@ -362,7 +365,7 @@ window.getPersonBrozters = (pid, older = false, rec = false) ->
 
   broztersObj = persons_data.filter (e)->
     if e.mother > 0 and e.father > 0 and e.id isnt cid
-      if e.mother is parseInt(cur.mother) and e.father is parseInt(cur.father) # then true else false
+      if e.mother is toInt(cur.mother) and e.father is toInt(cur.father) # then true else false
         if older is true
 #          console.log 'older is true', e
           if cur.posinbroz > e.posinbroz then return true
@@ -419,9 +422,9 @@ window.getPersonFamily = (pid)->
     couples = p.couple.split(',')
 #    console.log couples
     $(couples).each ()->
-      window.personLinks.push parseInt(@)
+      window.personLinks.push toInt(@)
   else
-    window.personLinks.push parseInt(p.couple)
+    window.personLinks.push toInt(p.couple)
 
 
   personLinks = window.personLinks.map (i)->
@@ -432,7 +435,7 @@ window.getPersonFamily = (pid)->
   $(personLinks).each ()->
     $('#person-'+@).show().removeClass('flag-0')
 #    $('#lines > g[id^="' + getFlag(p).name + '-"]').show()
-    showLine(parseInt(@), null, window.personLinks)
+    showLine(toInt(@), null, window.personLinks)
 
 
   return
@@ -444,7 +447,7 @@ window.getPersonData = (pid)->
   if pid is undefined or pid is null then return false
 #  console.log 'getPersonData', pid
   return persons_data.find (e)->
-    return if e.id is parseInt(pid) then true else false
+    return if e.id is toInt(pid) then true else false
 # ==============================================
 
 window.getPersonName = (pid)->
@@ -472,7 +475,7 @@ window.getPersonID = (pid)->
 
 window.getFlag = (data)->
   return flags.find (e)->
-    return if e.id is parseInt(data.family) then true else false
+    return if e.id is toInt(data.family) then true else false
 # ==============================================
 
 window.showLine = (id1, id2 = null, brozt = []) ->
@@ -522,7 +525,7 @@ window.showSegment = (els, broz)->
   elems = $(els).attr('id')
   elements = elems.split('-')
   #  console.log elems, elements, elements[1], broz
-  ret = $.inArray(parseInt(elements[1]), broz)
+  ret = $.inArray(toInt(elements[1]), broz)
 #  console.log 'showSegment:', elems
   if ret isnt -1 then $(els).show()
 
@@ -537,13 +540,13 @@ window.showSegment = (els, broz)->
 #    return name
 #
 #  fatherOf = persons_data.filter (e)->
-#    if e.father is parseInt(cur.id)  then true else false
+#    if e.father is toInt(cur.id)  then true else false
 #
 #  fatherOfNames = fatherOf.map (el)->
 #    return el.name
 #
 #  motherOf = persons_data.filter (e)->
-#    if e.mother is parseInt(cur.id)  then true else false
+#    if e.mother is toInt(cur.id)  then true else false
 #
 #  motherOfNames = motherOf.map (el)->
 #    return el.name
