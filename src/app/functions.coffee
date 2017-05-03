@@ -34,8 +34,8 @@ window.social_meta = {
     ru: 'Опасные связи. Карта королевских династий Европы'
     en: 'Dangerous Liaisons. Map of the royal dynasties of Europe'
   image:
-    ru: '/infographic-static/img/og.png'
-    en: '/infographic-static/img/og_en.png'
+    ru: 'https://project1917.ru/infographic-static/img/og.png'
+    en: 'https://project1917.com/infographic-static/img/og_en.png'
 
 }
 
@@ -382,6 +382,7 @@ window.initZoom = ->
     controlIconsEnabled: false
     fit: true
     contain: true
+    zoomScaleSensitivity: 0.5
     center: 1
     customEventsHandler: eventsHandler
     minZoom: 1
