@@ -60,7 +60,7 @@ window.interesInit = ()->
     if i.show?
       data1 = getPersonData(i.id1)
       data2 = getPersonData(i.id2)
-  #    console.log i, data1, data2
+#      console.log data1, data2
       pair = $('<div>').addClass('pair')
       pair.append(showOnePerson(data1))
       pair.append(showOnePerson(data2))
@@ -100,7 +100,7 @@ window.showPersonDescription = (data1, data2)->
     desc.addClass('show-link')
   else
     pers2.text(if lang is 'ru' then data1.descriptionru else data1.descriptionen)
-    note = $('<p>').addClass('note').text('Выберите еще одного персонажа на карте, чтобы узнать как они связаны')
+    note = $('<p>').addClass('note').text('Сейчас вы видите только близких родственников героя. Выберите любого другого героя на карте, чтобы узнать как они связаны')
     pair.append(note)
 
 
@@ -139,7 +139,7 @@ window.showOnePerson = (data)->
     title = data.titleen
     description = data.descriptionen
 
-  img_src = if data.img then data.img else 'img/def-'+ (if data.sex is 0 then 'wo' else '') + 'man.png'
+  img_src = if data.img then '/infographic-static/'+data.img else '/infographic-static/img/def-'+ (if data.sex is 0 then 'wo' else '') + 'man.png'
   person = $('<div>').addClass('person')
   person.append($('<div>').addClass('img '+flag.name).append($('<img>').attr('src', img_src)))
   person.append($('<p>').addClass('name').text(name))

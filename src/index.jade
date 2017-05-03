@@ -7,13 +7,13 @@ html
     meta(name='viewport', content='user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1')
     meta(charset='utf-8')
     link(href='https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic', rel='stylesheet')
-    link(href='app.min.css', rel='stylesheet', type='text/css')
+    link(href='/infographic-static/app.min.css', rel='stylesheet', type='text/css')
   body
     #preloader
-      img(src="img/default.svg")
+      img(src="/infographic-static/img/default.svg")
 
-    #mobile-div(style='')
-    #title: img(src='img/logo-title-ru@2x.png')
+    #mobile-div
+    #title: img(src='/infographic-static/img/logo-title-ru@2x.png')
     #zoom-in: div +
     #zoom-out: div &ndash;
     //#zoom-reset: img(src='img/reset.svg')
@@ -23,11 +23,11 @@ html
       #tw
 
     #toggle-open
-      img(src='img/menu.svg')
+      img(src='/infographic-static/img/menu.svg')
     #panel
       form
         #toggle-close
-          img(src='img/close.svg')
+          img(src='/infographic-static/img/close.svg')
         #dinasty
           h3 Династии
           ul#land-switcher
@@ -60,5 +60,5 @@ html
       #interes
         h4 Самые интересные связи
 
-  //script(src='app.min.js')
-  script(src='app.js')
+  script(src='/infographic-static/app.min.js')
+  //- script(src='/infographic-static/app.js')

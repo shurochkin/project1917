@@ -98,7 +98,7 @@ window.preparePerson = (el)->
         else doShowDefault(el, fs)
   else
     $(el).addClass('has-image')
-    $(el).find('[id="{img}"]').attr('xlink:href', 'img/'+id+'.png')
+    $(el).find('[id="{img}"]').attr('xlink:href', '/infographic-static/img/'+id+'.png')
     $(el).find('g#Oval-2').children().attr('xlink:href', '#path-person-standard')
 
 

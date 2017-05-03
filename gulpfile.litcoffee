@@ -14,6 +14,7 @@
     (notify = require 'gulp-notify').logger (->)
     rename = require 'gulp-rename'
     uglify = require 'gulp-uglify'
+    static_path = '/infographic-static/'
 
 В clearFolders пишем все задачи очистки папок.  Папку ./build чистим сохраняя директорию .git, чтоб не терять
 настройки публикации в ветку gh-pages (https://github.com/webprofyru/rms/tree/gh-pages).
@@ -37,7 +38,7 @@
 
 JS
 
-    tasks.push task('app-js').browserify('./src/app.coffee').dest('./build')
+    tasks.push task('app-js').browserify('./src/app.coffee').dest('./build'+static_path)
 
 HTML
 
@@ -45,11 +46,11 @@ HTML
 
 CSS
 
-    tasks.push task('app-css').sass('./src').dest('./build')
+    tasks.push task('app-css').sass('./src').dest('./build'+static_path)
 
 Static
 
-    tasks.push task('app-static').copy('./static').dest('./build')
+    tasks.push task('app-static').copy('./static').dest('./build'+static_path)
 
 Fonts
 

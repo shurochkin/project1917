@@ -7,11 +7,10 @@ window.Hammer = require 'hammerjs'
 
 window.lang = if window.serverlang? then window.serverlang else if document.location.hostname.search(/\.com/) is -1 then 'ru' else 'en'
 #window.lang = 'en'
-#window.svgPath = 'data/1917-work-default-5.svg'
 if lang is 'en'
   src = $('#title img').attr 'src'
   $('#title img').attr 'src', src.replace('ru','en')
-window.svgPath = 'data/export-scheme-ru.svg'
+window.svgPath = '/infographic-static/img/export-scheme-ru.svg'
 window.flags = require './../../data/flags.json'
 window.persons_data = require './../../data/persons.json'
 window.interes_data = require './../../data/interes.json'
@@ -29,14 +28,14 @@ window.locales = {
 
 window.social_meta = {
   text:
-    ru: 'ru-text'
-    en: 'en-text'
+    ru: 'Кто кому кем приходится'
+    en: 'Who is who'
   title:
-    ru: 'ru-title'
-    en: 'en-title'
+    ru: 'Опасные связи. Карта королевских династий Европы'
+    en: 'Dangerous Liaisons. Map of the royal dynasties of Europe'
   image:
-    ru: 'ru-img'
-    en: 'en-img'
+    ru: '/infographic-static/img/og.png'
+    en: '/infographic-static/img/og_en.png'
 
 }
 
