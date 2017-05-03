@@ -38,7 +38,6 @@ window.preparePerson = (el)->
     y: n_y,
     name: getPersonName(id)
   } # name_el.text().trim()
-# TODO: доделать правильное позиционирование, для англ языка
 
 #  console.log name, name_el, name_el.attr('x'), name_el.attr('y')
 
@@ -145,6 +144,7 @@ window.bindEvents = (persons)->
 
 
     if personSelected isnt null and personSelected2 is null
+      console.log 'both persons selected'
       note = $('<p>').addClass('note').text('Выберите еще одного персонажа на карте, чтобы узнать как они связаны')
       $('#person2').html('').append(note)
       if ua.type.toLowerCase() is 'mobile' then $('#panel').removeClass('open')
@@ -169,9 +169,32 @@ window.bindEvents = (persons)->
     $('g#person-'+personSelected2).show().removeClass('person-mini flag-0')
     #    $('g.person-'+land).removeClass('flag-0')
 
-    links = findPath(personSelected, personSelected2)
+    # special hack for id's 86-87
+    if personSelected isnt null and personSelected2 isnt null
+      arr = interes_data.find (e)->
+        if (e.id1 is personSelected and e.id2 is personSelected2) or (e.id2 is personSelected and e.id1 is personSelected2) and e.links? isnt null
+          return true
+        return false
+#      console.info arr
+      if arr? and typeof arr.links isnt 'undefined'
+        linkZ = arr.links.split(',')
+        linkZ.forEach (e, i)->
+          linkZ[i] = toInt(linkZ[i])
+#        console.log 'linkZ:', linkZ, typeof linkZ
+        linkZ.unshift(personSelected)
+        linkZ.push(personSelected2)
+#        linkZ = linkZ.concat(personSelected, personSelected2)
+
+#    console.info 'linkZ:', linkZ, typeof linkZ
+
+    if typeof linkZ is 'undefined'
+#      console.log 'linkZ is undefined'
+      links = findPath(personSelected, personSelected2)
+    else
+#      console.log 'linkZ is array', linkZ
+      links = linkZ
 #    console.log 'links', links
-    if links isnt undefined
+    if typeof links isnt 'undefined'
       links.forEach (i)->
         $('g#person-'+i).show().removeClass('person-mini flag-0')
 
@@ -302,9 +325,6 @@ window.onePersonMaximize = (e) ->
       e.attr('y', toInt(e.attr('y')) + 24)
       return
     el.find('[id="{'+title_id+'}"]').show()
-
-
-  #    console.log 'translate', translate, x, y
 
 
 # ==============================================

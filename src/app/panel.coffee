@@ -109,7 +109,7 @@ window.showPersonDescription = (data1, data2)->
     int_data = interes_data.find (item)->
       if item.id1 is data1.id and item.id2 is data2.id then true else false
     if int_data
-      pair.text(int_data.description)
+      pair.text(if lang is 'ru' then int_data.descriptionru else int_data.descriptionen)
 
   desc.show()
 

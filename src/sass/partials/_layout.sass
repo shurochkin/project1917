@@ -56,10 +56,18 @@ body
     & > g:last-child > g:last-child > text:last-child
       fill: red
 
+#title
+  position: absolute
+  bottom: 85px
+  left: 20px
+  display: inline-block
+  img
+    height: 102px
 
 [id^="zoom-"]
   position: absolute
   left: 20px
+  bottom: 20px
   display: inline-flex
   justify-content: center
   align-content: center
@@ -73,18 +81,12 @@ body
     align-self: center
     color: white
     +vr-baseline(40px, 40px)
-  &[id$='in']
-    bottom: 140px
-  &[id$='reset']
-    bottom: 80px
-    img
-      width: 60%
   &[id$='out']
-    bottom: 20px
+    left: 90px
 
 #share-social
   position: absolute
-  left: 100px
+  left: 200px
   bottom: 20px
   & > div
     display: inline-block

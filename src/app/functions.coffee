@@ -8,6 +8,9 @@ window.Hammer = require 'hammerjs'
 window.lang = if window.serverlang? then window.serverlang else if document.location.hostname.search(/\.com/) is -1 then 'ru' else 'en'
 #window.lang = 'en'
 #window.svgPath = 'data/1917-work-default-5.svg'
+if lang is 'en'
+  src = $('#title img').attr 'src'
+  $('#title img').attr 'src', src.replace('ru','en')
 window.svgPath = 'data/export-scheme-ru.svg'
 window.flags = require './../../data/flags.json'
 window.persons_data = require './../../data/persons.json'
@@ -19,6 +22,10 @@ window.graph = {}
 window.personLinks = []
 window.name_id = if lang is 'ru' then 'nameru' else 'nameen'
 window.title_id = if lang is 'ru' then 'titleru' else 'titleen'
+
+window.locales = {
+
+}
 
 window.social_meta = {
   text:
@@ -165,10 +172,14 @@ window.showPath = (path) ->
 
   showLine = (id1, id2) ->
     selector = '#lines > g[id$="-' + id1 + '-' + id2 + '"], #lines > g[id$="-' + id2 + '-' + id1 + '"]'
-    console.log selector
+#    console.log selector
     l = $(selector).show().length
+#    console.log 'showLine 1:', selector, l
     if l is 0
-      return $('#m-lines > g[id$="-' + id1 + '-' + id2 + '"], #m-lines > g[id$="-' + id2 + '-' + id1 + ']"').show().length
+      selector = '#m-lines > g[id$="-' + id1 + '-' + id2 + '"], #m-lines > g[id$="-' + id2 + '-' + id1 + '"]'
+      l2 = $(selector).show().length
+#      console.log 'showLine 2:', selector, l2
+      return l2
 
     return l
 
@@ -297,6 +308,20 @@ window.globalInit = (data)->
 
 # ==============================================
 
+window.beforePan = (oldPan, newPan) ->
+  stopHorizontal = false
+  stopVertical = false
+  gutterWidth = 200
+  gutterHeight = 200
+  sizes = @getSizes()
+  leftLimit = -((sizes.viewBox.x + sizes.viewBox.width) * sizes.realZoom) + gutterWidth
+  rightLimit = sizes.width - gutterWidth - (sizes.viewBox.x * sizes.realZoom)
+  topLimit = -((sizes.viewBox.y + sizes.viewBox.height) * sizes.realZoom) + gutterHeight
+  bottomLimit = sizes.height - gutterHeight - (sizes.viewBox.y * sizes.realZoom)
+  customPan = {}
+  customPan.x = Math.max(leftLimit, Math.min(rightLimit, newPan.x))
+  customPan.y = Math.max(topLimit, Math.min(bottomLimit, newPan.y))
+  customPan
 
 window.initZoom = ->
 #  console.log svgPanZoom, Hammer
@@ -362,6 +387,7 @@ window.initZoom = ->
     customEventsHandler: eventsHandler
     minZoom: 1
     maxZoom: 3
+    beforePan: beforePan
   )
   panZoom.zoom 1
 
