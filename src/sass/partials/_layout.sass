@@ -52,64 +52,111 @@ body
   overflow: hidden
   display: inline-block
   position: relative
+  //background: #eee
 
-  svg
-    & > g:last-child > g:last-child > text:last-child
-      fill: red
 
 #header
   position: absolute
-  bottom: 85px
-  left: 20px
+  bottom: 17px
+  left: 15px
   display: inline-block
+  .en &
+    bottom: 14px
   img
-    height: 102px
+    height: 120px
     position: relative
-    .Mobile &
-      height: 51px
+  .Mobile &, .Tablet &
+    bottom: 45px
+    left: 0
+    img
+      height: 80px
 
-[id^="zoom-"]
+#zoompad
   position: absolute
-  left: 20px
+  left: 307px
   bottom: 20px
+  width: auto
+  height: 58px
+  background: white
+  border-radius: 58px
   display: inline-flex
-  justify-content: center
+  justify-content: space-around
   align-content: center
-  width: 50px
-  height: 50px
-  background: #9B9B9B
-  border-radius: 50%
-  box-shadow: 0 5px 10px rgba(#9B9B9B, .5)
-  cursor: pointer
-  div
-    align-self: center
-    color: white
-    +vr-baseline(40px, 40px)
-  &[id$='out']
-    left: 90px
+  align-items: center
+  padding: 0 4px
+  .en &
+    left: 342px
+  .Mobile &, .Tablet &
+    left: 0
+    bottom: 137px
+    height: calc(58px * .75)
+    padding: 0 calc(4px * .75)
+
+  [id^="zoom-"]
+    width: 50px
+    height: 50px
+    cursor: pointer
+    margin-right: 5px
+    img
+      width: 100%
+      height: 100%
+    &:last-child
+      margin-right: 0
+    .Mobile &, .Tablet &
+      width: calc(50px * .75)
+      height: calc(50px * .75)
 
 #share-social
   position: absolute
-  .Desktop &, .Tablet &
-    left: 200px
-    bottom: 20px
-  .Mobile &
-    left: 20px
-    top: 20px
+  left: 435px
+  bottom: 20px
+  width: auto
+  height: 58px
+  background: white
+  border-radius: 58px
+  display: inline-flex
+  justify-content: space-around
+  align-content: center
+  align-items: center
+  z-index: 2
+  padding: 0 4px
+  .Desktop &
+    left: 435px
+  .en.Desktop &
+    left: 470px
+
+  .Mobile &, .Tablet &
+    left: 0
+    bottom: 0
+    height: calc(58px * .75)
+    padding: 0 calc(4px * .75)
+
+
   & > div
-    display: inline-block
-    border: 1px solid #979797
-    width: 60px
-    height: 40px
-    margin-left: -4px
-    border-right: none
+    width: 50px
+    height: 50px
+    cursor: pointer
+    margin-right: 5px
+    img
+      width: 100%
+      height: 100%
     &:last-child
-      border-right: 1px solid #979797
-    &:first-child
-      margin-left: 0
-  @each $ss in $socnet
-    ##{$ss}
-      background: white url('/infographic-static/img/#{$ss}.svg') no-repeat center center
+      margin-right: 0
+    .Mobile &, .Tablet &
+      width: calc(50px * .75)
+      height: calc(50px * .75)
+  & > div[id$="-counter"]
+    width: auto
+    height: 50px
+    cursor: pointer
+    color: #4A4A4A
+    margin-right: 0
+    +vr-baseline(25px, 50px)
+    .Mobile &, .Tablet &
+      +vr-baseline(18px, 50px)
+    &.show
+      margin-right: 10px
+
 
 #panel
   width: 360px

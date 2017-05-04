@@ -1,26 +1,46 @@
-
-
-
+- var ver = '348'
+//-| @php($version = 2)
 doctype html
 html
   head
     meta(name='viewport', content='user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1')
     meta(charset='utf-8')
     link(href='https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic', rel='stylesheet')
-    link(href='/infographic-static/app.min.css', rel='stylesheet', type='text/css')
+    link(href='/infographic-static/app.min.css?v={{ $version }}', rel='stylesheet', type='text/css')
+    link(rel="icon", type="image/png", href="/img/favicon.png?1")
+    title {{ $shareTitle }}
+    meta(property='og:url', content='{{ \Illuminate\Support\Facades\URL::current() }}')
+    meta(property='og:title', content='{{ $shareTitle }}')
+    meta(property='og:description', content='{{ $shareDesc }}')
+    meta(property='og:image', content='{{ $shareImg }}')
+    meta(property='og:image:secure_url', content='{{ $shareImg }}')
+    meta(property='og:image:width', content='1200')
+    meta(property='og:image:height', content='630')
+    meta(name='twitter:card', content='summary_large_image')
+    meta(name='twitter:site', content='@project19171')
+    meta(name='twitter:title', content='{{ $shareTitle }}')
+    meta(name='twitter:description', content='{{ $shareDesc }}')
+    meta(name='twitter:image', content='{{ $shareImg }}')
   body
     #preloader
-      img(src="/infographic-static/img/default.svg")
-
+      img(src='/infographic-static/img/default.svg')
     #mobile-div
-    #header: img(src='/infographic-static/img/logo-title-ru@2x.png')
-    #zoom-in: div +
-    #zoom-out: div &ndash;
-    //- #zoom-reset: img(src='img/reset.svg')
+    #header
+      a(href="/"): img(src='/infographic-static/img/logo-title-ru@2x.png')
+    #zoompad
+      #zoom-in
+        img(src="/infographic-static/img/zoomin.svg")
+      #zoom-out
+        img(src="/infographic-static/img/zoomout.svg")
     #share-social
       #fb
+        img(src="/infographic-static/img/fb.svg")
+      #fb-counter
       #vk
+        img(src="/infographic-static/img/vk.svg")
+      #vk-counter
       #tw
+        img(src="/infographic-static/img/tw.svg")
 
     #toggle-open
       img(src='/infographic-static/img/menu.svg')
@@ -49,16 +69,21 @@ html
                 |  Дания и Греция
         #description
           h3 Кто кому кем приходится
-
           #person1
-
           #person2
-
           #pair-desc
-
         button#clear-selection(type='reset') Очистить выбор
       #interes
         h4 Самые интересные связи
-
-  script(src='/infographic-static/app.min.js')
+  script.
+    window.serverlang = '{{ $serverLocale }}';
+    window.hideBackButton = true;
+  script(src='/infographic-static/app.min.js?v=#{ver}')
   //- script(src='/infographic-static/app.js')
+  | @if($app->environment('production'))
+  |     @if (app('LocaleService')->getLocale() === 'ru')
+  |         @include('partial.metrics')
+  |     @else
+  |         @include('partial.metrics_en')
+  |     @endif
+  | @endif

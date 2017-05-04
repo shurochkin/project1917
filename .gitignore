@@ -8,5 +8,6 @@
 build
 node_modules
 experiment
+source
 www
 www.zip

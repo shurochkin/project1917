@@ -3,13 +3,16 @@ window.$ = require 'jquery'
 window.svgPanZoom = require 'svg-pan-zoom'
 window.Hammer = require 'hammerjs'
 
-
+window.url = document.location.href
+#window.url = 'https://project1917.com/infographic'
 
 window.lang = if window.serverlang? then window.serverlang else if document.location.hostname.search(/\.com/) is -1 then 'ru' else 'en'
 #window.lang = 'en'
+
 if lang is 'en'
-  src = $('#title img').attr 'src'
-  $('#title img').attr 'src', src.replace('ru','en')
+  src = $('#header img').attr 'src'
+  $('#header img').attr 'src', src.replace('ru','en')
+$('body').addClass(lang)
 window.svgPath = '/infographic-static/img/export-scheme-ru.svg'
 window.flags = require './../../data/flags.json'
 window.persons_data = require './../../data/persons.json'
@@ -237,6 +240,14 @@ window.showPath = (path) ->
 
 # ==============================================
 
+window.VK = {
+  Share:
+    count: (value, count)->
+      if count > 0
+        $('#vk-counter').text(count).addClass('show')
+}
+
+
 window.init = ->
   console.log 'init()'
 
@@ -244,6 +255,15 @@ window.init = ->
   interesInit()
   resetInit()
 
+  $.ajax
+    url: 'https://vk.com/share.php?act=count&index=0&url=' + encodeURIComponent(url)
+    type: 'GET'
+    dataType: "jsonp"
+    crossDomain: true
+
+  $.getJSON 'https://graph.facebook.com/'+url, (data)->
+    if data.share.share_count > 0
+      $('#fb-counter').text(data.share.share_count).addClass('show')
 
   persons_data.forEach (e) ->
     links = []
