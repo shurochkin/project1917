@@ -93,10 +93,10 @@ window.showPersonDescription = (data1, data2)->
   pers1 = $('#person1').html('')
   pers2 = $('#person2').html('')
 
-  pers1.append(showOnePerson(data1))
+  pers1.append(showOnePerson(data1, true))
 
   if data2
-    pers2.append(showOnePerson(data2))
+    pers2.append(showOnePerson(data2, true))
     desc.addClass('show-link')
   else
     pers2.text(if lang is 'ru' then data1.descriptionru else data1.descriptionen)
@@ -127,7 +127,7 @@ window.showDinastySelector = ()->
 window.hideDinastySelector = ()->
   $('#dinasty').hide()
 
-window.showOnePerson = (data)->
+window.showOnePerson = (data, desc = false)->
   flag = getFlag(data)
 
   if lang is 'ru'
@@ -139,11 +139,20 @@ window.showOnePerson = (data)->
     title = data.titleen
     description = data.descriptionen
 
+  has_profile = false
+  if data.profile? and desc
+    has_profile = true
+    name = '<a href="'+data.profile+'" target="_blank">'+name+'</a>'
+
   img_src = if data.img then '/infographic-static/'+data.img else '/infographic-static/img/def-'+ (if data.sex is 0 then 'wo' else '') + 'man.png'
   person = $('<div>').addClass('person')
   person.append($('<div>').addClass('img '+flag.name).append($('<img>').attr('src', img_src)))
-  person.append($('<p>').addClass('name').text(name))
-  person.append($('<p>').addClass('title').text(title))
+  person.append($('<p>').addClass('name').html(name))
+  if title
+    person.append($('<p>').addClass('title').text(title))
+#    $('#description.show-link:before').css('height','38px')
+  if has_profile
+    person.append($('<a>').addClass('profile-link').attr('href', data.profile).attr('target', '_blank').text('профиль'))
   #  person.append($('<p>').addClass('title').text(description))
 
   #  desc.find('.description').text('').text(data.description)

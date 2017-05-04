@@ -279,6 +279,9 @@ body
   display: block
   width: 100%
   height: 38px
+  &:hover
+    color: #fff
+    background: #4A4A4A
 
 #description
   display: none
@@ -291,7 +294,7 @@ body
       width: 8px
       height: 38px
       top: 96px
-      left: 36px
+      left: 24px
       background: #dedede
       border: 2px solid white
   #person1, #person2
@@ -305,19 +308,42 @@ body
     color: #4A4A4A
     font-family: Helvetica
     +vr-baseline(10px, 12px)
+  .profile-link
+    background: none
+    border-radius: 19px
+    border: 1px solid #4A4A4A
+    color: #4A4A4A
+    +vr-baseline(11px, 22px)
+    font-family: Helvetica
+    display: inline
+    width: auto
+    height: 14px
+    text-decoration: none
+    padding: 0px 13px 1px 7px
+    position: relative
+    background: url('/infographic-static/img/play.svg') no-repeat 0 0
+    background-size: 6px
+    background-position: 95% 3px
+
   p
     margin: 0
     &.name
-      +vr-baseline(16px, 34px)
+      +vr-baseline(16px, 20px)
+      a, a:link, a:visited
+        color: #4796b5
+      a:hover
+        color: #418de1
     &.title
       +vr-baseline(10px, 12px)
+      //height: 10px
+      color: #4A4A4A
     &.note
       color: #9B9B9B
       +vr-baseline(14px, 20px)
       margin-bottom: 10px
   .img
     position: relative
-    margin: 0 12px
+    margin-right: 12px
     float: left
     width: 56px
     height: 56px

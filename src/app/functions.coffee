@@ -7,7 +7,7 @@ window.url = document.location.href
 #window.url = 'https://project1917.com/infographic'
 
 window.lang = if window.serverlang? then window.serverlang else if document.location.hostname.search(/\.com/) is -1 then 'ru' else 'en'
-#window.lang = 'en'
+window.lang = 'ru'
 
 if lang is 'en'
   src = $('#header img').attr 'src'
