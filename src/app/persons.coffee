@@ -494,6 +494,7 @@ window.getPersonID = (pid)->
 # ==============================================
 
 window.getFlag = (data)->
+  console.log 'getFlag', data
   return flags.find (e)->
     return if e.id is toInt(data.family) then true else false
 # ==============================================
