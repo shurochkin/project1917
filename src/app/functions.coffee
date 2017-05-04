@@ -440,9 +440,18 @@ window.initZoom = ->
     image = if lang is 'ru' then social_meta.image.ru else social_meta.image.en
     $(@).on 'click', ()->
       switch id
-        when 'vk' then window.open 'https://vk.com/share.php?url=' + url + '&title=' + title + '&description=' + text + '&image=' + image, '_blank'
-        when 'fb' then window.open 'https://www.facebook.com/sharer.php?src=sp&u=' + url + '&r=' + Math.random(), '_blank'
-        when 'tw' then window.open 'http://twitter.com/share?&url=' + url, '_blank'
+        when 'vk'
+          vkc = $('#vk-counter').text()
+          vk = if vkc isnt '' then toInt(vkc) else 0
+          $('#vk-counter').text( vk + 1 )
+          window.open 'https://vk.com/share.php?url=' + url + '&title=' + title + '&description=' + text + '&image=' + image, '_blank'
+        when 'fb'
+          fbc = $('#fb-counter').text()
+          vk = if fbc isnt '' then toInt(fbc) else 0
+          $('#fb-counter').text( vk + 1 )
+          window.open 'https://www.facebook.com/sharer.php?src=sp&u=' + url + '&r=' + Math.random(), '_blank'
+        when 'tw'
+          window.open 'http://twitter.com/share?&url=' + url, '_blank'
         else return false
 
 

@@ -50,7 +50,7 @@ window.preparePerson = (el)->
   #    console.log 'flag', flags[flag[1]].name
 
   # Remove ID <text>
-  $(el).find('text:last-child').remove()
+#  $(el).find('text:last-child').remove()
   # Remove Mask <g>
   $(el).find('#Mask').remove()
 
