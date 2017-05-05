@@ -77,8 +77,8 @@ html
   script.
     window.serverlang = '{{ $serverLocale }}';
     window.hideBackButton = true;
-  //- script(src='/infographic-static/app.min.js?v=#{ver}')
-  script(src='/infographic-static/app.js')
+  script(src='/infographic-static/app.min.js?v=#{ver}')
+  //- script(src='/infographic-static/app.js')
   | @if($app->environment('production'))
   |     @if (app('LocaleService')->getLocale() === 'ru')
   |         @include('partial.metrics')

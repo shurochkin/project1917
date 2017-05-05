@@ -128,7 +128,6 @@ window.hideDinastySelector = ()->
   $('#dinasty').hide()
 
 window.showOnePerson = (data, desc = false)->
-  console.log 'data', data
   flag = getFlag(data)
 
   if lang is 'ru'
@@ -147,11 +146,7 @@ window.showOnePerson = (data, desc = false)->
 
   img_src = if data.img then '/infographic-static/'+data.img else '/infographic-static/img/def-'+ (if data.sex is 0 then 'wo' else '') + 'man.png'
   person = $('<div>').addClass('person')
-
-  # TODO
-  console.log('showOnePerson', data, flag)
-
-  person.append($('<div>').addClass('img '+ flag.name ).append($('<img>').attr('src', img_src)))
+  person.append($('<div>').addClass('img '+flag.name).append($('<img>').attr('src', img_src)))
   person.append($('<p>').addClass('name').html(name))
   if title
     person.append($('<p>').addClass('title').text(title))

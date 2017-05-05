@@ -170,7 +170,7 @@ window.showPath = (path) ->
   if !path
     return
 
-#  console.log path
+  console.log path
 
   showLine = (id1, id2) ->
     selector = '#lines > g[id$="-' + id1 + '-' + id2 + '"], #lines > g[id$="-' + id2 + '-' + id1 + '"]'
@@ -290,9 +290,7 @@ window.init = ->
     graph[e.id] =
       color: 0
       links: links.concat(children, siblings)
-    e.family_line = graph[e.id].links
-
-#    console.log(e.id + " " + e.nameru + " " + e.family + " children " + children + " siblings " + siblings);
+#    console.log(e.id + " " + e.name + " " + graph[e.id].links + " children " + children + " siblings " + siblings);
     return
 
 # TEST
