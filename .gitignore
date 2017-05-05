@@ -5,7 +5,6 @@
 *.iml
 *.ipr
 *.tar.gz
-build
 node_modules
 experiment
 www

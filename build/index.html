@@ -1,0 +1,91 @@
+@php($version = 2)<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;amp;subset=cyrillic" rel="stylesheet">
+    <link href="/infographic-static/app.min.css?v={{ $version }}" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="/img/favicon.png?1">
+    <title>{{ $shareTitle }}</title>
+    <meta property="og:url" content="{{ IlluminateSupportFacadesURL::current() }}">
+    <meta property="og:title" content="{{ $shareTitle }}">
+    <meta property="og:description" content="{{ $shareDesc }}">
+    <meta property="og:image" content="{{ $shareImg }}">
+    <meta property="og:image:secure_url" content="{{ $shareImg }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@project19171">
+    <meta name="twitter:title" content="{{ $shareTitle }}">
+    <meta name="twitter:description" content="{{ $shareDesc }}">
+    <meta name="twitter:image" content="{{ $shareImg }}">
+  </head>
+  <body>
+    <div id="preloader"><img src="/infographic-static/img/default.svg"></div>
+    <div id="mobile-div"></div>
+    <div id="header"><a href="/"><img src="/infographic-static/img/logo-title-ru@2x.png"></a></div>
+    <div id="zoompad">
+      <div id="zoom-in"><img src="/infographic-static/img/zoomin.svg"></div>
+      <div id="zoom-out"><img src="/infographic-static/img/zoomout.svg"></div>
+    </div>
+    <div id="share-social">
+      <div id="fb"><img src="/infographic-static/img/fb.svg"></div>
+      <div id="fb-counter"></div>
+      <div id="vk"><img src="/infographic-static/img/vk.svg"></div>
+      <div id="vk-counter"></div>
+      <div id="tw"><img src="/infographic-static/img/tw.svg"></div>
+    </div>
+    <div id="toggle-open"><img src="/infographic-static/img/menu.svg"></div>
+    <div id="panel">
+      <form>
+        <div id="toggle-close"><img src="/infographic-static/img/close.svg"></div>
+        <div id="dinasty">
+          <h3>Династии</h3>
+          <ul id="land-switcher">
+            <li class="en">
+              <label>
+                <input type="radio" name="land" value="en"> Великобритания
+              </label>
+            </li>
+            <li class="de">
+              <label>
+                <input type="radio" name="land" value="de"> Германия
+              </label>
+            </li>
+            <li class="ru">
+              <label>
+                <input type="radio" name="land" value="ru"> Россия
+              </label>
+            </li>
+            <li class="gr">
+              <label>
+                <input type="radio" name="land" value="gr"> Дания и Греция
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div id="description">
+          <h3>Кто кому кем приходится</h3>
+          <div id="person1"></div>
+          <div id="person2"></div>
+          <div id="pair-desc"></div>
+        </div>
+        <button id="clear-selection" type="reset">Очистить выбор</button>
+      </form>
+      <div id="interes">
+        <h4>Самые интересные связи</h4>
+      </div>
+    </div>
+  </body>
+  <script>
+    window.serverlang = '{{ $serverLocale }}';
+    window.hideBackButton = true;
+  </script>
+  <script src="/infographic-static/app.min.js?v=undefined"></script>@if($app->environment('production'))
+      @if (app('LocaleService')->getLocale() === 'ru')
+          @include('partial.metrics')
+      @else
+          @include('partial.metrics_en')
+      @endif
+  @endif
+</html>

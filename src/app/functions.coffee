@@ -406,7 +406,7 @@ window.initZoom = ->
     center: 1
     customEventsHandler: eventsHandler
     minZoom: 1
-    maxZoom: 3
+    maxZoom: 5
     beforePan: beforePan
   )
   panZoom.zoom 1
