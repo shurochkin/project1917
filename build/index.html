@@ -81,7 +81,7 @@
     window.serverlang = '{{ $serverLocale }}';
     window.hideBackButton = true;
   </script>
-  <script src="/infographic-static/app.min.js?v=undefined"></script>@if($app->environment('production'))
+  <script src="/infographic-static/app.min.js?v={{ $version }}"></script>@if($app->environment('production'))
       @if (app('LocaleService')->getLocale() === 'ru')
           @include('partial.metrics')
       @else
