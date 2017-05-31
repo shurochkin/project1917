@@ -14,6 +14,7 @@ if lang is 'en'
   $('#header img').attr 'src', src.replace('ru','en')
 $('body').addClass(lang)
 window.svgPath = '/infographic-static/img/export-scheme-ru.svg'
+window.messages = require './../../data/messages.json'
 window.flags = require './../../data/flags.json'
 window.persons_data = require './../../data/persons.json'
 window.interes_data = require './../../data/interes.json'
@@ -22,25 +23,8 @@ window.personSelected2 = null
 window.land = null
 window.graph = {}
 window.personLinks = []
-window.name_id = if lang is 'ru' then 'nameru' else 'nameen'
-window.title_id = if lang is 'ru' then 'titleru' else 'titleen'
-
-window.locales = {
-
-}
-
-window.social_meta = {
-  text:
-    ru: 'Кто кому кем приходится'
-    en: 'Who is who'
-  title:
-    ru: 'Опасные связи. Карта королевских династий Европы'
-    en: 'Dangerous Liaisons. Map of the royal dynasties of Europe'
-  image:
-    ru: 'https://project1917.ru/infographic-static/img/og.png'
-    en: 'https://project1917.com/infographic-static/img/og_en.png'
-
-}
+window.name_id = 'name'+window.lang
+window.title_id = 'title'+window.lang
 
 # ==============================================
 
@@ -435,9 +419,9 @@ window.initZoom = ->
   $('#share-social > div').each ()->
     id = $(@).attr('id')
     url = document.location.href
-    title = if lang is 'ru' then social_meta.title.ru else social_meta.title.en
-    text = if lang is 'ru' then social_meta.text.ru else social_meta.text.en
-    image = if lang is 'ru' then social_meta.image.ru else social_meta.image.en
+    title = messages['Title'][window.lang]
+    text = messages['Description'][window.lang]
+    image = messages['image'][window.lang]
     $(@).on 'click', ()->
       switch id
         when 'vk'

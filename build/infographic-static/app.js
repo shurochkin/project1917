@@ -84,6 +84,69 @@ module.exports=[
   }
 ]
 },{}],3:[function(require,module,exports){
+module.exports={
+  "Title" : {
+    "id" : "Title",
+    "ru" : "Опасные связи. Карта королевских династий Европы",
+    "en" : "Dangerous Liaisons. Map of of the Royal dynasties of Europe"
+  },
+  "Dynasties" : {
+    "id" : "Dynasties",
+    "ru" : "Династии",
+    "en" : "Dynasties"
+  },
+  "GreatBritain" : {
+    "id" : "GreatBritain",
+    "ru" : "Великобритания",
+    "en" : "Great Britain"
+  },
+  "Germany" : {
+    "id" : "Germany",
+    "ru" : "Германия",
+    "en" : "Germany"
+  },
+  "Russia" : {
+    "id" : "Russia",
+    "ru" : "Россия",
+    "en" : "Russia"
+  },
+  "DenmarkGreece" : {
+    "id" : "DenmarkGreece",
+    "ru" : "Дания и Греция",
+    "en" : "Denmark and Greece"
+  },
+  "Description" : {
+    "id" : "Description",
+    "ru" : "Кто кому кем приходится",
+    "en" : "Who is who"
+  },
+  "MostInteresting" : {
+    "id" : "MostInteresting",
+    "ru" : "Самые интересные связи",
+    "en" : "The most interesting connections"
+  },
+  "NowYouSee" : {
+    "id" : "NowYouSee",
+    "ru" : "Сейчас вы видите только близких родственников героя. Выберите любого другого героя на карте, чтобы узнать как они связаны",
+    "en" : "Now you see only close relatives of the character. Select any another character on the map to see how they are connected"
+  },
+  "Clear" : {
+    "id" : "Clear",
+    "ru" : "Очистить выбор ",
+    "en" : "Clear selection"
+  },
+  "Profile" : {
+    "id" : "Profile",
+    "ru" : "профиль",
+    "en" : "profile"
+  },
+  "image" : {
+    "id" : "image",
+    "ru" : "https://project1917.ru/infographic-static/img/og.png",
+    "en" : "https://project1917.com/infographic-static/img/og_en.png"
+  }
+}
+},{}],4:[function(require,module,exports){
 module.exports=[
   {
     "id": 1,
@@ -107,7 +170,7 @@ module.exports=[
     "nameru": "Альберт",
     "titleru": "Принц-консорт",
     "nameen": "Albert",
-    "titleen": "Prince Consort",
+    "titleen": "Prince-Consort",
     "father": 0,
     "couple": 1,
     "sex": 1,
@@ -220,7 +283,7 @@ module.exports=[
     "posinbroz": 1,
     "born": "1844-11-30T17:02:55.000Z",
     "descriptionru": "Урожденная Александра Каролина Мария Шарлотта Луиза Юлия Датская (Аликс). Императрица-консорт Великобритании и Ирландии с 1901 по 1910 год. После замужества становится любимицей светского общества и законодательницей мод. Очень религиозна. (1844–1925)",
-    "profile": "https://project1917.ru/persons/aleksandra-datskaya"
+    "profileru": "https://project1917.ru/persons/aleksandra-datskaya"
   },
   {
     "id": 9,
@@ -307,7 +370,8 @@ module.exports=[
     "posinbroz": 4,
     "born": "1847-11-13T17:02:55.000Z",
     "descriptionru": "Урожденная Мария София Фредерика Дагмар (Минни), датская принцесса. Пользуется популярностью в петербургском светском обществе. Возглавляет Российское общество Красного Креста. После революции возвращается в Данию. (1847–1928)",
-    "profile": "https://project1917.ru/persons/imperatritsa-mariya-fedorovna"
+    "profileru": "https://project1917.ru/persons/imperatritsa-mariya-fedorovna",
+    "profileen": "https://project1917.com/persons/imperatrica_mariya_fedorovna"
   },
   {
     "id": 14,
@@ -324,7 +388,7 @@ module.exports=[
     "posinbroz": 4,
     "born": "1851-08-21T17:02:55.000Z",
     "descriptionru": "Королева-консорт Греции в 1867–1913 годах. Основывает в Греции военно-морской госпиталь. Открывает медицинские курсы, работает в госпиталях, помогает раненым. (1851–1926)",
-    "profile": "https://project1917.ru/persons/velikaya-knyazhna-olga-konstantinovna"
+    "profileru": "https://project1917.ru/persons/velikaya-knyazhna-olga-konstantinovna"
   },
   {
     "id": 15,
@@ -420,7 +484,7 @@ module.exports=[
   {
     "id": 20,
     "nameru": "Николай Николаевич",
-    "nameen": "Nicholas ",
+    "nameen": "Nikolay Nikolaevich",
     "father": 61,
     "couple": 65,
     "sex": 1,
@@ -436,7 +500,7 @@ module.exports=[
   {
     "id": 21,
     "nameru": "Михаил Николаевич",
-    "nameen": "Michael Nikolaevich",
+    "nameen": "Mikhail Nikolaevich",
     "father": 61,
     "couple": 66,
     "sex": 1,
@@ -466,7 +530,8 @@ module.exports=[
     "born": "1859-01-26T17:02:55.000Z",
     "descriptionru": "Фридрих Вильгельм Виктор Альберт Прусский. Последний германский император, с 1888 по 1918 год — Вильгельмовская эпоха. При нем начинается и заканчивается Первая мировая война. После отречения от престола в результате революции бежит в нейтральные Нидерланды. (1859–1941)",
     "descriptionen": "Born Friedrich Wilhelm Victor Albert of Prussia. The last German emperor from 1888 to 1918 - the Wilhelmine era. The First World War begins and ends under his rule. After revolution forces his abdication, he fled to the Netherlands which was neutral.",
-    "profile": "https://project1917.ru/persons/germanskij_imperator_i_prusskij_korol_vilgelm_ii"
+    "profileru": "https://project1917.ru/persons/germanskij_imperator_i_prusskij_korol_vilgelm_ii",
+    "profileen": "https://project1917.com/persons/germanskij_imperator_i_prusskij_korol_vilgelm_ii"
   },
   {
     "id": 23,
@@ -553,7 +618,7 @@ module.exports=[
     "born": "1868-08-01T17:02:55.000Z",
     "descriptionru": "Греческий король в 1913–1917, 1920–1922 годах. Его нежелание участвовать в Первой мировой войне приводит к национальному расколу в стране и заставляет его впоследствии отказаться от престола. В 1920-м вновь становится королем. (1868–1923)",
     "descriptionen": "King of Greece from 1913-1917 and 1920-1922. His unwillingness to participate in the First World War leads to a national split in the country and subsequently forces him to abandon the throne. He becomes king again in 1920.",
-    "profile": "https://project1917.ru/persons/korol-konstantin-glyuksburg"
+    "profileru": "https://project1917.ru/persons/korol-konstantin-glyuksburg"
   },
   {
     "id": 28,
@@ -588,7 +653,8 @@ module.exports=[
     "born": "1865-06-02T17:02:55.000Z",
     "descriptionru": "Король Великобритании и Северной Ирландии в 1910–1936 годах. Во время его правления усиливается влияние фашизма, социализма и коммунизма. В 1917 году отказывается принимать семью двоюродного брата Николая II. (1865–1936)",
     "descriptionen": "King of Great Britain and Northern Ireland from 1910-1936. The influence of fascism, socialism and communism grows steadily during his reign. In 1917, he refused to offer refuge to his cousin, Nicholas II, and family.",
-    "profile": "https://project1917.ru/persons/georg-v"
+    "profileru": "https://project1917.ru/persons/georg-v",
+    "profileen": "https://project1917.com/persons/georg_v"
   },
   {
     "id": 30,
@@ -657,7 +723,7 @@ module.exports=[
     "born": "1854-05-01T17:02:55.000Z",
     "descriptionru": "Урожденная Мария Александрина Элизабета Элеонора, герцогиня Мекленбург-Шверинская (Михен). Ее двор пользуется огромной влиятельностью и популярностью в Петербургском обществе. (1854–1920)",
     "descriptionen": "Born Maria Alexandrina Elizabeth Eleonora, the Duchess of Mecklenburg-Schwerin (Michen). Her court is very influential and popular in Petersburg society.",
-    "profile": "https://project1917.ru/persons/velikaya-knyaginya-mariya-pavlovna-starshaya"
+    "profileru": "https://project1917.ru/persons/velikaya-knyaginya-mariya-pavlovna-starshaya"
   },
   {
     "id": 34,
@@ -675,7 +741,7 @@ module.exports=[
     "born": "1860-09-20T17:02:55.000Z",
     "descriptionru": "Кавалерийский офицер. Не принимает участие в государственных делах. Несколько лет живет в изгнании из-за морганатического брака с Ольгой Палей. Расстрелян большевиками в 1919 году. (1860–1919)",
     "descriptionen": "Cavalry officer. He’s not involved in state affairs. He lives most of his life in exile because of his illegal marriage to Olga Paley. Executed by the Bolsheviks in 1919.",
-    "profile": "https://project1917.ru/persons/velikiy-knyaz-pavel-aleksandrovich"
+    "profileru": "https://project1917.ru/persons/velikiy-knyaz-pavel-aleksandrovich"
   },
   {
     "id": 35,
@@ -740,7 +806,9 @@ module.exports=[
     "born": "1856-11-05T17:02:55.000Z",
     "descriptionru": "Верховный главнокомандующий всеми морскими и сухопутными силами России во время Первой мировой войны. В армии имеет прозвище Лукавый за жажду власти и чрезмерное честолюбие. Ему предлагают занять российский престол вместо Николая II, но он отказывается. (1856–1929)",
     "descriptionen": "Chief commander of all of Russia’s naval and land forces during World War I. In the army, he was nicknamed “the Schemer” on account of his thirst for power and excessive ambitiousness. Invited to take up the Russian throne in place of Nicholas II, he refused.",
-    "profile": "https://project1917.ru/persons/velikiy-knyaz-nikolay-nikolaevich"
+    "profileru": "https://project1917.ru/persons/velikiy-knyaz-nikolay-nikolaevich",
+    "profileen": "https://project1917.com/persons/velikiy-knyaz-nikolay-nikolaevich",
+    "undefined": "отличается имя на сайте"
   },
   {
     "id": 39,
@@ -758,7 +826,7 @@ module.exports=[
     "born": "1864-01-09T17:02:55.000Z",
     "descriptionru": "Военный по назначению, но не по призванию. В армии успокаивает нрав старшего брата Николая Николаевича. В жизни находит себя в архитектуре и живописи. По его проектами воздвигаются несколько церквей и дворец в Крыму. (1864–1931)",
     "descriptionen": "A military man by occupation but not by vocation. In the army, he mollified the stiff temperament of his elder brother Nikolai Nikolaevich. In civilian life, he found his calling in architecture and painting, with several churches and a palace in the Crimea being constructed according to his designs.",
-    "profile": "https://project1917.ru/persons/velikiy-knyaz-petr-nikolaevich"
+    "profileru": "https://project1917.ru/persons/velikiy-knyaz-petr-nikolaevich"
   },
   {
     "id": 40,
@@ -774,13 +842,13 @@ module.exports=[
     "born": "1859-04-13T17:02:55.000Z",
     "descriptionru": "Председатель Русского исторического общества, глава Русского географического общества. Специалист по эпохе Александра I и Наполеона. Оппозиционно настроен к Николаю II, одобряет Февральскую революцию 1917 года, поддерживает Временное правительство. (1859–1919)",
     "descriptionen": "Сhairman of the Russian Historical Society, head of the Russian Geographical Society. The era of Alexander I and Napoleon was his particular specialism. Opposed to Nicholas II and supportive of the February Revolution of 1917, he backed the Provisional Government.",
-    "profile": "https://project1917.ru/persons/velikiy-knyaz-nikolay-mikhaylovich"
+    "profileru": "https://project1917.ru/persons/velikiy-knyaz-nikolay-mikhaylovich"
   },
   {
     "id": 41,
     "nameru": "Александр Михайлович",
     "titleru": "Сандро",
-    "nameen": "Sandro",
+    "nameen": "Alexander Mikhailovich",
     "titleen": "Sandro",
     "father": 21,
     "couple": 89,
@@ -793,7 +861,8 @@ module.exports=[
     "born": "1866-03-31T17:02:55.000Z",
     "descriptionru": "Увлекается флотом, в 1886 году совершает кругосветное путешествие. Выступает за совершенствование российских кораблей, инициатор создания Офицерской авиационной школы под Севастополем. Покровительствует Обществу помощи детям русской эмиграции. (1866–1933)",
     "descriptionen": "A navy fanatic, he completed a round-the-world trip in 1886.  Sandro called for the continued development of Russian naval capabilities and initiated the establishment of an officer aviation school at Sevastopol. Patron of the Society for Assistance to Children of Russian Émigrés. ",
-    "profile": "https://project1917.ru/persons/velikiy-knyaz-aleksandr-mikhaylovich"
+    "profileru": "https://project1917.ru/persons/velikiy-knyaz-aleksandr-mikhaylovich",
+    "profileen": "https://project1917.com/persons/velikiy-knyaz-aleksandr-mikhaylovich"
   },
   {
     "id": 42,
@@ -809,7 +878,7 @@ module.exports=[
     "born": "1869-09-24T17:02:55.000Z",
     "descriptionru": "Вместе с Сандро путешествует к Индии, что описано в книге «23 000 миль на яхте „Тамара“». Его прозвище — «господин тем хуже» (Monsieur Tant Pis), т.к. он часто употребляет это выражение. (1869–1918)",
     "descriptionen": "Travelled to India with Sandro and described their adventures in a book entitled 23 000 Miles on the Yacht Tamara. Nicknamed “Monsieur Tant Pis” due to his frequent use of that expression.  ",
-    "profile": "https://project1917.ru/persons/velikiy-knyaz-sergey-mikhaylovich"
+    "profileru": "https://project1917.ru/persons/velikiy-knyaz-sergey-mikhaylovich"
   },
   {
     "id": 43,
@@ -826,7 +895,7 @@ module.exports=[
     "born": "1863-08-10T17:02:55.000Z",
     "descriptionru": "Великий князь, 20 лет управляет Русским музеем в Петербурге. Собирает живопись и скульптуру, монеты. Пишет нескольких трудов по нумизматике. (1863–1919)",
     "descriptionen": "A Grand Duke who spent twenty years at the helm of the Russian Museum in St. Petersburg. A collector of paintings, sculpture and coins, he penned several works on the subject of numismatics.",
-    "profile": "https://project1917.ru/comandante/heroes/1410/edit"
+    "profileru": "https://project1917.ru/comandante/heroes/1410/edit"
   },
   {
     "id": 44,
@@ -903,7 +972,7 @@ module.exports=[
   {
     "id": 48,
     "nameru": "Мария",
-    "nameen": "Maria Georgievna",
+    "nameen": "Maria ",
     "father": 100,
     "couple": 43,
     "sex": 0,
@@ -919,7 +988,7 @@ module.exports=[
   {
     "id": 49,
     "nameru": "Николай",
-    "nameen": "Nicholas",
+    "nameen": "Nikolay",
     "father": 100,
     "couple": 47,
     "sex": 1,
@@ -1112,7 +1181,7 @@ module.exports=[
   {
     "id": 62,
     "nameru": "Мария Николаевна",
-    "nameen": "Maria",
+    "nameen": "Maria Nikolaevna",
     "father": 61,
     "sex": 0,
     "value": 0,
@@ -1126,7 +1195,7 @@ module.exports=[
   {
     "id": 63,
     "nameru": "Ольга Николаевна",
-    "nameen": "Olga",
+    "nameen": "Olga Nikolaevna",
     "father": 61,
     "sex": 0,
     "value": 0,
@@ -1140,7 +1209,7 @@ module.exports=[
   {
     "id": 64,
     "nameru": "Александра Николаевна",
-    "nameen": "Alexandra",
+    "nameen": "Alexandra Nikolaevna",
     "father": 61,
     "sex": 0,
     "value": 0,
@@ -1260,7 +1329,7 @@ module.exports=[
     "born": "1869-11-25T17:02:55.000Z",
     "descriptionru": "Урожденная Мод Шарлотта Мария Виктория (Гарри). Первая за 600 лет королева-консорт Норвегии как самостоятельного государства (1905–1938 годы). Во время Первой мировой войны до максимума сокращает свои расходы, чтобы помогать нуждающимся одеждой и продуктами. (1869–1938)",
     "descriptionen": "Born “Maud Charlotte Maria Victoria” (“Harry”). The first Queen-consort of an independent Norway (1905-1938) for 600 years. During the First World War, she reduced her expenses as much as possible in order to help provide the needy with clothes and food.",
-    "profile": "https://project1917.ru/persons/mod-glyuksburg"
+    "profileru": "https://project1917.ru/persons/mod-glyuksburg"
   },
   {
     "id": 73,
@@ -1338,7 +1407,7 @@ module.exports=[
   {
     "id": 78,
     "nameru": "Николай Константинович",
-    "nameen": "Nicholas Konstantinovich",
+    "nameen": "Nikolay Konstantinovich",
     "father": 19,
     "sex": 1,
     "value": 0,
@@ -1397,7 +1466,8 @@ module.exports=[
     "born": "1872-06-05T17:02:55.000Z",
     "descriptionru": "Последняя российская императрица (с 1894 по 1917 год). Урожденная принцесса Виктория Алиса Елена Луиза Беатриса Гессен-Дармштадтская, любимая внучка британской королевы Виктории. Покровительствует более чем 30 благотворительным организациям, помогает раненым солдатам во время Первой мировой войны. (1872–1918)",
     "descriptionen": "The last Russian Empress (from 1894 to 1917). Born Princess Victoria Alice Helen Louise Beatrice Hesse-Darmstadt, the favorite granddaughter of Queen Victoria. Supports more than 30 charity organizations, helps wounded soldiers during World War I.",
-    "profile": "https://project1917.ru/persons/imperatritsa-aleksandra-fedorovna"
+    "profileru": "https://project1917.ru/persons/imperatritsa-aleksandra-fedorovna",
+    "profileen": "https://project1917.com/persons/imperatrica_aleksandra_fedorovna"
   },
   {
     "id": 82,
@@ -1417,7 +1487,8 @@ module.exports=[
     "born": "1868-05-05T17:02:55.000Z",
     "descriptionru": "Последний российский император (с 1894 по 1917 год). Любящий отец и муж. Главнокомандующий российскими войсками во время Первой мировой войны. Учреждает Государственную думу, проводит аграрную и военную реформы. В 1917 году отрекается от российского престола. (1868–1918)",
     "descriptionen": "The last Russian Emperor (1894 to 1917). A loving father and husband. The chief commander of the Russian army during World War I. Creates the state Duma, carries out agricultural and military reform. In 1917 abdicates from the Russian throne.",
-    "profile": "https://project1917.ru/persons/imperator-nikolay-ii"
+    "profileru": "https://project1917.ru/persons/imperator-nikolay-ii",
+    "profileen": "https://project1917.com/persons/imperator_nikolaj_ii"
   },
   {
     "id": 83,
@@ -1503,12 +1574,13 @@ module.exports=[
     "born": "1876-09-29T17:02:55.000Z",
     "descriptionru": "Великий князь. Его брак не признается императором, несколько лет живет за границей. Отказывается поддержать царя во время Февральской революции. В эмиграции помогает русским беженцам. (1876–1938)",
     "descriptionen": "His marriage is not recognized by the Emperor, he lives abroad for several years. Refuses to support the czar during the February Revolution. In emigration helps Russian refugees.",
-    "profile": "https://project1917.ru/persons/velikiy-knyaz-kirill-vladimirovich"
+    "profileru": "https://project1917.ru/persons/velikiy-knyaz-kirill-vladimirovich",
+    "profileen": "https://project1917.com/persons/velikiy-knyaz-kirill-vladimirovich"
   },
   {
     "id": 88,
     "nameru": "Михаил Александрович",
-    "nameen": "Mikhail",
+    "nameen": "Mikhail Alexandrovich",
     "father": 15,
     "couple": 109,
     "sex": 1,
@@ -1520,12 +1592,14 @@ module.exports=[
     "born": "1878-11-21T17:02:55.000Z",
     "descriptionru": "Великий князь. Военачальник. Пытается спасти монархию, но во время Февральской революции 1917 года отрекается от престола и призывает подчиняться Временному правительству. Близок к Николаю II, не участвует в заговорах против него. (1878–1918)",
     "descriptionen": "A military commander. Tries to save the monarchy, but during the February Revolution of 1917 abdicates from the throne and calls for compliance with the Provisional Government. Close to Nicholas II and does not participate in plots against him.",
-    "profile": "https://project1917.ru/persons/velikiy-knyaz-mikhail-aleksandrovich"
+    "profileru": "https://project1917.ru/persons/velikiy-knyaz-mikhail-aleksandrovich",
+    "profileen": "https://project1917.com/persons/velikij_knyaz_mihail_aleksandrovich",
+    "undefined": " отличается имя на сайте"
   },
   {
     "id": 89,
     "nameru": "Ксения Александровна",
-    "nameen": "Xenia",
+    "nameen": "Xenia Alexandrovna",
     "father": 15,
     "couple": 41,
     "sex": 0,
@@ -1537,12 +1611,12 @@ module.exports=[
     "born": "1875-03-24T17:02:55.000Z",
     "descriptionru": "Выходит замуж за двоюродного дядю, Александра Михайловича. Занимается благотворительностью. В 1919 году эмигрирует и до самой смерти живет в Великобритании. (1875–1960)",
     "descriptionen": "Marries her cousin uncle Alexander Mikhailovich. Participates in charity work. In 1919 emigrates and lives until her death in Britain.",
-    "profile": "https://project1917.ru/persons/velikaya-knyaginya-kseniya-aleksandrovna"
+    "profileru": "https://project1917.ru/persons/velikaya-knyaginya-kseniya-aleksandrovna"
   },
   {
     "id": 90,
     "nameru": "Ольга Александровна",
-    "nameen": "Olga",
+    "nameen": "Olga Alexandrovna",
     "father": 15,
     "sex": 0,
     "value": 1,
@@ -1553,7 +1627,8 @@ module.exports=[
     "born": "1882-05-31T17:02:55.000Z",
     "descriptionru": "Последняя великая княгиня. Во время Первой мировой войны работает сестрой милосердия. С 1928 года живет в Дании, потом переезжает в Канаду. Занимается живописью, что позволяет ей заниматься благотворительностью и поддерживать семью. (1882–1960)",
     "descriptionen": "The last Grand Duchess. During World War I works as a nurse. From 1928 lives in Denmark and then moves to Canada. Paints, which helps her carry out her charity work and to support her family.",
-    "profile": "https://project1917.ru/persons/velikaya-knyaginya-olga-aleksandrovna"
+    "profileru": "https://project1917.ru/persons/velikaya-knyaginya-olga-aleksandrovna",
+    "profileen": "https://project1917.com/persons/velikaya-knyaginya-olga-aleksandrovna"
   },
   {
     "id": 91,
@@ -1607,7 +1682,7 @@ module.exports=[
   {
     "id": 94,
     "nameru": "Дмитрий Константинович",
-    "nameen": "Dmitry",
+    "nameen": "Dmitry Konstantinovich",
     "father": 19,
     "sex": 1,
     "value": 0,
@@ -1718,7 +1793,7 @@ module.exports=[
   {
     "id": 101,
     "nameru": "Вячеслав Константинович",
-    "nameen": "Vyacheslav",
+    "nameen": "Vyacheslav Konstantinovich",
     "father": 19,
     "sex": 1,
     "value": 0,
@@ -1809,7 +1884,7 @@ module.exports=[
   {
     "id": 108,
     "nameru": "Георгий Александрович",
-    "nameen": "George",
+    "nameen": "George Alexandrovich",
     "father": 15,
     "sex": 1,
     "value": 0,
@@ -1830,7 +1905,8 @@ module.exports=[
     "posinbroz": 0,
     "born": "1880-06-26T17:02:55.000Z",
     "descriptionru": "Брак с великим князем Михаилом стал третьим для нее. Брак заключен без разрешения императора Николая II, из-за чего супруги были вынуждены уехать из России, но в 1914 году вместе возвращаются на родину. Во время Первой мировой войны заведует госпиталями для раненых в Петербурге. (1880–1952)",
-    "profile": "https://project1917.ru/persons/natalya-brasova"
+    "profileru": "https://project1917.ru/persons/natalya-brasova",
+    "profileen": "no"
   },
   {
     "id": 110,
@@ -2091,7 +2167,7 @@ module.exports=[
   {
     "id": 128,
     "nameru": "Борис Владимирович",
-    "nameen": "Boris",
+    "nameen": "Boris Vladimirovich",
     "father": 32,
     "couple": 129,
     "sex": 1,
@@ -2101,7 +2177,8 @@ module.exports=[
     "posinbroz": 3,
     "born": "1877-11-11T17:02:55.000Z",
     "descriptionru": "Строит военную карьеру и участвует в русско-японской войне. После революции 1917 года эмигрирует из России и живет во Франции. Из-за морганатического брака лишается права на наследование престола. (1877–1943)",
-    "profile": "https://project1917.ru/persons/velikiy-knyaz-boris-vladimirovich"
+    "profileru": "https://project1917.ru/persons/velikiy-knyaz-boris-vladimirovich",
+    "profileen": "no"
   },
   {
     "id": 129,
@@ -2129,7 +2206,9 @@ module.exports=[
     "posinbroz": 0,
     "born": "1879-04-19T17:02:55.000Z",
     "descriptionru": "С 1920 года живет во Франции вместе с известной балериной Матильдой Кшесинской. С 1943 года и до своей смерти в 1956 году остается последним из великих князей, родившихся в царской России. (1879–1956)",
-    "profile": "https://project1917.ru/persons/velikiy-knyaz-andrey-vladimirovich"
+    "profileru": "https://project1917.ru/persons/velikiy-knyaz-andrey-vladimirovich",
+    "profileen": "https://project1917.com/persons/velikij_knyaz_andrej_vladimirovich",
+    "undefined": "отличается имя"
   },
   {
     "id": 131,
@@ -2143,7 +2222,8 @@ module.exports=[
     "posinbroz": 0,
     "born": "1872-08-18T17:02:55.000Z",
     "descriptionru": "Самая известная балерина в Петербурге, выступает в Мариинском театре. Была любовницей Николая II до его помолвки. В эмиграции в Париже, куда она уезжает с Андреем Владимировичем, открывает свою балетную школу. (1872–1971)",
-    "profile": "https://project1917.ru/persons/matilda-kshesinskaya"
+    "profileru": "https://project1917.ru/persons/matilda-kshesinskaya",
+    "profileen": "https://project1917.com/persons/matilda_kshesinskaya"
   },
   {
     "id": 132,
@@ -2159,7 +2239,8 @@ module.exports=[
     "posinbroz": 0,
     "born": "1890-04-05T17:02:55.000Z",
     "descriptionru": "В 1908 году выходит замуж за шведского принца Вильгельма, однако вскоре возвращается в Россию. После революции 1917 года эмигрирует из страны и занимается «предпринимательством»: изготавливает вышивку и кружева, а также работает фотографом для модных журналов. (1890–1958)",
-    "profile": "https://project1917.ru/persons/velikaya-knyaginya-mariya-pavlovna-mladshaya"
+    "profileru": "https://project1917.ru/persons/velikaya-knyaginya-mariya-pavlovna-mladshaya",
+    "profileen": "https://project1917.com/persons/velikaya-knyaginya-mariya-pavlovna-mladshaya"
   },
   {
     "id": 133,
@@ -2174,7 +2255,9 @@ module.exports=[
     "posinbroz": 1,
     "born": "1891-09-05T17:02:55.000Z",
     "descriptionru": "Принимает участие в Олимпийских играх 1912 года, распоряжается проводить в России ежегодные олимпиады. Революция побуждает его эмигрировать из страны, и несколько лет в Европе он состоит в различных патриотических и монархических движениях. (1891–1942)",
-    "profile": "https://project1917.ru/persons/velikiy-knyaz-dmitriy-pavlovich"
+    "profileru": "https://project1917.ru/persons/velikiy-knyaz-dmitriy-pavlovich",
+    "profileen": "https://project1917.com/persons/velikiy-knyaz-dmitriy-pavlovich",
+    "undefined": "отличается имя"
   },
   {
     "id": 134,
@@ -2264,11 +2347,11 @@ module.exports=[
     "descriptionru": "Урожденная Елизавета Ангела Маргарет Боуз-Лайон, «королева-мать». Королева-консорт Британской империи с 1936 по 1952 год. В годы Второй мировой войны отказывается покидать Лондон, становится моральным авторитетом и символом борьбы для британцев. (1900–2002)"
   }
 ]
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 exports = module.exports = require('./src/device-detector');
 exports.version = require('./package').version;
 
-},{"./package":5,"./src/device-detector":6}],5:[function(require,module,exports){
+},{"./package":6,"./src/device-detector":7}],6:[function(require,module,exports){
 module.exports={
   "_args": [
     [
@@ -2379,7 +2462,7 @@ module.exports={
   "version": "0.1.32"
 }
 
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 /**
  * Device Detector
  * GitHub : git@github.com:ndaidong/device-detector.git
@@ -2716,7 +2799,7 @@ module.exports={
   }
 })();
 
-},{}],7:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 /*! Hammer.JS - v2.0.7 - 2016-04-22
  * http://hammerjs.github.io/
  *
@@ -5361,7 +5444,7 @@ if (typeof define === 'function' && define.amd) {
 
 })(window, document, 'Hammer');
 
-},{}],8:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.1.1
  * https://jquery.com/
@@ -15583,12 +15666,12 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{}],9:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 var SvgPanZoom = require('./svg-pan-zoom.js');
 
 module.exports = SvgPanZoom;
 
-},{"./svg-pan-zoom.js":12}],10:[function(require,module,exports){
+},{"./svg-pan-zoom.js":13}],11:[function(require,module,exports){
 var SvgUtils = require('./svg-utilities');
 
 module.exports = {
@@ -15715,7 +15798,7 @@ module.exports = {
   }
 }
 
-},{"./svg-utilities":13}],11:[function(require,module,exports){
+},{"./svg-utilities":14}],12:[function(require,module,exports){
 var SvgUtils = require('./svg-utilities')
   , Utils = require('./utilities')
   ;
@@ -16054,7 +16137,7 @@ module.exports = function(viewport, options){
   return new ShadowViewport(viewport, options)
 }
 
-},{"./svg-utilities":13,"./utilities":15}],12:[function(require,module,exports){
+},{"./svg-utilities":14,"./utilities":16}],13:[function(require,module,exports){
 var Wheel = require('./uniwheel')
 , ControlIcons = require('./control-icons')
 , Utils = require('./utilities')
@@ -16826,7 +16909,7 @@ var svgPanZoom = function(elementOrSelector, options){
 
 module.exports = svgPanZoom;
 
-},{"./control-icons":10,"./shadow-viewport":11,"./svg-utilities":13,"./uniwheel":14,"./utilities":15}],13:[function(require,module,exports){
+},{"./control-icons":11,"./shadow-viewport":12,"./svg-utilities":14,"./uniwheel":15,"./utilities":16}],14:[function(require,module,exports){
 var Utils = require('./utilities')
   , _browser = 'unknown'
   ;
@@ -17046,7 +17129,7 @@ module.exports = {
   }
 }
 
-},{"./utilities":15}],14:[function(require,module,exports){
+},{"./utilities":16}],15:[function(require,module,exports){
 // uniwheel 0.1.2 (customized)
 // A unified cross browser mouse wheel event handler
 // https://github.com/teemualap/uniwheel
@@ -17188,7 +17271,7 @@ module.exports = (function(){
 
 })();
 
-},{}],15:[function(require,module,exports){
+},{}],16:[function(require,module,exports){
 module.exports = {
   /**
    * Extends an object
@@ -17464,7 +17547,7 @@ function requestTimeout(timeout) {
   }
 }
 
-},{}],16:[function(require,module,exports){
+},{}],17:[function(require,module,exports){
 var DeviceDetector;
 
 DeviceDetector = require('device-detector');
@@ -17490,7 +17573,7 @@ $(document).ready(function() {
 });
 
 
-},{"./app/functions":17,"./app/panel":18,"./app/persons":19,"device-detector":4}],17:[function(require,module,exports){
+},{"./app/functions":18,"./app/panel":19,"./app/persons":20,"device-detector":5}],18:[function(require,module,exports){
 var src;
 
 window.$ = require('jquery');
@@ -17512,6 +17595,8 @@ $('body').addClass(lang);
 
 window.svgPath = '/infographic-static/img/export-scheme-ru.svg';
 
+window.messages = require('./../../data/messages.json');
+
 window.flags = require('./../../data/flags.json');
 
 window.persons_data = require('./../../data/persons.json');
@@ -17528,26 +17613,9 @@ window.graph = {};
 
 window.personLinks = [];
 
-window.name_id = lang === 'ru' ? 'nameru' : 'nameen';
+window.name_id = 'name' + window.lang;
 
-window.title_id = lang === 'ru' ? 'titleru' : 'titleen';
-
-window.locales = {};
-
-window.social_meta = {
-  text: {
-    ru: 'Кто кому кем приходится',
-    en: 'Who is who'
-  },
-  title: {
-    ru: 'Опасные связи. Карта королевских династий Европы',
-    en: 'Dangerous Liaisons. Map of the royal dynasties of Europe'
-  },
-  image: {
-    ru: 'https://project1917.ru/infographic-static/img/og.png',
-    en: 'https://project1917.com/infographic-static/img/og_en.png'
-  }
-};
+window.title_id = 'title' + window.lang;
 
 window.doShowName = function(el, fs, y) {
   if (fs === '12') {
@@ -17870,9 +17938,9 @@ window.initZoom = function() {
     var id, image, text, title, url;
     id = $(this).attr('id');
     url = document.location.href;
-    title = lang === 'ru' ? social_meta.title.ru : social_meta.title.en;
-    text = lang === 'ru' ? social_meta.text.ru : social_meta.text.en;
-    image = lang === 'ru' ? social_meta.image.ru : social_meta.image.en;
+    title = messages['Title'][window.lang];
+    text = messages['Description'][window.lang];
+    image = messages['image'][window.lang];
     return $(this).on('click', function() {
       var fbc, vk, vkc;
       switch (id) {
@@ -17925,9 +17993,32 @@ window.getId = function(p) {
 };
 
 
-},{"./../../data/flags.json":1,"./../../data/interes.json":2,"./../../data/persons.json":3,"hammerjs":7,"jquery":8,"svg-pan-zoom":9}],18:[function(require,module,exports){
+},{"./../../data/flags.json":1,"./../../data/interes.json":2,"./../../data/messages.json":3,"./../../data/persons.json":4,"hammerjs":8,"jquery":9,"svg-pan-zoom":10}],19:[function(require,module,exports){
+window.getDinastyListItem = function(code, mess) {
+  var input, label, li;
+  input = $('<input>').attr('type', 'radio').attr('name', 'radio').attr('value', code);
+  label = $('<label>').text(' ' + messages[mess][window.lang]).prepend(input);
+  li = $('<li>').addClass(code).append(label);
+  return li;
+};
+
 window.dinastyInit = function() {
-  return $('#panel input').each(function() {
+  var $button, $description, $dinasty, $ul;
+  $dinasty = $('<div>').attr('id', 'dinasty');
+  $ul = $('<ul>').attr('id', 'land-switcher');
+  $ul.append(getDinastyListItem('en', 'GreatBritain'));
+  $ul.append(getDinastyListItem('de', 'Germany'));
+  $ul.append(getDinastyListItem('ru', 'Russia'));
+  $ul.append(getDinastyListItem('gr', 'DenmarkGreece'));
+  $description = $('<div>').attr('id', 'description');
+  $description.append($('<h3>').text(messages['Description'][window.lang]));
+  $description.append($('<div>').attr('id', 'person1'));
+  $description.append($('<div>').attr('id', 'person2'));
+  $description.append($('<div>').attr('id', 'pair-desc'));
+  $button = $('<button>').attr('id', 'clear-selection').attr('type', 'reset').text(messages['Clear'][window.lang]);
+  $dinasty.append($('<h3>').text(messages['Dynasties'][window.lang]).append($ul));
+  $('#panel form').append($dinasty).append($description).append($button);
+  return $('#dinasty input').each(function() {
     $(this).on('click', function(el) {
       var elem, lines, prsns, prsnsIDs;
       hidePersonDescription();
@@ -17972,6 +18063,7 @@ window.dinastyInit = function() {
 window.interesInit = function() {
   var int;
   int = $('#interes');
+  int.append($('<h4>').text(messages['MostInteresting'][window.lang]));
   return interes_data.forEach(function(i) {
     var data1, data2, pair;
     if (i.show != null) {
@@ -18013,8 +18105,8 @@ window.showPersonDescription = function(data1, data2) {
     pers2.append(showOnePerson(data2, true));
     desc.addClass('show-link');
   } else {
-    pers2.text(lang === 'ru' ? data1.descriptionru : data1.descriptionen);
-    note = $('<p>').addClass('note').text('Сейчас вы видите только близких родственников героя. Выберите любого другого героя на карте, чтобы узнать как они связаны');
+    pers2.text(data1['description' + window.lang]);
+    note = $('<p>').addClass('note').text(messages['NowYouSee'][window.lang]);
     pair.append(note);
   }
   if (data1 && data2) {
@@ -18026,7 +18118,7 @@ window.showPersonDescription = function(data1, data2) {
       }
     });
     if (int_data) {
-      pair.text(lang === 'ru' ? int_data.descriptionru : int_data.descriptionen);
+      pair.text(int_data['description' + window.lang]);
     }
   }
   return desc.show();
@@ -18053,19 +18145,13 @@ window.showOnePerson = function(data, desc) {
     desc = false;
   }
   flag = getFlag(data);
-  if (lang === 'ru') {
-    name = data.nameru;
-    title = data.titleru;
-    description = data.descriptionru;
-  } else {
-    name = data.nameen;
-    title = data.titleen;
-    description = data.descriptionen;
-  }
+  name = data['name' + window.lang];
+  title = data['title' + window.lang];
+  description = data['description' + window.lang];
   has_profile = false;
-  if ((data.profile != null) && desc) {
+  if ((data['profile' + window.lang] != null) && desc) {
     has_profile = true;
-    name = '<a href="' + data.profile + '" target="_blank">' + name + '</a>';
+    name = '<a href="' + data['profile' + window.lang] + '" target="_blank">' + name + '</a>';
   }
   img_src = data.img ? '/infographic-static/' + data.img : '/infographic-static/img/def-' + (data.sex === 0 ? 'wo' : '') + 'man.png';
   person = $('<div>').addClass('person');
@@ -18075,13 +18161,13 @@ window.showOnePerson = function(data, desc) {
     person.append($('<p>').addClass('title').text(title));
   }
   if (has_profile) {
-    person.append($('<a>').addClass('profile-link').attr('href', data.profile).attr('target', '_blank').text('профиль'));
+    person.append($('<a>').addClass('profile-link').attr('href', data['profile' + window.lang]).attr('target', '_blank').text(messages['Profile'][window.lang]));
   }
   return person;
 };
 
 
-},{}],19:[function(require,module,exports){
+},{}],20:[function(require,module,exports){
 window.parseData = function(data) {
   var dom, persons;
   dom = $(data);
@@ -18453,21 +18539,13 @@ window.getPersonName = function(pid) {
 window.getPersonTitle = function(pid) {
   var p;
   p = getPersonData(pid);
-  if (lang === 'ru') {
-    return p.titleru;
-  } else {
-    return p.titleen;
-  }
+  return p['title' + window.lang];
 };
 
 window.getPersonDescription = function(pid) {
   var p;
   p = getPersonData(pid);
-  if (lang === 'ru') {
-    return p.descriptionru;
-  } else {
-    return p.descriptionen;
-  }
+  return p['description' + window.lang];
 };
 
 window.getPersonID = function(pid) {
@@ -18541,4 +18619,4 @@ window.showSegment = function(els, broz) {
 };
 
 
-},{}]},{},[16]);
+},{}]},{},[17]);

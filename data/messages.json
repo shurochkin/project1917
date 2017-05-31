@@ -1,0 +1,62 @@
+{
+  "Title" : {
+    "id" : "Title",
+    "ru" : "Опасные связи. Карта королевских династий Европы",
+    "en" : "Dangerous Liaisons. Map of of the Royal dynasties of Europe"
+  },
+  "Dynasties" : {
+    "id" : "Dynasties",
+    "ru" : "Династии",
+    "en" : "Dynasties"
+  },
+  "GreatBritain" : {
+    "id" : "GreatBritain",
+    "ru" : "Великобритания",
+    "en" : "Great Britain"
+  },
+  "Germany" : {
+    "id" : "Germany",
+    "ru" : "Германия",
+    "en" : "Germany"
+  },
+  "Russia" : {
+    "id" : "Russia",
+    "ru" : "Россия",
+    "en" : "Russia"
+  },
+  "DenmarkGreece" : {
+    "id" : "DenmarkGreece",
+    "ru" : "Дания и Греция",
+    "en" : "Denmark and Greece"
+  },
+  "Description" : {
+    "id" : "Description",
+    "ru" : "Кто кому кем приходится",
+    "en" : "Who is who"
+  },
+  "MostInteresting" : {
+    "id" : "MostInteresting",
+    "ru" : "Самые интересные связи",
+    "en" : "The most interesting connections"
+  },
+  "NowYouSee" : {
+    "id" : "NowYouSee",
+    "ru" : "Сейчас вы видите только близких родственников героя. Выберите любого другого героя на карте, чтобы узнать как они связаны",
+    "en" : "Now you see only close relatives of the character. Select any another character on the map to see how they are connected"
+  },
+  "Clear" : {
+    "id" : "Clear",
+    "ru" : "Очистить выбор ",
+    "en" : "Clear selection"
+  },
+  "Profile" : {
+    "id" : "Profile",
+    "ru" : "профиль",
+    "en" : "profile"
+  },
+  "image" : {
+    "id" : "image",
+    "ru" : "https://project1917.ru/infographic-static/img/og.png",
+    "en" : "https://project1917.com/infographic-static/img/og_en.png"
+  }
+}

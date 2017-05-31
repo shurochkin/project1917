@@ -480,12 +480,12 @@ window.getPersonName = (pid)->
 
 window.getPersonTitle = (pid)->
   p = getPersonData(pid)
-  return if lang is 'ru' then p.titleru else p.titleen
+  return p['title'+window.lang]
 # ==============================================
 
 window.getPersonDescription = (pid)->
   p = getPersonData(pid)
-  return if lang is 'ru' then p.descriptionru else p.descriptionen
+  return p['description'+window.lang]
 # ==============================================
 
 window.getPersonID = (pid)->
