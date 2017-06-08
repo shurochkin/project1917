@@ -17593,7 +17593,7 @@ if (lang === 'en') {
 
 $('body').addClass(lang);
 
-window.svgPath = '/infographic-static/img/export-scheme-ru.svg';
+window.svgPath = '/infographic-static/img/export-scheme-' + lang + '.svg';
 
 window.messages = require('./../../data/messages.json');
 

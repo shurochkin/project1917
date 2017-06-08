@@ -11,9 +11,9 @@ window.lang = if window.serverlang? then window.serverlang else if document.loca
 
 if lang is 'en'
   src = $('#header img').attr 'src'
-  $('#header img').attr 'src', src.replace('ru','en')
+  $('#header img').attr 'src', src.replace('ru', 'en')
 $('body').addClass(lang)
-window.svgPath = '/infographic-static/img/export-scheme-ru.svg'
+window.svgPath = '/infographic-static/img/export-scheme-' + lang + '.svg'
 window.messages = require './../../data/messages.json'
 window.flags = require './../../data/flags.json'
 window.persons_data = require './../../data/persons.json'
@@ -23,8 +23,8 @@ window.personSelected2 = null
 window.land = null
 window.graph = {}
 window.personLinks = []
-window.name_id = 'name'+window.lang
-window.title_id = 'title'+window.lang
+window.name_id = 'name' + window.lang
+window.title_id = 'title' + window.lang
 
 # ==============================================
 
@@ -35,18 +35,18 @@ window.doShowName = (el, fs, y) ->
 #    console.log el, 'name', fs, y
     $(el).find('rect').attr('y', y - 40)
 
-    if $(el).find('text[id="{'+name_id+'}"][font-size="12"] tspan').length > 1
-      $(el).find('text[id="{'+name_id+'}"][font-size="12"] tspan').each ->
+    if $(el).find('text[id="{' + name_id + '}"][font-size="12"] tspan').length > 1
+      $(el).find('text[id="{' + name_id + '}"][font-size="12"] tspan').each ->
         y = $(@).attr('y')
         $(@).attr('y', y - 12)
       $(el).find('rect').attr('height', toInt($(el).find('rect').attr('height')) + 7)
 
     else
-      $(el).find('text[id="{'+name_id+'}"][font-size="12"] tspan').attr('y', y - 25)
+      $(el).find('text[id="{' + name_id + '}"][font-size="12"] tspan').attr('y', y - 25)
 
-    $(el).find('text[id="{'+title_id+'}"] tspan').attr('y', y - 10)
+    $(el).find('text[id="{' + title_id + '}"] tspan').attr('y', y - 10)
 
-    if $(el).find('text[id="{'+title_id+'}"] tspan').text().length > 0
+    if $(el).find('text[id="{' + title_id + '}"] tspan').text().length > 0
       $(el).find('rect').attr('height', toInt($(el).find('rect').attr('height')) + 15)
 
 
@@ -158,13 +158,13 @@ window.showPath = (path) ->
 
   showLine = (id1, id2) ->
     selector = '#lines > g[id$="-' + id1 + '-' + id2 + '"], #lines > g[id$="-' + id2 + '-' + id1 + '"]'
-#    console.log selector
+    #    console.log selector
     l = $(selector).show().length
-#    console.log 'showLine 1:', selector, l
+    #    console.log 'showLine 1:', selector, l
     if l is 0
       selector = '#m-lines > g[id$="-' + id1 + '-' + id2 + '"], #m-lines > g[id$="-' + id2 + '-' + id1 + '"]'
       l2 = $(selector).show().length
-#      console.log 'showLine 2:', selector, l2
+      #      console.log 'showLine 2:', selector, l2
       return l2
 
     return l
@@ -186,13 +186,13 @@ window.showPath = (path) ->
     if p1.father == id2 or p1.mother == id2
 # Потомок и предок. Добавляем всех сиблингов от первого до нужного.
       console.log id1 + ' is ancestor of ' + id2
-      extra = [ p2 ].concat(persons_data.filter((e) ->
+      extra = [p2].concat(persons_data.filter((e) ->
         (e.father == id2 or e.mother == id2) and e.posinbroz <= p1.posinbroz
       ).sort(birthOrder))
     else if p2.father == id1 or p2.mother == id1
 # Предок и потомок. Аналогично предыдущему.
       console.log id2 + ' is ancestor of ' + id1
-      extra = [ p1 ].concat(persons_data.filter((e) ->
+      extra = [p1].concat(persons_data.filter((e) ->
         (e.father == id1 or e.mother == id1) and e.posinbroz <= p2.posinbroz
       ).sort(birthOrder))
     else if p1.father > 0 and p1.father == p2.father or p1.mother > 0 and p1.mother == p2.mother
@@ -206,18 +206,18 @@ window.showPath = (path) ->
     else
 # Тут не очень красивое соединение через первого ребёнка. Но непонятно, как сделать лучше.
       console.log id1 + ' is spouse of ' + id2
-#      console.log 'showLine:', showLine(id1, id2)
+      #      console.log 'showLine:', showLine(id1, id2)
       showLine(id1, id2)
 
-#      extra = []
-#      extra = [ p1 ].concat(persons_data.filter((e) ->
-#        (e.father == id1 or e.mother == id1) and e.posinbroz == 0
-#      ), [ p2 ])
+    #      extra = []
+    #      extra = [ p1 ].concat(persons_data.filter((e) ->
+    #        (e.father == id1 or e.mother == id1) and e.posinbroz == 0
+    #      ), [ p2 ])
     e = 1
     while e < extra.length
       showLine extra[e - 1].id, extra[e].id
-      $('g#person-'+extra[e - 1].id).show().removeClass('person-mini flag-0')
-      $('g#person-'+extra[e].id).show().removeClass('person-mini flag-0')
+      $('g#person-' + extra[e - 1].id).show().removeClass('person-mini flag-0')
+      $('g#person-' + extra[e].id).show().removeClass('person-mini flag-0')
       ++e
     ++i
   return
@@ -245,7 +245,7 @@ window.init = ->
     dataType: "jsonp"
     crossDomain: true
 
-  $.getJSON 'https://graph.facebook.com/'+url, (data)->
+  $.getJSON 'https://graph.facebook.com/' + url, (data)->
     if data.share.share_count > 0
       $('#fb-counter').text(data.share.share_count).addClass('show')
 
@@ -270,20 +270,20 @@ window.init = ->
     siblings = persons_data.filter((child) ->
       child.id != e.id and (e.father > 0 and child.father == e.father or e.mother > 0 and child.mother == e.mother)
     ).map(getId)
-#    console.log e.id, e.nameru, siblings
+    #    console.log e.id, e.nameru, siblings
     graph[e.id] =
       color: 0
       links: links.concat(children, siblings)
-#    console.log(e.id + " " + e.name + " " + graph[e.id].links + " children " + children + " siblings " + siblings);
+    #    console.log(e.id + " " + e.name + " " + graph[e.id].links + " children " + children + " siblings " + siblings);
     return
 
-# TEST
-#  '-1,0;1,1;1,2;1,3;2,3;3,4;1,29;45,2;50,114;38,92;92,65'.split(/;/g).forEach (pair) ->
-#    ids = pair.split(/,/)
-#    console.log 'Path ' + pair + ' [' + findPath(ids[0] * 1, ids[1] * 1) + ']'
-#    return
+  # TEST
+  #  '-1,0;1,1;1,2;1,3;2,3;3,4;1,29;45,2;50,114;38,92;92,65'.split(/;/g).forEach (pair) ->
+  #    ids = pair.split(/,/)
+  #    console.log 'Path ' + pair + ' [' + findPath(ids[0] * 1, ids[1] * 1) + ']'
+  #    return
 
-#  console.log graph
+  #  console.log graph
   return
 
 # ==============================================
@@ -298,7 +298,7 @@ window.globalInit = (data)->
     data.attr('style', 'display: inline; width: inherit; min-width: inherit; max-width: inherit; height: inherit; min-height: inherit; max-height: inherit;')
     #    console.log $(data.children()[1]).children()
 
-#    console.log data, svg
+    #    console.log data, svg
     #    parseData(data)
 
     data = parseData(data)
@@ -427,17 +427,17 @@ window.initZoom = ->
         when 'vk'
           vkc = $('#vk-counter').text()
           vk = if vkc isnt '' then toInt(vkc) else 0
-          $('#vk-counter').text( vk + 1 )
+          $('#vk-counter').text(vk + 1)
           window.open 'https://vk.com/share.php?url=' + url + '&title=' + title + '&description=' + text + '&image=' + image, '_blank'
         when 'fb'
           fbc = $('#fb-counter').text()
           vk = if fbc isnt '' then toInt(fbc) else 0
-          $('#fb-counter').text( vk + 1 )
+          $('#fb-counter').text(vk + 1)
           window.open 'https://www.facebook.com/sharer.php?src=sp&u=' + url + '&r=' + Math.random(), '_blank'
         when 'tw'
           window.open 'http://twitter.com/share?&url=' + url, '_blank'
-        else return false
-
+        else
+          return false
 
 
   init()
