@@ -144,6 +144,31 @@ module.exports={
     "id" : "image",
     "ru" : "https://project1917.ru/infographic-static/img/og.png",
     "en" : "https://project1917.com/infographic-static/img/og_en.png"
+  },
+  "ExploreNetwork" : {
+    "id" : "ExploreNetwork",
+    "ru" : "Читайте сложную схему королевских династий Европы",
+    "en" : "Explore the complex networks of European royal dynasties."
+  },
+  "ScaleToSee" : {
+    "id" : "ScaleToSee",
+    "ru" : "Изменить<br/>масштаб. Чтобы рассмотреть пересечения и портреты",
+    "en" : "Scale. To see connections and portraits."
+  },
+  "SendToSocial" : {
+    "id" : "SendToSocial",
+    "ru" : "Отправить<br/>в соцсеть. Расскажите о находках друзьям и подписчикам",
+    "en" : "Send to<br/>social network. Share your findings with friends and subscribers."
+  },
+  "Profiles" : {
+    "id" : "Profiles",
+    "ru" : "Профили<br/>и характеры. Выберите любого из персонажей и прочтите о нем краткую справку или посмотрите, кем он приходится другим историческим персонам",
+    "en" : "Profiles and characters. Choose any of the characters and read a short summary about them, or see which historical figures they are related to."
+  },
+  "InterestingConnections" : {
+    "id" : "InterestingConnections",
+    "ru" : "Самые интересные связи. Мы уже отобрали для вас несколько любопытных пар, за вами поиск остальных",
+    "en" : "Interesting connections. We have already selected a few curious couples for you, leaving the rest to be discovered."
   }
 }
 },{}],4:[function(require,module,exports){
@@ -17787,6 +17812,7 @@ window.VK = {
 
 window.init = function() {
   console.log('init()');
+  helpInit();
   dinastyInit();
   interesInit();
   resetInit();
@@ -18164,6 +18190,30 @@ window.showOnePerson = function(data, desc) {
     person.append($('<a>').addClass('profile-link').attr('href', data['profile' + window.lang]).attr('target', '_blank').text(messages['Profile'][window.lang]));
   }
   return person;
+};
+
+window.helpInit = function() {
+  var help;
+  $('#manual-button').on('click', manualOpen);
+  help = $('#manual');
+  help.find('header').on('click', manualClose);
+  return help.find('article > div').each(function(i, item) {
+    var id, text;
+    id = $(item).attr('id');
+    text = messages[id][window.lang].split('. ');
+    console.log(text);
+    text[0] = '<h3>' + text[0] + '</h3>';
+    text[1] = text[1] !== void 0 ? '<p>' + text[1] + '</p>' : void 0;
+    return $(item).html(text.join(''));
+  });
+};
+
+window.manualClose = function() {
+  return $('#manual').hide();
+};
+
+window.manualOpen = function() {
+  return $('#manual').show();
 };
 
 

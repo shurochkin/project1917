@@ -235,6 +235,7 @@ window.VK = {
 window.init = ->
   console.log 'init()'
 
+  helpInit()
   dinastyInit()
   interesInit()
   resetInit()

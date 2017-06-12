@@ -230,7 +230,7 @@ body {
   overflow: hidden; }
 
 /* line 15, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
-#preloader {
+#preloader, #manual {
   position: absolute;
   height: 100vh;
   width: 100vw;
@@ -238,32 +238,132 @@ body {
   text-align: center;
   z-index: 100; }
   /* line 22, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
-  #preloader img {
+  #preloader img, #manual img {
     margin: 37vh auto; }
 
-/* line 26, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+/* line 25, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+#manual {
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  font-family: Roboto;
+  z-index: 99; }
+  /* line 30, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  #manual header {
+    z-index: 5;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 32px;
+    height: 32px; }
+    /* line 37, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    #manual header img {
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer; }
+  /* line 44, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  #manual article {
+    z-index: 4;
+    position: relative;
+    width: 100%;
+    height: 100%; }
+  /* line 49, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  #manual article > div {
+    position: absolute;
+    text-align: left; }
+    /* line 52, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    #manual article > div h3 {
+      font-size: 1.3rem;
+      line-height: 1.7rem;
+      margin-top: 0;
+      font-weight: bold; }
+    /* line 56, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    #manual article > div p {
+      font-size: 0.9rem;
+      line-height: 1.4rem; }
+  /* line 58, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  .Mobile #manual, .Tablet #manual {
+    display: none; }
+
+/* line 60, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+.Desktop #manual-button {
+  position: absolute;
+  bottom: 20px;
+  left: -webkit-calc(100vw - 410px);
+  left: calc(100vw - 410px);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  cursor: pointer; }
+  /* line 69, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  .Desktop #manual-button span {
+    display: block;
+    text-align: center;
+    line-height: 1.75; }
+
+/* line 74, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+#ExploreNetwork {
+  top: 15vh;
+  left: 25vw;
+  width: 25vw; }
+
+/* line 79, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+#Profiles {
+  top: 13vh;
+  right: 20px;
+  width: 290px; }
+
+/* line 84, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+#InterestingConnections {
+  top: 70vh;
+  right: 20px;
+  width: 290px; }
+
+/* line 89, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+#ScaleToSee {
+  bottom: 80px;
+  left: 220px;
+  width: 170px;
+  text-align: right !important; }
+  /* line 92, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  .en #ScaleToSee {
+    left: 260px; }
+
+/* line 97, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+#SendToSocial {
+  bottom: 80px;
+  left: 470px;
+  width: 170px; }
+  /* line 100, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  .en #SendToSocial {
+    left: 500px; }
+
+/* line 104, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
 [id^='toggle-'] {
   display: inline-block; }
-  /* line 29, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 107, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   [id^='toggle-'], [id^='toggle-'] img {
     width: 40px;
     height: 40px; }
-  /* line 32, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 110, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   .Desktop [id^='toggle-'] {
     display: none; }
-  /* line 34, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 112, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   [id^='toggle-'][id$='close'] {
     float: left;
     margin: -6px 30px 0 -15px;
     position: relative;
     z-index: 10; }
-  /* line 39, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 117, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   [id^='toggle-'][id$='open'] {
     position: absolute;
     top: 20px;
     right: 20px; }
 
-/* line 46, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+/* line 124, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
 #mobile-div {
   width: -webkit-calc(100vw - 360px);
   width: calc(100vw - 360px);
@@ -272,32 +372,32 @@ body {
   overflow: hidden;
   display: inline-block;
   position: relative; }
-  /* line 48, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 126, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   .Tablet #mobile-div, .Mobile #mobile-div {
     width: 100vw; }
 
-/* line 58, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+/* line 136, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
 #header {
   position: absolute;
   bottom: 17px;
   left: 15px;
   display: inline-block; }
-  /* line 63, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 141, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   .en #header {
     bottom: 14px; }
-  /* line 65, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 143, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #header img {
     height: 120px;
     position: relative; }
-  /* line 68, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 146, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   .Mobile #header, .Tablet #header {
     bottom: 45px;
     left: 0; }
-    /* line 71, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 149, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     .Mobile #header img, .Tablet #header img {
       height: 80px; }
 
-/* line 74, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+/* line 152, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
 #zoompad {
   position: absolute;
   left: 307px;
@@ -321,10 +421,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 4px; }
-  /* line 87, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 165, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   .en #zoompad {
     left: 342px; }
-  /* line 89, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 167, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   .Mobile #zoompad, .Tablet #zoompad {
     left: 0;
     bottom: 137px;
@@ -332,27 +432,27 @@ body {
     height: calc(58px * .75);
     padding: 0 -webkit-calc(4px * .75);
     padding: 0 calc(4px * .75); }
-  /* line 95, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 173, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #zoompad [id^="zoom-"] {
     width: 50px;
     height: 50px;
     cursor: pointer;
     margin-right: 5px; }
-    /* line 100, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 178, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #zoompad [id^="zoom-"] img {
       width: 100%;
       height: 100%; }
-    /* line 103, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 181, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #zoompad [id^="zoom-"]:last-child {
       margin-right: 0; }
-    /* line 105, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 183, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     .Mobile #zoompad [id^="zoom-"], .Tablet #zoompad [id^="zoom-"] {
       width: -webkit-calc(50px * .75);
       width: calc(50px * .75);
       height: -webkit-calc(50px * .75);
       height: calc(50px * .75); }
 
-/* line 109, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+/* line 187, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
 #share-social {
   position: absolute;
   left: 435px;
@@ -377,13 +477,13 @@ body {
           align-items: center;
   z-index: 2;
   padding: 0 4px; }
-  /* line 123, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 201, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   .Desktop #share-social {
     left: 435px; }
-  /* line 125, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 203, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   .en.Desktop #share-social {
     left: 470px; }
-  /* line 128, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 206, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   .Mobile #share-social, .Tablet #share-social {
     left: 0;
     bottom: 0;
@@ -391,26 +491,26 @@ body {
     height: calc(58px * .75);
     padding: 0 -webkit-calc(4px * .75);
     padding: 0 calc(4px * .75); }
-  /* line 135, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 213, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #share-social > div {
     width: 50px;
     height: 50px;
     cursor: pointer;
     margin-right: 5px; }
-    /* line 140, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 218, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #share-social > div img {
       width: 100%;
       height: 100%; }
-    /* line 143, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 221, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #share-social > div:last-child {
       margin-right: 0; }
-    /* line 145, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 223, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     .Mobile #share-social > div, .Tablet #share-social > div {
       width: -webkit-calc(50px * .75);
       width: calc(50px * .75);
       height: -webkit-calc(50px * .75);
       height: calc(50px * .75); }
-  /* line 148, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 226, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #share-social > div[id$="-counter"] {
     width: auto;
     height: 50px;
@@ -419,15 +519,15 @@ body {
     margin-right: 0;
     font-size: 25px;
     line-height: 50px; }
-    /* line 155, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 233, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     .Mobile #share-social > div[id$="-counter"], .Tablet #share-social > div[id$="-counter"] {
       font-size: 18px;
       line-height: 50px; }
-    /* line 157, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 235, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #share-social > div[id$="-counter"].show {
       margin-right: 10px; }
 
-/* line 161, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+/* line 239, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
 #panel {
   width: 360px;
   height: 100vh;
@@ -438,17 +538,17 @@ body {
   overflow-y: scroll;
   z-index: 10;
   margin-left: -4px; }
-  /* line 171, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 249, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #panel form {
     padding: 20px 30px 30px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
-  /* line 174, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 252, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #panel h3 {
     font-weight: 400;
     margin-top: 0;
     font-size: 20px;
     line-height: 28px; }
-  /* line 178, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 256, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   .Tablet #panel, .Mobile #panel {
     -webkit-transition: right 0.3s ease;
     transition: right 0.3s ease;
@@ -457,23 +557,23 @@ body {
     position: absolute;
     top: 0;
     right: -370px; }
-    /* line 184, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 262, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     .Tablet #panel.open, .Mobile #panel.open {
       right: 0; }
 
-/* line 187, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+/* line 265, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
 #dinasty, #description {
   min-height: 300px; }
 
-/* line 191, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+/* line 269, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
 #pair-desc {
   margin-bottom: 20px; }
 
-/* line 195, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+/* line 273, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
 #land-switcher {
   list-style-type: none;
   padding: 0; }
-  /* line 198, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 276, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #land-switcher li {
     position: relative;
     height: 38px;
@@ -481,13 +581,13 @@ body {
     background: none;
     padding: 8px 0;
     cursor: pointer; }
-    /* line 205, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 283, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #land-switcher li:before, #land-switcher li:after {
       cursor: pointer;
       position: absolute;
       display: block;
       content: ''; }
-    /* line 210, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 288, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #land-switcher li:before {
       width: 38px;
       height: 38px;
@@ -496,7 +596,7 @@ body {
       top: 0;
       left: 0;
       z-index: 1; }
-    /* line 218, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 296, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #land-switcher li:after {
       width: 93px;
       height: 8px;
@@ -507,10 +607,10 @@ body {
       top: 15px;
       left: 15px;
       z-index: 0; }
-    /* line 229, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 307, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #land-switcher li input[type="radio"] {
       display: none; }
-    /* line 231, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 309, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #land-switcher li label {
       cursor: pointer;
       position: relative;
@@ -520,13 +620,13 @@ body {
       vertical-align: middle;
       margin: 0;
       padding-left: 120px; }
-      /* line 239, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+      /* line 317, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
       #land-switcher li label:before, #land-switcher li label:after {
         position: absolute;
         display: block;
         content: '';
         z-index: 1; }
-      /* line 244, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+      /* line 322, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
       #land-switcher li label:before {
         width: 34px;
         height: 34px;
@@ -535,7 +635,7 @@ body {
         border-radius: 50%;
         top: -6px;
         left: 2px; }
-      /* line 252, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+      /* line 330, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
       #land-switcher li label:after {
         width: 18px;
         height: 18px;
@@ -543,44 +643,44 @@ body {
         border-radius: 50%;
         top: 2px;
         left: 10px; }
-    /* line 262, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 340, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #land-switcher li.en:after {
       background-color: #F66E6E; }
-    /* line 265, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 343, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #land-switcher li.en label:before {
       border-color: #F66E6E; }
-    /* line 269, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 347, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #land-switcher li.en.current label:after {
       background: #F66E6E; }
-    /* line 262, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 340, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #land-switcher li.gr:after {
       background-color: #A0E159; }
-    /* line 265, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 343, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #land-switcher li.gr label:before {
       border-color: #A0E159; }
-    /* line 269, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 347, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #land-switcher li.gr.current label:after {
       background: #A0E159; }
-    /* line 262, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 340, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #land-switcher li.ru:after {
       background-color: #4990E2; }
-    /* line 265, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 343, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #land-switcher li.ru label:before {
       border-color: #4990E2; }
-    /* line 269, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 347, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #land-switcher li.ru.current label:after {
       background: #4990E2; }
-    /* line 262, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 340, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #land-switcher li.de:after {
       background-color: #F8C449; }
-    /* line 265, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 343, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #land-switcher li.de label:before {
       border-color: #F8C449; }
-    /* line 269, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 347, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #land-switcher li.de.current label:after {
       background: #F8C449; }
 
-/* line 272, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+/* line 350, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
 #clear-selection {
   background: none;
   border-radius: 19px;
@@ -592,18 +692,18 @@ body {
   display: block;
   width: 100%;
   height: 38px; }
-  /* line 282, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 360, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #clear-selection:hover {
     color: #fff;
     background: #4A4A4A; }
 
-/* line 286, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+/* line 364, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
 #description {
   display: none; }
-  /* line 288, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 366, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #description.show-link {
     position: relative; }
-    /* line 290, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 368, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #description.show-link:before {
       position: absolute;
       display: block;
@@ -614,22 +714,22 @@ body {
       left: 24px;
       background: #dedede;
       border: 2px solid white; }
-  /* line 300, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 378, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #description #person1, #description #person2 {
     clear: both;
     display: block;
     overflow: hidden;
     margin: 0 0 10px; }
-  /* line 305, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 383, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #description #person1 {
     margin-bottom: 22px; }
-  /* line 307, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 385, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #description #title {
     color: #4A4A4A;
     font-family: Helvetica;
     font-size: 10px;
     line-height: 12px; }
-  /* line 311, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 389, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #description .profile-link {
     background: none;
     border-radius: 19px;
@@ -647,38 +747,38 @@ body {
     background: url("/infographic-static/img/play.svg") no-repeat 0 0;
     background-size: 6px;
     background-position: 95% 3px; }
-  /* line 328, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 406, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #description p {
     margin: 0; }
-    /* line 330, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 408, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #description p.name {
       font-size: 16px;
       line-height: 20px; }
-      /* line 332, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+      /* line 410, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
       #description p.name a, #description p.name a:link, #description p.name a:visited {
         color: #4796b5; }
-      /* line 334, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+      /* line 412, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
       #description p.name a:hover {
         color: #418de1; }
-    /* line 336, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 414, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #description p.title {
       font-size: 10px;
       line-height: 12px;
       color: #4A4A4A; }
-    /* line 340, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 418, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #description p.note {
       color: #9B9B9B;
       font-size: 14px;
       line-height: 20px;
       margin-bottom: 10px; }
-  /* line 344, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 422, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #description .img {
     position: relative;
     margin-right: 12px;
     float: left;
     width: 56px;
     height: 56px; }
-    /* line 350, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 428, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #description .img img {
       width: 40px;
       height: 40px;
@@ -687,7 +787,7 @@ body {
       position: absolute;
       top: 8px;
       left: 8px; }
-    /* line 358, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 436, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #description .img:before, #description .img:after {
       position: absolute;
       display: block;
@@ -695,13 +795,13 @@ body {
       z-index: 2;
       top: 0;
       left: 0; }
-    /* line 365, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 443, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #description .img:before {
       width: 56px;
       height: 56px;
       border: 8px solid white;
       border-radius: 50%; }
-    /* line 370, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 448, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #description .img:after {
       width: 52px;
       height: 52px;
@@ -709,20 +809,20 @@ body {
       border-radius: 50%;
       top: 2px;
       left: 2px; }
-    /* line 379, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 457, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #description .img.en:after {
       border-color: #F66E6E; }
-    /* line 379, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 457, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #description .img.gr:after {
       border-color: #A0E159; }
-    /* line 379, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 457, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #description .img.ru:after {
       border-color: #4990E2; }
-    /* line 379, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+    /* line 457, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
     #description .img.de:after {
       border-color: #F8C449; }
 
-/* line 383, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+/* line 461, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
 #interes h4 {
   padding: 0 20px;
   font-size: 16px;
@@ -730,19 +830,19 @@ body {
   font-weight: normal;
   margin: 10px 0 20px; }
 
-/* line 389, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+/* line 467, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
 #interes .pair {
   position: relative;
   margin-bottom: 20px;
   cursor: pointer; }
 
-/* line 393, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+/* line 471, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
 #interes .person {
   display: inline-block;
   vertical-align: top;
   text-align: center;
   width: 50%; }
-  /* line 398, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 476, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #interes .person:before {
     position: absolute;
     display: block;
@@ -754,26 +854,26 @@ body {
     background: #dedede;
     border: 2px solid white; }
 
-/* line 408, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+/* line 486, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
 #interes p {
   margin: 0; }
-  /* line 410, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 488, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #interes p.name {
     font-size: 12px;
     line-height: 14px; }
-  /* line 412, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 490, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #interes p.title {
     font-size: 10px;
     line-height: 12px;
     color: #4A4A4A; }
 
-/* line 415, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+/* line 493, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
 #interes .img {
   position: relative;
   margin: 0 auto;
   width: 82px;
   height: 82px; }
-  /* line 420, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 498, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #interes .img img {
     width: 66px;
     height: 66px;
@@ -782,7 +882,7 @@ body {
     position: absolute;
     top: 8px;
     left: 8px; }
-  /* line 428, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 506, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #interes .img:before, #interes .img:after {
     position: absolute;
     display: block;
@@ -790,14 +890,14 @@ body {
     z-index: 2;
     top: 0;
     left: 0; }
-  /* line 435, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 513, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #interes .img:before {
     width: 82px;
     height: 82px;
     border: 8px solid white;
     border-radius: 50%;
     background: white; }
-  /* line 441, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 519, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #interes .img:after {
     width: 78px;
     height: 78px;
@@ -805,40 +905,40 @@ body {
     border-radius: 50%;
     top: 2px;
     left: 2px; }
-  /* line 450, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 528, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #interes .img.en:after {
     border-color: #F66E6E; }
-  /* line 450, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 528, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #interes .img.gr:after {
     border-color: #A0E159; }
-  /* line 450, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 528, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #interes .img.ru:after {
     border-color: #4990E2; }
-  /* line 450, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 528, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   #interes .img.de:after {
     border-color: #F8C449; }
 
-/* line 453, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+/* line 531, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
 #m-lines > g {
   display: none; }
 
-/* line 456, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+/* line 534, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
 [id^="person-"] {
   -webkit-transition: matrix 1s ease;
   transition: matrix 1s ease; }
-  /* line 458, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+  /* line 536, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
   [id^="person-"]:hover {
     cursor: pointer; }
 
-/* line 462, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+/* line 540, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
 .person-mini image {
   display: none; }
 
-/* line 466, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+/* line 544, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
 .flag-0 use:last-child {
   stroke: #dedede; }
 
-/* line 469, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
+/* line 547, /Users/shurochkin/Projects/1917/src/sass/partials/_layout.sass */
 #debug {
   padding: 10px;
   display: none; }

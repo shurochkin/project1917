@@ -183,3 +183,21 @@ window.showOnePerson = (data, desc = false)->
   #  desc.find('.title').text('').text(data.title)
   #  desc.find('.img').attr('src', data.image)
   person
+
+window.helpInit = ()->
+  $('#manual-button').on 'click', manualOpen
+  help = $('#manual')
+  help.find('header').on 'click', manualClose
+  help.find('article > div').each (i, item)->
+    id = $(item).attr('id')
+    text = messages[id][window.lang].split('. ')
+    console.log(text)
+    text[0] = '<h3>'+ text[0] + '</h3>'
+    text[1] = if text[1] isnt undefined then '<p>'+ text[1] + '</p>'
+    $(item).html(text.join(''))
+
+window.manualClose = () ->
+  $('#manual').hide()
+
+window.manualOpen = () ->
+  $('#manual').show()
