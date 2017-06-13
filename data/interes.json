@@ -1,12 +1,5 @@
 [
   {
-    "id1": 46,
-    "id2": 133,
-    "show": 1,
-    "descriptionru": "Филипп, герцог Эдинбургский (супруг королевы Великобритании Елизаветы II), является двоюродным братом великого князя Дмитрия Павловича (соучастника убийства Григория Распутина) — отец Филиппа Андрей и мать Дмитрия Александра были детьми короля Греции Георга I и великой княжны Ольги Константиновны.",
-    "descriptionen": "Philip, the Duke of Edinburgh (and the husband of Queen Elizabeth II of Great Britain), is the cousin of Grand Duke Dmitry Pavlovich (an accomplice in the Grigori Rasputin’s murder). Philip's father Andrew and Dmitry's mother Alexandra were the children of King George I of Greece and Grand Duchess Olga Konstantinovna."
-  },
-  {
     "id1": 22,
     "id2": 81,
     "show": 1,
@@ -14,63 +7,81 @@
     "descriptionen": "Wilhelm II (the last German emperor and King of Prussia) is the cousin of Alexandra Feodorovna (the last Russian  Empress). Wilhelm II’s mother Victoria and Alexandra Feodorovna’s mother Alice were the children of Queen Victoria and Prince Albert."
   },
   {
-    "id1": 95,
+    "id1": 28,
     "id2": 81,
-    "show": 1,
-    "links": "93,91,127,97,96,29,4,5,137,80",
-    "descriptionru": "Елизавета II (царствующая королева Великобритании) является двоюродной внучатой племянницей Александры Федоровны (последней российской императрицы) — дедушка Елизаветы II Георг V был двоюродным братом Александры Федоровны."
+    "descriptionru": "Первой кандидаткой на роль невесты Альберта Виктора в 1889 году становится будущая императрица России Александра Федоровна, но она отказывается от помолвки.",
+    "descriptionen": "The first candidate for the role of bride of Albert Victor in 1889 was to be the future Empress of Russia Alexandra Feodorovna, but she turned down this engagement."
   },
   {
-    "id1": 95,
-    "id2": 82,
+    "id1": 28,
+    "id2": 30,
+    "descriptionru": "В 1891 году состоялась помолвка Альберта Виктора и Марии Текской, но брак не был заключен из-за скоропостижной смерти герцога. ",
+    "descriptionen": "In 1891 the engagement of Albert Victor and Mary of Teck took place, but the marriage was not concluded, due to the sudden death of the Duke.In 1891 the engagement of Albert Victor and Mary of Teck took place, but the marriage was not concluded, due to the sudden death of the Duke."
+  },
+  {
+    "id1": 30,
+    "id2": 28,
+    "descriptionru": "В 1891 году состоялась помолвка Альберта Виктора и Марии Текской, но брак не был заключен из-за скоропостижной смерти герцога. ",
+    "descriptionen": "In 1891 the engagement of Albert Victor and Mary of Teck took place, but the marriage was not concluded, due to the sudden death of the Duke.In 1891 the engagement of Albert Victor and Mary of Teck took place, but the marriage was not concluded, due to the sudden death of the Duke."
+  },
+  {
+    "id1": 46,
+    "id2": 133,
     "show": 1,
-    "descriptionru": "Елизавета II (королева Великобритании) является двоюродной внучатой племянницей Николая II (последнего российского императора) — дедушка Елизаветы II Георг V был двоюродным братом Николая II."
+    "descriptionru": "Филипп, герцог Эдинбургский (супруг королевы Великобритании Елизаветы II), является двоюродным братом великого князя Дмитрия Павловича (соучастника убийства Григория Распутина) — отец Филиппа Андрей и мать Дмитрия Александра были детьми короля Греции Георга I и великой княжны Ольги Константиновны.",
+    "descriptionen": "Philip, the Duke of Edinburgh (and the husband of Queen Elizabeth II of Great Britain), is the cousin of Grand Duke Dmitry Pavlovich (an accomplice in the Grigori Rasputin’s murder). Philip's father Andrew and Dmitry's mother Alexandra were the children of King George I of Greece and Grand Duchess Olga Konstantinovna."
+  },
+  {
+    "id1": 81,
+    "id2": 28,
+    "descriptionru": "Первой кандидаткой на роль невесты Альберта Виктора в 1889 году становится будущая императрица России Александра Федоровна, но она отказывается от помолвки.",
+    "descriptionen": "The first candidate for the role of bride of Albert Victor in 1889 was to be the future Empress of Russia Alexandra Feodorovna, but she turned down this engagement."
   },
   {
     "id1": 86,
     "id2": 87,
     "show": 1,
     "links": "85,107,106,84,10,15,76,77,32,130",
-    "descriptionru": "Виктория Мелита, жена Кирилла Владимировича, одновременно является его   двоюродной сестрой — мать Виктории Мелиты Мария Александровна и отец Кирилла Владимировича Владимир Александрович были детьми Александра II и Марии Александровны."
+    "descriptionru": "Виктория Мелита, жена Кирилла Владимировича, одновременно является его   двоюродной сестрой — мать Виктории Мелиты Мария Александровна и отец Кирилла Владимировича Владимир Александрович были детьми Александра II и Марии Александровны.",
+    "descriptionen": "Victoria Melita, the wife of Kirill Vladimirovich, is also his cousin. Victoria Melita’s mother Maria Alexandrovna and Kirill Vladimirovich's father Vladimir Alexandrovich were the children of Alexander II and Maria Alexandrovna."
   },
   {
-    "id1": 28,
+    "id1": 95,
     "id2": 81,
-    "descriptionru": "Первой кандидаткой на роль невесты Альберта Виктора в 1889 году становится будущая императрица России Александра Федоровна, но она отказывается от помолвки."
+    "show": 1,
+    "links": "93,91,127,97,96,29,4,5,137,80",
+    "descriptionru": "Елизавета II (царствующая королева Великобритании) является двоюродной внучатой племянницей Александры Федоровны (последней российской императрицы) — дедушка Елизаветы II Георг V был двоюродным братом Александры Федоровны.",
+    "descriptionen": "Elizabeth II (the reigning queen of Great Britain) is the first cousin twice removed of Alexandra Feodorovna (the last Russian empress). Elizabeth II’s grandfather George V was Alexandra Feodorovna’s cousin."
   },
   {
-    "id1": 81,
-    "id2": 28,
-    "descriptionru": "Первой кандидаткой на роль невесты Альберта Виктора в 1889 году становится будущая императрица России Александра Федоровна, но она отказывается от помолвки."
-  },
-  {
-    "id1": 28,
-    "id2": 30,
-    "descriptionru": "В 1891 году состоялась помолвка Альберта Виктора и Марии Текской, но брак не был заключен из-за скоропостижной смерти герцога. "
-  },
-  {
-    "id1": 30,
-    "id2": 28,
-    "descriptionru": "В 1891 году состоялась помолвка Альберта Виктора и Марии Текской, но брак не был заключен из-за скоропостижной смерти герцога. "
-  },
-  {
-    "id1": 116,
-    "id2": 115,
-    "descriptionru": "Харальд V — внук Хокона VII."
-  },
-  {
-    "id1": 115,
-    "id2": 116,
-    "descriptionru": "Хокон VII — дед Харальда V. "
-  },
-  {
-    "id1": 114,
-    "id2": 113,
-    "descriptionru": "Маргрете II — внучка Кристиана Х."
+    "id1": 95,
+    "id2": 82,
+    "show": 1,
+    "descriptionru": "Елизавета II (королева Великобритании) является двоюродной внучатой племянницей Николая II (последнего российского императора) — дедушка Елизаветы II Георг V был двоюродным братом Николая II.",
+    "descriptionen": "Elizabeth II (the Queen of Great Britain) is the first cousin twice removed of Nicholas II (the last Russian emperor). Elizabeth II’s grandfather George V was Nicholas II’s cousin."
   },
   {
     "id1": 113,
     "id2": 114,
-    "descriptionru": "Кристиан X — дед Маргрете II."
+    "descriptionru": "Кристиан X — дед Маргрете II.",
+    "descriptionen": "Christian X — grandfather of Margrethe II"
+  },
+  {
+    "id1": 114,
+    "id2": 113,
+    "descriptionru": "Маргрете II — внучка Кристиана Х.",
+    "descriptionen": "Magrethe II — granddaughter of Christian X"
+  },
+  {
+    "id1": 115,
+    "id2": 116,
+    "descriptionru": "Хокон VII — дед Харальда V. ",
+    "descriptionen": "Haakon VII — grandfather of Harald V"
+  },
+  {
+    "id1": 116,
+    "id2": 115,
+    "descriptionru": "Харальд V — внук Хокона VII.",
+    "descriptionen": "Harald V — grandson of Haakon VII"
   }
 ]

@@ -9,13 +9,6 @@ module.exports=[
 },{}],2:[function(require,module,exports){
 module.exports=[
   {
-    "id1": 46,
-    "id2": 133,
-    "show": 1,
-    "descriptionru": "Филипп, герцог Эдинбургский (супруг королевы Великобритании Елизаветы II), является двоюродным братом великого князя Дмитрия Павловича (соучастника убийства Григория Распутина) — отец Филиппа Андрей и мать Дмитрия Александра были детьми короля Греции Георга I и великой княжны Ольги Константиновны.",
-    "descriptionen": "Philip, the Duke of Edinburgh (and the husband of Queen Elizabeth II of Great Britain), is the cousin of Grand Duke Dmitry Pavlovich (an accomplice in the Grigori Rasputin’s murder). Philip's father Andrew and Dmitry's mother Alexandra were the children of King George I of Greece and Grand Duchess Olga Konstantinovna."
-  },
-  {
     "id1": 22,
     "id2": 81,
     "show": 1,
@@ -23,64 +16,82 @@ module.exports=[
     "descriptionen": "Wilhelm II (the last German emperor and King of Prussia) is the cousin of Alexandra Feodorovna (the last Russian  Empress). Wilhelm II’s mother Victoria and Alexandra Feodorovna’s mother Alice were the children of Queen Victoria and Prince Albert."
   },
   {
-    "id1": 95,
+    "id1": 28,
     "id2": 81,
-    "show": 1,
-    "links": "93,91,127,97,96,29,4,5,137,80",
-    "descriptionru": "Елизавета II (царствующая королева Великобритании) является двоюродной внучатой племянницей Александры Федоровны (последней российской императрицы) — дедушка Елизаветы II Георг V был двоюродным братом Александры Федоровны."
+    "descriptionru": "Первой кандидаткой на роль невесты Альберта Виктора в 1889 году становится будущая императрица России Александра Федоровна, но она отказывается от помолвки.",
+    "descriptionen": "The first candidate for the role of bride of Albert Victor in 1889 was to be the future Empress of Russia Alexandra Feodorovna, but she turned down this engagement."
   },
   {
-    "id1": 95,
-    "id2": 82,
+    "id1": 28,
+    "id2": 30,
+    "descriptionru": "В 1891 году состоялась помолвка Альберта Виктора и Марии Текской, но брак не был заключен из-за скоропостижной смерти герцога. ",
+    "descriptionen": "In 1891 the engagement of Albert Victor and Mary of Teck took place, but the marriage was not concluded, due to the sudden death of the Duke.In 1891 the engagement of Albert Victor and Mary of Teck took place, but the marriage was not concluded, due to the sudden death of the Duke."
+  },
+  {
+    "id1": 30,
+    "id2": 28,
+    "descriptionru": "В 1891 году состоялась помолвка Альберта Виктора и Марии Текской, но брак не был заключен из-за скоропостижной смерти герцога. ",
+    "descriptionen": "In 1891 the engagement of Albert Victor and Mary of Teck took place, but the marriage was not concluded, due to the sudden death of the Duke.In 1891 the engagement of Albert Victor and Mary of Teck took place, but the marriage was not concluded, due to the sudden death of the Duke."
+  },
+  {
+    "id1": 46,
+    "id2": 133,
     "show": 1,
-    "descriptionru": "Елизавета II (королева Великобритании) является двоюродной внучатой племянницей Николая II (последнего российского императора) — дедушка Елизаветы II Георг V был двоюродным братом Николая II."
+    "descriptionru": "Филипп, герцог Эдинбургский (супруг королевы Великобритании Елизаветы II), является двоюродным братом великого князя Дмитрия Павловича (соучастника убийства Григория Распутина) — отец Филиппа Андрей и мать Дмитрия Александра были детьми короля Греции Георга I и великой княжны Ольги Константиновны.",
+    "descriptionen": "Philip, the Duke of Edinburgh (and the husband of Queen Elizabeth II of Great Britain), is the cousin of Grand Duke Dmitry Pavlovich (an accomplice in the Grigori Rasputin’s murder). Philip's father Andrew and Dmitry's mother Alexandra were the children of King George I of Greece and Grand Duchess Olga Konstantinovna."
+  },
+  {
+    "id1": 81,
+    "id2": 28,
+    "descriptionru": "Первой кандидаткой на роль невесты Альберта Виктора в 1889 году становится будущая императрица России Александра Федоровна, но она отказывается от помолвки.",
+    "descriptionen": "The first candidate for the role of bride of Albert Victor in 1889 was to be the future Empress of Russia Alexandra Feodorovna, but she turned down this engagement."
   },
   {
     "id1": 86,
     "id2": 87,
     "show": 1,
     "links": "85,107,106,84,10,15,76,77,32,130",
-    "descriptionru": "Виктория Мелита, жена Кирилла Владимировича, одновременно является его   двоюродной сестрой — мать Виктории Мелиты Мария Александровна и отец Кирилла Владимировича Владимир Александрович были детьми Александра II и Марии Александровны."
+    "descriptionru": "Виктория Мелита, жена Кирилла Владимировича, одновременно является его   двоюродной сестрой — мать Виктории Мелиты Мария Александровна и отец Кирилла Владимировича Владимир Александрович были детьми Александра II и Марии Александровны.",
+    "descriptionen": "Victoria Melita, the wife of Kirill Vladimirovich, is also his cousin. Victoria Melita’s mother Maria Alexandrovna and Kirill Vladimirovich's father Vladimir Alexandrovich were the children of Alexander II and Maria Alexandrovna."
   },
   {
-    "id1": 28,
+    "id1": 95,
     "id2": 81,
-    "descriptionru": "Первой кандидаткой на роль невесты Альберта Виктора в 1889 году становится будущая императрица России Александра Федоровна, но она отказывается от помолвки."
+    "show": 1,
+    "links": "93,91,127,97,96,29,4,5,137,80",
+    "descriptionru": "Елизавета II (царствующая королева Великобритании) является двоюродной внучатой племянницей Александры Федоровны (последней российской императрицы) — дедушка Елизаветы II Георг V был двоюродным братом Александры Федоровны.",
+    "descriptionen": "Elizabeth II (the reigning queen of Great Britain) is the first cousin twice removed of Alexandra Feodorovna (the last Russian empress). Elizabeth II’s grandfather George V was Alexandra Feodorovna’s cousin."
   },
   {
-    "id1": 81,
-    "id2": 28,
-    "descriptionru": "Первой кандидаткой на роль невесты Альберта Виктора в 1889 году становится будущая императрица России Александра Федоровна, но она отказывается от помолвки."
-  },
-  {
-    "id1": 28,
-    "id2": 30,
-    "descriptionru": "В 1891 году состоялась помолвка Альберта Виктора и Марии Текской, но брак не был заключен из-за скоропостижной смерти герцога. "
-  },
-  {
-    "id1": 30,
-    "id2": 28,
-    "descriptionru": "В 1891 году состоялась помолвка Альберта Виктора и Марии Текской, но брак не был заключен из-за скоропостижной смерти герцога. "
-  },
-  {
-    "id1": 116,
-    "id2": 115,
-    "descriptionru": "Харальд V — внук Хокона VII."
-  },
-  {
-    "id1": 115,
-    "id2": 116,
-    "descriptionru": "Хокон VII — дед Харальда V. "
-  },
-  {
-    "id1": 114,
-    "id2": 113,
-    "descriptionru": "Маргрете II — внучка Кристиана Х."
+    "id1": 95,
+    "id2": 82,
+    "show": 1,
+    "descriptionru": "Елизавета II (королева Великобритании) является двоюродной внучатой племянницей Николая II (последнего российского императора) — дедушка Елизаветы II Георг V был двоюродным братом Николая II.",
+    "descriptionen": "Elizabeth II (the Queen of Great Britain) is the first cousin twice removed of Nicholas II (the last Russian emperor). Elizabeth II’s grandfather George V was Nicholas II’s cousin."
   },
   {
     "id1": 113,
     "id2": 114,
-    "descriptionru": "Кристиан X — дед Маргрете II."
+    "descriptionru": "Кристиан X — дед Маргрете II.",
+    "descriptionen": "Christian X — grandfather of Margrethe II"
+  },
+  {
+    "id1": 114,
+    "id2": 113,
+    "descriptionru": "Маргрете II — внучка Кристиана Х.",
+    "descriptionen": "Magrethe II — granddaughter of Christian X"
+  },
+  {
+    "id1": 115,
+    "id2": 116,
+    "descriptionru": "Хокон VII — дед Харальда V. ",
+    "descriptionen": "Haakon VII — grandfather of Harald V"
+  },
+  {
+    "id1": 116,
+    "id2": 115,
+    "descriptionru": "Харальд V — внук Хокона VII.",
+    "descriptionen": "Harald V — grandson of Haakon VII"
   }
 ]
 },{}],3:[function(require,module,exports){
@@ -188,7 +199,8 @@ module.exports=[
     "mother": 0,
     "posinbroz": 0,
     "born": "1819-05-23T17:02:55.000Z",
-    "descriptionru": "Урожденная Александрина Виктория, королева Великобритании и Ирландии с 1837 по 1901 год (Викторианская эпоха). Имеет прозвище «бабушка Европы», потому что ее дети вступают в браки с представителями европейских королевских семей. После смерти мужа 40 лет носит траур, за что ее называют Виндзорская Вдова. (1819–1901)"
+    "descriptionru": "Урожденная Александрина Виктория, королева Великобритании и Ирландии с 1837 по 1901 год (Викторианская эпоха). Имеет прозвище «бабушка Европы», потому что ее дети вступают в браки с представителями европейских королевских семей. После смерти мужа 40 лет носит траур, за что ее называют Виндзорская Вдова. (1819–1901)",
+    "descriptionen": "Born Alexandrina Victoria, Queen of Great Britain and Ireland from 1837 to 1901 - the Victorian Era. Nicknamed “The Grandmother of Europe” due to the marital connections of her children with numerous members of European royal families. For 40 years after the death of her husband, Victoria wears mourning dress, for which she is known as “The Widow of Windsor”. (1819–1901)"
   },
   {
     "id": 2,
@@ -205,7 +217,8 @@ module.exports=[
     "mother": 0,
     "posinbroz": 0,
     "born": "1819-08-25T17:02:55.000Z",
-    "descriptionru": "Урожденный Альберт Франц Август Эммануил Саксен-Кобург-Готский. Родоначальник Виндзорской династии. Дважды спасает супругу от смерти. Не участвует в политических делах, занимается просвещением народа. (1819–1861)"
+    "descriptionru": "Урожденный Альберт Франц Август Эммануил Саксен-Кобург-Готский. Родоначальник Виндзорской династии. Дважды спасает супругу от смерти. Не участвует в политических делах, занимается просвещением народа. (1819–1861)",
+    "descriptionen": "Born Albert Franz August Emanuel Saxe-Coburg and Gotha. Founder of the Windsor Dynasty. Twice saves his spouse from death. Does not participate in the politics of his adopted nation, but busies himself with cultural and educational programmes. (1819–1861)"
   },
   {
     "id": 3,
@@ -221,7 +234,8 @@ module.exports=[
     "mother": 1,
     "posinbroz": 0,
     "born": "1840-11-20T17:02:55.000Z",
-    "descriptionru": "Урожденная Виктория Аделаида Мария Луиза Великобританская (Викки), императрица-консорт Германии и королева-консорт Пруссии с марта по июнь 1888 года. Ее критикуют за англофильство, из-за чего после смерти мужа она возвращается на родину. (1840–1901)"
+    "descriptionru": "Урожденная Виктория Аделаида Мария Луиза Великобританская (Викки), императрица-консорт Германии и королева-консорт Пруссии с марта по июнь 1888 года. Ее критикуют за англофильство, из-за чего после смерти мужа она возвращается на родину. (1840–1901)",
+    "descriptionen": "Born Victoria Adelaide Maria Louisa (Vicky), Empress of Germany and Queen-Consort of Prussia from March to June 1888. Criticized for her Anglophile views. As a result of this hostility, she returns to her homeland after the death of her husband. (1840–1901)"
   },
   {
     "id": 4,
@@ -239,7 +253,8 @@ module.exports=[
     "mother": 1,
     "posinbroz": 1,
     "born": "1841-11-08T17:02:55.000Z",
-    "descriptionru": "Король Великобритании и Индии с 1901 по 1910 год. Имеет прозвище «дядя Европы» за родственные связи с европейскими монархами. Его правление ознаменовано ростом феминизма, научно-техническим развитием и укреплением экономики в Англии. (1841–1910)"
+    "descriptionru": "Король Великобритании и Индии с 1901 по 1910 год. Имеет прозвище «дядя Европы» за родственные связи с европейскими монархами. Его правление ознаменовано ростом феминизма, научно-техническим развитием и укреплением экономики в Англии. (1841–1910)",
+    "descriptionen": "King of Great Britain and India from 1901 to 1910. Nicknamed “The Uncle of Europe” due to his family relations with European monarchs. His reign is marked by the growth of feminism, scientific and technological progress and prolonged economic growth in England. (1841–1910)"
   },
   {
     "id": 5,
@@ -255,7 +270,8 @@ module.exports=[
     "mother": 1,
     "posinbroz": 2,
     "born": "1843-04-22T17:02:55.000Z",
-    "descriptionru": "Урожденная Алиса Саксен-Кобург-Готская. Интересуется сестринским делом, во время Австро-прусской войны 1866 года руководит полевыми госпиталями. Основала «Женскую гильдию принцессы Алисы», которая управляет работой военных госпиталей Англии. (1843–1878)"
+    "descriptionru": "Урожденная Алиса Саксен-Кобург-Готская. Интересуется сестринским делом, во время Австро-прусской войны 1866 года руководит полевыми госпиталями. Основала «Женскую гильдию принцессы Алисы», которая управляет работой военных госпиталей Англии. (1843–1878)",
+    "descriptionen": "Born Alice Saxe-Coburg and Gotha. Takes a great interesting in the nursing profession. In charge of a field hospital during the Austro-Prussian War of 1866. Founds the “Women’s Guild of Princess Alice”, which directs the work of military hospitals in England. (1843–1878)"
   },
   {
     "id": 6,
@@ -271,7 +287,8 @@ module.exports=[
     "mother": 1,
     "posinbroz": 4,
     "born": "1844-08-05T17:02:55.000Z",
-    "descriptionru": "Урожденный Альфред Саксен-Кобург-Готский. Мог стать королем Греции, но отклонил корону. Первый среди британских монархов посещает Австралию. (1844–1900)"
+    "descriptionru": "Урожденный Альфред Саксен-Кобург-Готский. Мог стать королем Греции, но отклонил корону. Первый среди британских монархов посещает Австралию. (1844–1900)",
+    "descriptionen": "Born Alfred Saxe-Coburg and Gotha. Could have become the King of Greece, but refuses the crown. The first British royal to visit Australia. (1844–1900)"
   },
   {
     "id": 7,
@@ -289,7 +306,8 @@ module.exports=[
     "mother": 138,
     "posinbroz": 0,
     "born": "1831-10-17T17:02:55.000Z",
-    "descriptionru": "Урожденный Фридрих Вильгельм Николай Карл Прусский. Германский император и король Пруссии с марта по июнь 1888 года. Талантливый полководец, имеет прозвище «наш Фриц». (1831–1888)"
+    "descriptionru": "Урожденный Фридрих Вильгельм Николай Карл Прусский. Германский император и король Пруссии с марта по июнь 1888 года. Талантливый полководец, имеет прозвище «наш Фриц». (1831–1888)",
+    "descriptionen": "Born Friedrich Wilhelm Nikolaus Karl. German Emperor and King of Prussia from March to June 1888. A talented colonel, bore the nickname “Our Fritz”. (1831–1888)"
   },
   {
     "id": 8,
@@ -308,6 +326,7 @@ module.exports=[
     "posinbroz": 1,
     "born": "1844-11-30T17:02:55.000Z",
     "descriptionru": "Урожденная Александра Каролина Мария Шарлотта Луиза Юлия Датская (Аликс). Императрица-консорт Великобритании и Ирландии с 1901 по 1910 год. После замужества становится любимицей светского общества и законодательницей мод. Очень религиозна. (1844–1925)",
+    "descriptionen": "Born Alexandra Caroline Marie Charlotte Louise Julia. Queen of Great Britain and Ireland from 1901 to 1910. After her marriage she becomes a figurehead of high society and a trendsetter in fashion. Very religious. (1844–1925)",
     "profileru": "https://project1917.ru/persons/aleksandra-datskaya"
   },
   {
@@ -325,7 +344,8 @@ module.exports=[
     "marriage": 1,
     "posinbroz": 0,
     "born": "1837-09-11T17:02:55.000Z",
-    "descriptionru": "Урожденный Фридрих Вильгельм Людвиг Карл. Талантливый военнослужащий, командует дивизией во Франко-прусской войне. После череды смертей детей охладевает к жене. (1837–1892)"
+    "descriptionru": "Урожденный Фридрих Вильгельм Людвиг Карл. Талантливый военнослужащий, командует дивизией во Франко-прусской войне. После череды смертей детей охладевает к жене. (1837–1892)",
+    "descriptionen": "Born Friedrich Wilhelm Ludwig Karl. A talented soldier, commands a division in the Franco-Prussian War. After a series of deaths among his children, became estranged from his wife. (1837–1892)"
   },
   {
     "id": 10,
@@ -341,7 +361,8 @@ module.exports=[
     "mother": 18,
     "posinbroz": 1,
     "born": "1853-10-16T17:02:55.000Z",
-    "descriptionru": "Великая княгиня и герцогиня Саксен-Кобург-Готская и Эдинбургская. Дочь императора Александра II. Замужество не приносит ей счастья: английское общество не принимает ее и считает очень надменной. (1853–1920)"
+    "descriptionru": "Великая княгиня и герцогиня Саксен-Кобург-Готская и Эдинбургская. Дочь императора Александра II. Замужество не приносит ей счастья: английское общество не принимает ее и считает очень надменной. (1853–1920)",
+    "descriptionen": "Grand Duchess of Russia and Duchess of Saxe-Coburg-Goth and Edinburgh. Daughter of Emperor Alexander II. Marriage does not bring her happiness – Considered haughty and aloof, she is never accepted in English society. (1853–1920)"
   },
   {
     "id": 11,
@@ -358,7 +379,8 @@ module.exports=[
     "mother": 0,
     "posinbroz": 0,
     "born": "1818-04-07T17:02:55.000Z",
-    "descriptionru": "Король Дании в 1863–1906 годах. В годы его правления в Да­нии на­чинается раз­ра­бот­ка со­ци­аль­но­го за­ко­но­да­тель­ст­ва, в 1891 вводятся пен­сии по ста­рос­ти. Получает прозвище \"тесть Европы\", потому что его дети заключают браки с представителями разных европейских королевских семей. (1818–1906)"
+    "descriptionru": "Король Дании в 1863–1906 годах. В годы его правления в Да­нии на­чинается раз­ра­бот­ка со­ци­аль­но­го за­ко­но­да­тель­ст­ва, в 1891 вводятся пен­сии по ста­рос­ти. Получает прозвище \"тесть Европы\", потому что его дети заключают браки с представителями разных европейских королевских семей. (1818–1906)",
+    "descriptionen": "His reign sees the start of social legislation in Denmark, retirement benefits are introduced in 1891. Receives the nickname “the father-in-law of Europe”, as his children marry representatives of various European royal families. (1818–1906)"
   },
   {
     "id": 12,
@@ -376,7 +398,8 @@ module.exports=[
     "mother": 56,
     "posinbroz": 3,
     "born": "1843-06-02T17:02:55.000Z",
-    "descriptionru": "Король Дании в 1906–1912 годах. Приверженец либеральных взглядов, симпатизирует парламентской системе страны. Ведет простой образ жизни, искренне интересуется политикой. (1843–1912)"
+    "descriptionru": "Король Дании в 1906–1912 годах. Приверженец либеральных взглядов, симпатизирует парламентской системе страны. Ведет простой образ жизни, искренне интересуется политикой. (1843–1912)",
+    "descriptionen": "King of Denmark from 1906 to 1912. An adherent of liberal views, he is very supportive of the parliamentary system in his country. Leads a simple style of life and takes a genuine interest in politics. (1843–1912)"
   },
   {
     "id": 13,
@@ -395,6 +418,7 @@ module.exports=[
     "posinbroz": 4,
     "born": "1847-11-13T17:02:55.000Z",
     "descriptionru": "Урожденная Мария София Фредерика Дагмар (Минни), датская принцесса. Пользуется популярностью в петербургском светском обществе. Возглавляет Российское общество Красного Креста. После революции возвращается в Данию. (1847–1928)",
+    "descriptionen": "Born Marie Sophie Frederikke Dagmar (Minnie), a Danish princess. Enjoys considerable popularity in Petersburg high society. Head of the Russian Red Cross Society. Returns to Denmark after the revolution. (1847–1928)",
     "profileru": "https://project1917.ru/persons/imperatritsa-mariya-fedorovna",
     "profileen": "https://project1917.com/persons/imperatrica_mariya_fedorovna"
   },
@@ -413,6 +437,7 @@ module.exports=[
     "posinbroz": 4,
     "born": "1851-08-21T17:02:55.000Z",
     "descriptionru": "Королева-консорт Греции в 1867–1913 годах. Основывает в Греции военно-морской госпиталь. Открывает медицинские курсы, работает в госпиталях, помогает раненым. (1851–1926)",
+    "descriptionen": "Queen-Consort of Greece from 1867 to 1913. Founds the Military-Naval Hospital in Greece. Organises medical courses, works in hospitals and tends to the wounded. (1851–1926)",
     "profileru": "https://project1917.ru/persons/velikaya-knyazhna-olga-konstantinovna"
   },
   {
@@ -431,7 +456,8 @@ module.exports=[
     "mother": 18,
     "posinbroz": 2,
     "born": "1845-02-25T17:02:55.000Z",
-    "descriptionru": "Российский император с 1891 по 1894 год. Имеет прозвище Миротворец за то, что во время его правления Россия не участвовала ни в одной войне. Консерватор, проводит политику контрреформ и «импортозамещения» по отношению к продуктам питания царского двора. (1845–1894)"
+    "descriptionru": "Российский император с 1891 по 1894 год. Имеет прозвище Миротворец за то, что во время его правления Россия не участвовала ни в одной войне. Консерватор, проводит политику контрреформ и «импортозамещения» по отношению к продуктам питания царского двора. (1845–1894)",
+    "descriptionen": "Russian Emperor from 1891 to 1894. Known as the “Peacemaker”, as not one war was fought during his period on the throne. A reactionary, he pursues a policy of counter-reform and “import-substitution” by insisting the imperial court be supplied exclusively by locally produced food. (1845–1894)"
   },
   {
     "id": 16,
@@ -450,7 +476,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1798-07-12T17:02:55.000Z",
     "descriptionru": "Урожденная Фридерика Луиза Шарлотта Вильгельмина, прусская принцесса. Пользуется популярностью при петербургском дворе, но не в силах переносить климат Петербурга. (1798–1860)",
-    "descriptionen": "Born as Princess Friederike Louise Charlotte Wilhelmina of Prussia. She makes use of her popularity at the St. Petersburg court, but is unable to endure the city’s climate."
+    "descriptionen": "Born Princess Frederikke Louise Charlotte Wilhelmina of Prussia. She makes use of her popularity at the St. Petersburg court, but is unable to endure the city’s climate. (1798–1860)"
   },
   {
     "id": 17,
@@ -469,7 +495,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1818-04-16T17:02:55.000Z",
     "descriptionru": "Российский император с 1855 по 1881 год. Его царствование стало эпохой Великих реформ. Получает прозвище Освободитель за отмену крепостного права в России. Был убит, когда ехал подписывать проект российской Конституции. (1818–1881)",
-    "descriptionen": "Russian emperor from 1855 to 1881. His reign was the era of \"great reforms\". Gets the nickname \"Liberator\" for the abolition of serfdom in Russia. Assassinated as he makes his way to sign the draft of the Russian Constitution."
+    "descriptionen": "Russian Emperor from 1855 to 1881. His reign is the era of \"great reforms\". Dubbed \"the Liberator\" for the abolition of serfdom in Russia. Assassinated as he made his way to sign the draft of the Russian Constitution. (1818–1881)"
   },
   {
     "id": 18,
@@ -488,7 +514,7 @@ module.exports=[
     "posinbroz": 1,
     "born": "1824-07-26T17:02:55.000Z",
     "descriptionru": "Урожденная Максимилиана Вильгельмина Августа София Мария, принцесса Гессенская. Покровительствует российскому Красному Кресту, тратит большие суммы на благотворительность. (1824–1880)",
-    "descriptionen": "Born Princess Augusta Wilhelmine of Hesse-Darmstadt. Becomes the supreme patroness of the Red Cross, which she herself creates."
+    "descriptionen": "Born Princess Augusta Wilhelmina of Hesse-Darmstadt. Patron of the Russian Red Cross,  gives large sums to charity. (1824–1880)"
   },
   {
     "id": 19,
@@ -504,7 +530,7 @@ module.exports=[
     "posinbroz": 1,
     "born": "1827-09-08T17:02:55.000Z",
     "descriptionru": "С 1855 года адмирал, управляющий флотом и Морским министерством. Полностью отменяет телесные наказания в армии, сокращает срок службы с 25 до 10 лет, увеличивает жалованье офицерам. Инициирует продажу Аляски США. (1827–1892)",
-    "descriptionen": "Admiral from 1855 and commander of the fleet and of the ministry of maritime affairs. Abolishes corporal punishment in the army, shortens the service life from 25 to 10 years and increases the salaries of officers. Initiated of the sale of Alaska to the USA."
+    "descriptionen": "Admiral, commander of the fleet and commander of the ministry of maritime affairs from 1855. Abolishes corporal punishment in the army, shortens the period of military service from 25 to 10 years and increases officer salaries. Initiates the sale of Alaska to the USA. (1827–1892)"
   },
   {
     "id": 20,
@@ -520,7 +546,7 @@ module.exports=[
     "posinbroz": 2,
     "born": "1831-07-26T17:02:55.000Z",
     "descriptionru": "Генерал-фельдмаршал. Участвует в обороне Севастополя и командует войсками во время Российско-турецкой войны в 1877-1878 годах. (1831–1891)",
-    "descriptionen": "General-Field Marshal, aka \"Uncle Nizi\". Participates in the defense of Sevastopol and commands troops during the Russian-Turkish war in 1877-1878."
+    "descriptionen": "General-Field Marshal. Participates in the defense of Sevastopol and commands troops during the Russian-Turkish war in 1877-1878. (1831–1891)"
   },
   {
     "id": 21,
@@ -536,7 +562,7 @@ module.exports=[
     "posinbroz": 3,
     "born": "1832-10-12T17:02:55.000Z",
     "descriptionru": "Председатель Государственного совета с 1881 по 1905 год, военачальник. Командует солдатами во время Крымской, Русско-турецкой (1877-1878), Кавказской войн. (1832–1909)",
-    "descriptionen": "Chairman of the State Council from 1881 to 1905, military commander. He commands soldiers during the Crimean, Russian-Turkish (1877-1878), and Caucasian wars."
+    "descriptionen": "Chairman of the State Council from 1881 to 1905, military commander. Commands soldiers during the Crimean, Russian-Turkish (1877-1878), and Caucasian wars. (1832–1909)"
   },
   {
     "id": 22,
@@ -554,7 +580,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1859-01-26T17:02:55.000Z",
     "descriptionru": "Фридрих Вильгельм Виктор Альберт Прусский. Последний германский император, с 1888 по 1918 год — Вильгельмовская эпоха. При нем начинается и заканчивается Первая мировая война. После отречения от престола в результате революции бежит в нейтральные Нидерланды. (1859–1941)",
-    "descriptionen": "Born Friedrich Wilhelm Victor Albert of Prussia. The last German emperor from 1888 to 1918 - the Wilhelmine era. The First World War begins and ends under his rule. After revolution forces his abdication, he fled to the Netherlands which was neutral.",
+    "descriptionen": "Born Friedrich Wilhelm Victor Albert of Prussia. The last German Emperor from 1888 to 1918 - the Wilhelmine era. The First World War begins and ends under his rule. After revolution forces his abdication, he flees to the Netherlands, which is neutral. (1859–1941)",
     "profileru": "https://project1917.ru/persons/germanskij_imperator_i_prusskij_korol_vilgelm_ii",
     "profileen": "https://project1917.com/persons/germanskij_imperator_i_prusskij_korol_vilgelm_ii"
   },
@@ -570,7 +596,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1858-10-21T17:02:55.000Z",
     "descriptionru": "Августа Виктория Фредерика Луиза Феодора Дженни (Дона). Императрица-консорт Германии с 1888 по 1918 год. Возглавляет отделение Красного Креста в Германии, борется за права женщин. Во время войны заботится о раненых в госпиталях. (1858–1921)",
-    "descriptionen": "Augusta Victoria Frederic Louise Theodore Jenny (\"Dona\"). Empress Consort of Germany from 1888 to 1918. She heads the Red Cross in Germany and fights for women’s rights. During the war, she takes care of the wounded in hospitals."
+    "descriptionen": "Augusta Victoria Friederike Luise Theodore Jenny (Dona). Empress Consort of Germany from 1888 to 1918. Head of the Red Cross in Germany and campaigner for women’s rights. During the war, tends wounded in hospitals. (1858–1921)"
   },
   {
     "id": 24,
@@ -587,7 +613,7 @@ module.exports=[
     "posinbroz": 5,
     "born": "1862-08-13T17:02:55.000Z",
     "descriptionru": "Генрих Альберт Вильгельм, принц Прусский. Талантливый дипломат и военачальник. Учреждает соревнования немецких автомобилистов, инициирует разработку германского авианосца. (1862–1929)",
-    "descriptionen": "Born Prince Heinrich Albert Wilhelm of Prussia. A talented diplomat and military leader. Establishes competitions of German motorists, initiates the development of the German aircraft carrier."
+    "descriptionen": "Born Prince Henry Albert Wilhelm of Prussia. A talented diplomat and military leader. Establishes competitions of German motorists, initiates the development of the German aircraft carrier. (1862–1929)"
   },
   {
     "id": 25,
@@ -604,7 +630,7 @@ module.exports=[
     "posinbroz": 3,
     "born": "1866-07-10T17:02:55.000Z",
     "descriptionru": "Ирена Луиза Мария Анна Гессен-Дармштадтская, прусская принцесса. Выходит замуж без согласия бабушки, королевы Виктории, чем вызывает ее негодование. (1866–1953)",
-    "descriptionen": "Born Princess Irena Louise Maria Anna Hesse-Darmstadt of Prussia. Marries without the consent of her grandmother, Queen Victoria, which causes resentment."
+    "descriptionen": "Born Princess Irene Luise Maria Anna Hesse-Darmstadt of Prussia. Incurs resentment of her grandmother, Queen Victoria, by marrying without her consent. (1866–1953)"
   },
   {
     "id": 26,
@@ -623,7 +649,7 @@ module.exports=[
     "posinbroz": 4,
     "born": "1870-06-13T17:02:55.000Z",
     "descriptionru": "София Доротея Ульрика Алиса Прусская (Сосси). Королева-консорт Греции в 1913–1917, 1920–1922 годах. Развивает детские дома, школы и больницы. Основательница Союза греческих женщин, который помогает беженцам из Османской империи, и Греческого союза защиты животных. (1870–1932)",
-    "descriptionen": "Born Sofia Dorothea Ulrika Alice of Prussia (\"Sossi\"). Queen consort of Greece from 1913-1917 and 1920-1922. She establishes children's homes, schools and hospitals. Founder of the \"Union of Greek Women\", which helps refugees from the Ottoman Empire, and of the “Greek Union for the Protection of Animals”."
+    "descriptionen": "Born Sophia Dorothea Ulrike Alice of Prussia (\"Sossi\"). Queen-Consort of Greece from 1913 to 1917 and from 1920 to 1922. Establishes children's homes, schools and hospitals. Founder of the \"Union of Greek Women\", which helps refugees from the Ottoman Empire, and of the “Greek Union for the Protection of Animals”. (1870–1932)"
   },
   {
     "id": 27,
@@ -642,7 +668,7 @@ module.exports=[
     "posinbroz": 1,
     "born": "1868-08-01T17:02:55.000Z",
     "descriptionru": "Греческий король в 1913–1917, 1920–1922 годах. Его нежелание участвовать в Первой мировой войне приводит к национальному расколу в стране и заставляет его впоследствии отказаться от престола. В 1920-м вновь становится королем. (1868–1923)",
-    "descriptionen": "King of Greece from 1913-1917 and 1920-1922. His unwillingness to participate in the First World War leads to a national split in the country and subsequently forces him to abandon the throne. He becomes king again in 1920.",
+    "descriptionen": "King of Greece from 1913 to 1917 and from 1920 to 1922. His unwillingness to participate in the First World War leads to a national split in the country and subsequently forces him to abandon the throne. He becomes king again in 1920. (1868–1923)",
     "profileru": "https://project1917.ru/persons/korol-konstantin-glyuksburg"
   },
   {
@@ -659,7 +685,7 @@ module.exports=[
     "posinbroz": 4,
     "born": "1864-01-07T17:02:55.000Z",
     "descriptionru": "Герцог Кларенс и Эвондейл (Эдди). Имеет почетную степень Кембриджского университета. Ходят слухи, что он причастен к убийствам Джека-потрошителя или является им, но доказательств этого нет. (1864–1892)",
-    "descriptionen": "Duke of Clarence and Evondale (\"Eddie\"). Has an honorary degree from Cambridge University. Rumours circulate during his lifetime he visited a homosexual brothel on Cleveland Street and was Jack the Ripper, but little evidence exists for either."
+    "descriptionen": "Duke of Clarence and Avondale (Eddie). Awarded an honorary degree from Cambridge University. There are rumors that he is involved in the killings of Jack the Ripper, and some believe he and the Ripper are one and the same person, but there is no evidence of this. (1864–1892)"
   },
   {
     "id": 29,
@@ -677,7 +703,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1865-06-02T17:02:55.000Z",
     "descriptionru": "Король Великобритании и Северной Ирландии в 1910–1936 годах. Во время его правления усиливается влияние фашизма, социализма и коммунизма. В 1917 году отказывается принимать семью двоюродного брата Николая II. (1865–1936)",
-    "descriptionen": "King of Great Britain and Northern Ireland from 1910-1936. The influence of fascism, socialism and communism grows steadily during his reign. In 1917, he refused to offer refuge to his cousin, Nicholas II, and family.",
+    "descriptionen": "King of Great Britain and Northern Ireland from 1910 to 1936. The influence of fascism, socialism and communism grows steadily during his reign. In 1917, he refuses to offer refuge to his cousin, Nicholas II, and family. (1865–1936)",
     "profileru": "https://project1917.ru/persons/georg-v",
     "profileen": "https://project1917.com/persons/georg_v"
   },
@@ -695,7 +721,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1867-05-25T17:02:55.000Z",
     "descriptionru": "Королева-консорт Великобритании и Ирландии в 1910–1936 годах (Мэй). Коллекционирует драгоценности и предметы искусства, связанные с другими королевскими семьями. (1867–1953)",
-    "descriptionen": "Queen consort of the United Kingdom\nand the British Dominions from 1910-1936, known informally as \"May\". Collects jewels and art from other royal families."
+    "descriptionen": "Queen-Consort of the United Kingdom and the Ireland from 1910 to 1936. Collects jewels and art associated with other royal families. (1867–1953)"
   },
   {
     "id": 31,
@@ -713,7 +739,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1777-12-25T17:02:55.000Z",
     "descriptionru": "Великий герцог Гессенский с 1830 по 1848 год. Борется с революционерами, но безуспешно: после Французской революции 1848 года назначает своего сына соправителем, а сам отходит от дел. (1777–1848)",
-    "descriptionen": "Grand Duke of Hesse from 1830 to 1848. He unsuccessfully fought against revolutionaries: after the French Revolution of 1848, he appointed his son as co-ruler, and he retired from state affairs."
+    "descriptionen": "Grand Duke of Hesse from 1830 to 1848. Wages an unsuccessful struggle with revolutionaries. After the French Revolution of 1848, he appoints his son as co-ruler and retires from state affairs. (1777–1848)"
   },
   {
     "id": 32,
@@ -730,7 +756,7 @@ module.exports=[
     "posinbroz": 5,
     "born": "1847-04-09T17:02:55.000Z",
     "descriptionru": "Великий князь Российской империи. Командует войсками гвардии и Петербургского военного округа. Покровительствует художникам, в 1876 году становится президентом Императорской академии художеств. (1847–1909)",
-    "descriptionen": "Grand Duke of the Russian Empire. He commanded the Army Guard and the St. Petersburg Military District. He’s a patron to the arts, and in 1876 became president of the Imperial Academy of Arts."
+    "descriptionen": "Grand Duke of the Russian Empire. Commands the Army Guard and the St. Petersburg Military District. Patron to the arts. In 1876, becomes President of the Imperial Academy of Arts. (1847–1909)"
   },
   {
     "id": 33,
@@ -747,7 +773,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1854-05-01T17:02:55.000Z",
     "descriptionru": "Урожденная Мария Александрина Элизабета Элеонора, герцогиня Мекленбург-Шверинская (Михен). Ее двор пользуется огромной влиятельностью и популярностью в Петербургском обществе. (1854–1920)",
-    "descriptionen": "Born Maria Alexandrina Elizabeth Eleonora, the Duchess of Mecklenburg-Schwerin (Michen). Her court is very influential and popular in Petersburg society.",
+    "descriptionen": "Born Maria Alexandrina Elizabeth Eleonora, the Duchess of Mecklenburg-Schwerin (Michen). Her court is very influential and popular in Petersburg society. (1854–1920)",
     "profileru": "https://project1917.ru/persons/velikaya-knyaginya-mariya-pavlovna-starshaya"
   },
   {
@@ -765,7 +791,7 @@ module.exports=[
     "posinbroz": 6,
     "born": "1860-09-20T17:02:55.000Z",
     "descriptionru": "Кавалерийский офицер. Не принимает участие в государственных делах. Несколько лет живет в изгнании из-за морганатического брака с Ольгой Палей. Расстрелян большевиками в 1919 году. (1860–1919)",
-    "descriptionen": "Cavalry officer. He’s not involved in state affairs. He lives most of his life in exile because of his illegal marriage to Olga Paley. Executed by the Bolsheviks in 1919.",
+    "descriptionen": "Cavalry officer. Not involved in state affairs. He lives several years in exile because of his morganatic marriage to Olga Paley. Executed by the Bolsheviks in 1919. (1860–1919)",
     "profileru": "https://project1917.ru/persons/velikiy-knyaz-pavel-aleksandrovich"
   },
   {
@@ -783,7 +809,7 @@ module.exports=[
     "posinbroz": 3,
     "born": "1870-08-17T17:02:55.000Z",
     "descriptionru": "Великая княгиня, принцесса Греческая и Датская. Умирает после рождения сына, великого князя Дмитрия Павловича. (1870–1891)",
-    "descriptionen": "Grand Duchess and Princess of Greece and Denmark. Dies after the birth of the son of Grand Duke Dmitry Pavlovich."
+    "descriptionen": "Grand Duchess and Princess of Greece and Denmark. Dies after the birth of the son of Grand Duke Dmitry Pavlovich. (1870–1891)"
   },
   {
     "id": 36,
@@ -797,7 +823,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1830-07-07T17:02:55.000Z",
     "descriptionru": "Урожденная Александра Саксен-Альтенбургская (Тетя Санни). Учреждает Столичный совет детских приютов. Склонна к мистицизму, пишет музыку. Иоганн Штраус посвящает ей вальс и кадриль. (1830–1911)",
-    "descriptionen": "Born Alexandra Saxen-Altenburgskaya (\"Aunt Sunny\"). Establishes the Metropolitan Council of Children's Orphanages. She’s inclined toward mysticism and writes music. Johann Strauss dedicates the waltz and quadrille to her."
+    "descriptionen": "Born Alexandra of Saxe-Altenburg (Aunt Sunny). Establishes the Metropolitan Council of Children's Orphanages. Inclined toward mysticism and writes music. Johann Strauss dedicates a waltz and quadrille to her. (1830–1911)"
   },
   {
     "id": 37,
@@ -813,7 +839,7 @@ module.exports=[
     "posinbroz": 1,
     "born": "1858-08-09T17:02:55.000Z",
     "descriptionru": "С 1900 года — главный начальник Военно-учебных заведений, с 1889 года — президент Академии наук. Покровительствует Русской полярной экспедиции. (1858–1915)",
-    "descriptionen": "From 1900, he’s the commander of the military educational institutions, and from 1889, the president of the Academy of Sciences. A patron of the Russian Polar Expedition."
+    "descriptionen": "From 1900, commander of the military educational institutions, and from 1889, president of the Academy of Sciences. One of the patrons of the Russian Polar Expedition. (1858–1915)"
   },
   {
     "id": 38,
@@ -830,7 +856,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1856-11-05T17:02:55.000Z",
     "descriptionru": "Верховный главнокомандующий всеми морскими и сухопутными силами России во время Первой мировой войны. В армии имеет прозвище Лукавый за жажду власти и чрезмерное честолюбие. Ему предлагают занять российский престол вместо Николая II, но он отказывается. (1856–1929)",
-    "descriptionen": "Chief commander of all of Russia’s naval and land forces during World War I. In the army, he was nicknamed “the Schemer” on account of his thirst for power and excessive ambitiousness. Invited to take up the Russian throne in place of Nicholas II, he refused.",
+    "descriptionen": "Supreme commander-in-chief of all of Russia’s naval and land forces during World War I. Nicknamed “the Schemer” in the army on account of his thirst for power and excessive ambition. Invited to take up the Russian throne in place of Nicholas II, he refuses. (1856–1929)",
     "profileru": "https://project1917.ru/persons/velikiy-knyaz-nikolay-nikolaevich",
     "profileen": "https://project1917.com/persons/velikiy-knyaz-nikolay-nikolaevich",
     "undefined": "отличается имя на сайте"
@@ -850,7 +876,7 @@ module.exports=[
     "posinbroz": 1,
     "born": "1864-01-09T17:02:55.000Z",
     "descriptionru": "Военный по назначению, но не по призванию. В армии успокаивает нрав старшего брата Николая Николаевича. В жизни находит себя в архитектуре и живописи. По его проектами воздвигаются несколько церквей и дворец в Крыму. (1864–1931)",
-    "descriptionen": "A military man by occupation but not by vocation. In the army, he mollified the stiff temperament of his elder brother Nikolai Nikolaevich. In civilian life, he found his calling in architecture and painting, with several churches and a palace in the Crimea being constructed according to his designs.",
+    "descriptionen": "A military man by occupation, but not vocation. While in the army, acts as a moderating influence on the stern character of his elder brother Nikolay Nikolaevich. In civilian life, finds his true purpose in architecture and painting. Several churches and a palace in the Crimea are built  according to his designs. (1864–1931)",
     "profileru": "https://project1917.ru/persons/velikiy-knyaz-petr-nikolaevich"
   },
   {
@@ -866,7 +892,7 @@ module.exports=[
     "posinbroz": 1,
     "born": "1859-04-13T17:02:55.000Z",
     "descriptionru": "Председатель Русского исторического общества, глава Русского географического общества. Специалист по эпохе Александра I и Наполеона. Оппозиционно настроен к Николаю II, одобряет Февральскую революцию 1917 года, поддерживает Временное правительство. (1859–1919)",
-    "descriptionen": "Сhairman of the Russian Historical Society, head of the Russian Geographical Society. The era of Alexander I and Napoleon was his particular specialism. Opposed to Nicholas II and supportive of the February Revolution of 1917, he backed the Provisional Government.",
+    "descriptionen": "Сhairman of the Russian Historical Society, head of the Russian Geographical Society. Specializes in the era of Alexander I and Napoleon . Opposed to Nicholas II and supportive of the February Revolution of 1917, he backs the Provisional Government. (1859–1919)",
     "profileru": "https://project1917.ru/persons/velikiy-knyaz-nikolay-mikhaylovich"
   },
   {
@@ -885,7 +911,7 @@ module.exports=[
     "posinbroz": 2,
     "born": "1866-03-31T17:02:55.000Z",
     "descriptionru": "Увлекается флотом, в 1886 году совершает кругосветное путешествие. Выступает за совершенствование российских кораблей, инициатор создания Офицерской авиационной школы под Севастополем. Покровительствует Обществу помощи детям русской эмиграции. (1866–1933)",
-    "descriptionen": "A navy fanatic, he completed a round-the-world trip in 1886.  Sandro called for the continued development of Russian naval capabilities and initiated the establishment of an officer aviation school at Sevastopol. Patron of the Society for Assistance to Children of Russian Émigrés. ",
+    "descriptionen": "A naval fanatic, he completes a round-the-world trip in 1886.  Calls for the continued development of Russian naval capabilities and initiates the establishment of an officer aviation school at Sevastopol. Patron of the Society for Assistance to Children of Russian Émigrés. (1866–1933)",
     "profileru": "https://project1917.ru/persons/velikiy-knyaz-aleksandr-mikhaylovich",
     "profileen": "https://project1917.com/persons/velikiy-knyaz-aleksandr-mikhaylovich"
   },
@@ -902,7 +928,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1869-09-24T17:02:55.000Z",
     "descriptionru": "Вместе с Сандро путешествует к Индии, что описано в книге «23 000 миль на яхте „Тамара“». Его прозвище — «господин тем хуже» (Monsieur Tant Pis), т.к. он часто употребляет это выражение. (1869–1918)",
-    "descriptionen": "Travelled to India with Sandro and described their adventures in a book entitled 23 000 Miles on the Yacht Tamara. Nicknamed “Monsieur Tant Pis” due to his frequent use of that expression.  ",
+    "descriptionen": "Travels to India with Sandro and gives an account of their adventures in a book entitled 23 000 Miles on the Yacht Tamara. Nicknamed “Monsieur Tant Pis” due to his frequent use of that expression. (1869–1918)",
     "profileru": "https://project1917.ru/persons/velikiy-knyaz-sergey-mikhaylovich"
   },
   {
@@ -919,7 +945,7 @@ module.exports=[
     "posinbroz": 3,
     "born": "1863-08-10T17:02:55.000Z",
     "descriptionru": "Великий князь, 20 лет управляет Русским музеем в Петербурге. Собирает живопись и скульптуру, монеты. Пишет нескольких трудов по нумизматике. (1863–1919)",
-    "descriptionen": "A Grand Duke who spent twenty years at the helm of the Russian Museum in St. Petersburg. A collector of paintings, sculpture and coins, he penned several works on the subject of numismatics.",
+    "descriptionen": "Grand Duke. In charge of the  Russian Museum in St. Petersburg for twenty years. A collector of paintings, sculpture and coins, and author of several works on the subject of numismatics. (1863–1919)",
     "profileru": "https://project1917.ru/comandante/heroes/1410/edit"
   },
   {
@@ -937,7 +963,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1882-02-01T17:02:55.000Z",
     "descriptionru": "Принц Греческий и Датский. Военнослужащий, командует войсками во время Второй греко-турецкой войны. Из-за потери греческих территорий во время войны его как командира пожизненно высылают из страны. После этого живет во Франции. (1882–1944)",
-    "descriptionen": "An army commander during the Greco-Turkish War of 1919-1922. Blamed for the loss of Greek territory during that war, he was permanently exiled from the country and subsequently settled in France."
+    "descriptionen": "Army commander during the Greco-Turkish War of 1919-1922. Blamed for the loss of Greek territory during that war, he is permanently exiled from the country and subsequently settles in France. (1882–1944)"
   },
   {
     "id": 45,
@@ -956,7 +982,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1885-02-24T17:02:55.000Z",
     "descriptionru": "Принцесса Греческая и Датская, свекровь Елизаветы II. Во время Второй мировой войны работает медсестрой в Красном Кресте, открывает два приюта для бездомных детей. Прячет евреев во время нацистской оккупации, за что получает звание «Праведник народов мира». (1885–1969)",
-    "descriptionen": "Mother-in-law of Elizabeth II. During World War II, she worked as a nurse for the Red Cross and established two shelters for homeless and orphaned children. She helped shelter Jews during the Nazi occupation, for which she was awarded the title of Righteous Among the Nations."
+    "descriptionen": "Princess of Greece and Denmark. Mother-in-law of Elizabeth II. Works as a nurse for the Red Cross during World War II and establishes two shelters for homeless and orphaned children. Helps shelter Jews during the Nazi occupation, for which she is awarded the title of Righteous Among the Nations. (1885–1969)"
   },
   {
     "id": 46,
@@ -975,7 +1001,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1921-06-09T17:00:00.000Z",
     "descriptionru": "Принц-консорт Великобритании. Самый долгоживущий из всех мужчин-потомков королевы Виктории. Первым из членов британской королевской семьи посещает СССР в 1973 году. Покровительствует более чем восьмистам организациям. (1921–)",
-    "descriptionen": "The current Prince Consort of the United Kingdom. The longest-lived of all the male descendants of Queen Victoria, he also became the first member of the British royal family to visit the USSR (in 1973). Patron of over 800 organizations."
+    "descriptionen": "The Prince-Consort of the United Kingdom. Longest-lived of all the male descendants of Queen Victoria, he is also the first member of the British royal family to visit the USSR (in 1973). Patron of over 800 organizations. (1921–)"
   },
   {
     "id": 47,
@@ -992,7 +1018,7 @@ module.exports=[
     "posinbroz": 2,
     "born": "1882-01-16T17:02:55.000Z",
     "descriptionru": "Принцесса Греческая и Датская. Все детство проводит в Петербурге и окрестностях, но с 1902 года живет преимущественно в Греции. (1882–1957)",
-    "descriptionen": "Spent her entire childhood in Petersburg and the surrounding area, but resided predominantly in Greece from 1902 onwards."
+    "descriptionen": "Princess of Greece and Denmark. Spends her entire childhood in Petersburg and the surrounding area, but resides predominantly in Greece from 1902 onwards. (1882–1957)"
   },
   {
     "id": 48,
@@ -1008,7 +1034,7 @@ module.exports=[
     "posinbroz": 2,
     "born": "1876-03-02T17:02:55.000Z",
     "descriptionru": "С 1914 года живет в Великобритании, где руководит тремя военными госпиталями и финансирует их. Предлагает 50 000 фунтов стерлингов за освобождение князей Романовых из Петропавловской крепости. (1876–1940)",
-    "descriptionen": "From 1914 onwards, she resided in Britain, where she directed and financed three military hospitals. Offered a £50,000 reward for the successful liberation of the Romanov grand dukes incarcerated in the Peter and Paul Fortress."
+    "descriptionen": "From 1914 onwards, resides in Britain, where she directs and finances three military hospitals. Offers a £50,000 reward for the successful liberation of the Romanov grand dukes incarcerated in the Peter and Paul Fortress. (1876–1940)"
   },
   {
     "id": 49,
@@ -1025,7 +1051,7 @@ module.exports=[
     "posinbroz": 5,
     "born": "1872-01-21T17:02:55.000Z",
     "descriptionru": "Греческий Ники, принц Греческий и Датский. Участвует в организации Олимпийских игр в Афинах в 1896 году. После отречения короля Константина I живет во Франции, где дает уроки живописи и рисунка, чтобы прокормить семью. (1872–1938)",
-    "descriptionen": "Involved in the organisation of the 1896 Olympic Games in Athens. After the abdication of King Constantine I, he settled in France, giving drawing and painting lessons to put food on the table."
+    "descriptionen": "Greek Nicky, Prince of Greece and Denmark. Involved in the organisation of the 1896 Olympic Games in Athens. Following the abdication of King Constantine I, he settles in France, giving lessons in drawing and painting to make ends meet. (1872–1938)"
   },
   {
     "id": 50,
@@ -1043,7 +1069,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1797-03-21T17:02:55.000Z",
     "descriptionru": "Император Германии с 1871 по 1888 год. Считается основателем Второго рейха — объединил германские земли. Имеет консервативные взгляды, придерживается внешнеполитического курса «железного канцлера» Отто фон Бисмарка. (1797–1888)",
-    "descriptionen": "German Kaiser, 1871-1888. Regarded as the founder of the Second Reich, the unification of Germany having occurred under his leadership. Held conservative views and adhered to the foreign policy favoured by “Iron Chancellor” Otto von Bismarck."
+    "descriptionen": "German Kaiser, 1871-1888. Regarded as the founder of the Second Reich, as the unification of Germany occurs under his leadership. Holds conservative views and adheres to the foreign policy favoured by “Iron Chancellor” Otto von Bismarck. (1797–1888)"
   },
   {
     "id": 51,
@@ -1057,7 +1083,7 @@ module.exports=[
     "posinbroz": 5,
     "born": "1846-05-24T17:02:55.000Z",
     "descriptionru": "Основывает Королевскую школу рукоделия, возглавляет Королевскую ассоциацию британских медсестер. Помогает детям и безработным, за что пользуется популярностью в народе. (1846–1923)",
-    "descriptionen": "Founder of the Royal School of Needlework and president of the Royal British Nurses’ Association. Made efforts to help children and the unemployed, which earned her widespread popularity. "
+    "descriptionen": "Founder of the Royal School of Needlework and president of the Royal British Nurses’ Association. Active in helping children and the unemployed, which earns her widespread popularity. (1846–1923)"
   },
   {
     "id": 52,
@@ -1071,7 +1097,7 @@ module.exports=[
     "posinbroz": 6,
     "born": "1848-03-17T17:02:55.000Z",
     "descriptionru": "Имеет напряженные отношения с матерью и сестрами. После окончания Первой мировой войны отходит от государственных дел и занимается искусством. Помогает беднякам, сторонница феминизма. (1848–1939)",
-    "descriptionen": "Had a tense relationship with her mother and sisters. In the aftermath of World War I, she retired from state affairs and devoted her attention to art. Supporter of the feminist movement and helper of the poor. "
+    "descriptionen": "Has a tense relationship with her mother and sisters. In the aftermath of World War I, she retires from state affairs and devotes her attention to art. Supporter of the feminist movement and helper of the poor. (1848–1939)"
   },
   {
     "id": 53,
@@ -1085,7 +1111,7 @@ module.exports=[
     "posinbroz": 7,
     "born": "1850-04-30T17:02:55.000Z",
     "descriptionru": "Принц Великобритании. Канадский главнокомандующий в годы Первой мировой войны. С 1928 года отходит от общественных дел, но выполняет обязанности по военной службе. (1850–1942)",
-    "descriptionen": "Served as Governor General of Canada during World War I. Retired from public affairs in 1928 but continued to fulfil his military duties. "
+    "descriptionen": "Duke of Connaught. Serves as Governor General of Canada during World War I. Retires from public affairs in 1928 but continues to fulfil his military duties. (1850–1942)"
   },
   {
     "id": 54,
@@ -1099,7 +1125,7 @@ module.exports=[
     "posinbroz": 8,
     "born": "1853-04-06T17:02:55.000Z",
     "descriptionru": "Принц Великобритании. Из-за гемофилии не может посвятить себя военному делу. Вместо этого становится неофициальным секретарем матери, королевы Виктории, и занимается литературой. (1853–1884)",
-    "descriptionen": "A haemophilia suffer, Leopold found himself incapable of pursuing a military career, and became an unofficial secretary to his mother, Queen Victoria, while also serving as a patron of literature. "
+    "descriptionen": "Duke of Albany. A haemophilia sufferer, Leopold finds himself incapable of pursuing a military career, and becomes unofficial secretary to his mother, Queen Victoria, while also serving as a patron of literature. (1853–1884)"
   },
   {
     "id": 55,
@@ -1113,7 +1139,7 @@ module.exports=[
     "posinbroz": 3,
     "born": "1857-04-13T17:02:55.000Z",
     "descriptionru": "Любимица королевы Виктории, ее личный секретарь. Расшифровывает дневники матери после ее смерти. Ей потребовалось 30 лет, чтобы отредактировать и опубликовать записи королевы из 122 томов. (1857–1944)",
-    "descriptionen": "Victoria’s favourite daughter, Beatrice served as her mother’s personal secretary. Upon the queen’s death in 1901, she set about transcribing, editing and publishing her journals – all 122 volumes of them. This colossal endeavour took some three decades to complete. "
+    "descriptionen": "Victoria’s favourite daughter, Beatrice serves as her mother’s personal secretary. Upon the queen’s death in 1901, she sets about transcribing, editing and publishing her journals – all 122 volumes of them. This colossal endeavour takes some three decades to complete. (1857–1944)"
   },
   {
     "id": 56,
@@ -1126,7 +1152,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1817-09-06T17:02:55.000Z",
     "descriptionru": "Королева Дании с 1863 по 1898 год. Не участвует в политике, но влияет на отношения между странами через браки собственных детей. За это ее с мужем называют «тесть и теща Европы». (1817–1898)",
-    "descriptionen": "Uninvolved in state affairs, Louise did, however, exert an influence on international relations by arranging dynastic marriages for her children. As a result, she and her husband came to be known as the “parents-in-law of Europe”.7"
+    "descriptionen": "Queen of Denmark from 1863 to 1898. Uninvolved in state affairs, Louise does, however, exert an influence on international relations by arranging dynastic marriages for her children. As a result, she and her husband come to be known as the “parents-in-law of Europe”. (1817–1898)"
   },
   {
     "id": 57,
@@ -1140,7 +1166,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1851-10-30T17:02:55.000Z",
     "descriptionru": "Шведская принцесса, королева Дании с 1906 по 1912 год. В Швеции ее за необузданный нрав называют Стокгольмский сорванец. Создает несколько благотворительных и религиозных организаций. (1851–1926)",
-    "descriptionen": "Known in Sweden as the “Stockholm urchin” on account of her unbridled temperament. Established several charitable and religious organizations."
+    "descriptionen": "Queen of Denmark from 1906 to 1912. Known in Sweden as “the Stockholm urchin” on account of her unbridled temperament. Establishes several charitable and religious organizations. (1851–1926)"
   },
   {
     "id": 58,
@@ -1154,7 +1180,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1853-09-28T17:02:55.000Z",
     "descriptionru": "Принцесса Датская и Ганноверская. Дружит с канцлером Австро-Венгрии Францем Иосифом I. Во время Первой мировой войны поддерживает Германию. (1853–1933)",
-    "descriptionen": "Maintained a friendship with Franz Josef I of Austria. Supported Germany during World War I."
+    "descriptionen": "Princess of Denmark.Maintains a friendship with Franz Josef I of Austria. Supports Germany during World War I. (1853–1933)"
   },
   {
     "id": 59,
@@ -1168,7 +1194,7 @@ module.exports=[
     "posinbroz": 2,
     "born": "1858-10-26T17:02:55.000Z",
     "descriptionru": "Датский принц, кронпринц Греции с 1863 по 1868 год. Мог стать правителем Болгарии в 1886 году, но отказывается от престола. (1858–1939)",
-    "descriptionen": "Offered the Bulgarian throne in 1886, but declined to accede. "
+    "descriptionen": "Prince of Denmark. Offered the Bulgarian throne in 1886, but declines to accede. (1858–1939)"
   },
   {
     "id": 60,
@@ -1182,7 +1208,7 @@ module.exports=[
     "posinbroz": 1,
     "born": "1838-12-02T17:02:55.000Z",
     "descriptionru": "Прусская принцесса в 1838–1856 годах. Основывает благотворительные организации, которые предоставляют детям жилье и медицинскую помощь. (1838–1923)",
-    "descriptionen": "Established charitable organisations dedicated to the provision of housing and medical care to children."
+    "descriptionen": "Princess of Prussia from 1838 to 1856. Establishes charitable organisations dedicated to the provision of housing and medical care to children. (1838–1923)"
   },
   {
     "id": 61,
@@ -1201,7 +1227,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1796-06-24T17:02:55.000Z",
     "descriptionru": "Российский император с 1825 по 1855 год — «эпоха голубых мундиров», по цвету одежды жандармов. Вводит цензуру, страна укрепляет свои позиции за рубежом. (1796–1855)",
-    "descriptionen": "Tsar of Russia between 1825 and 1855, a period known as the “era of the light blue uniforms” (in reference to the colour of the uniforms worn by the country’s gendarmes, and which came to symbolise imperial repression). Nicholas exercised censorship and strengthened Russia’s position abroad."
+    "descriptionen": "Russian Emperor from 1825 to 1855, a period known as the “era of the light blue uniforms” (in reference to the colour of the uniforms worn by the country’s gendarmes, which came to symbolise imperial repression). Nicholas exercises censorship and strengthens Russia’s position abroad. (1796–1855)"
   },
   {
     "id": 62,
@@ -1215,7 +1241,7 @@ module.exports=[
     "posinbroz": 4,
     "born": "1819-08-05T17:02:55.000Z",
     "descriptionru": "Герцогиня Лейхтенбергская в 1839–1852 годах. Возглавляет Академию художеств в 1852–1876 годы. Втайне от отца заключает второй брак с графом Григорием Строгановым. С 1862 года живет в Италии. (1819–1876)",
-    "descriptionen": "President of the Imperial Academy of Arts from 1852 to 1876.  Embarked upon a second marriage – kept secret from her father – to Count Grigory Stroganov. Resided in Italy from 1862 onward."
+    "descriptionen": "Duchess of Leuchtenberg (1839-1852). President of the Imperial Academy of Arts from 1852 to 1876.  Embarks upon a second marriage – which she keeps secret from her father – to Count Grigory Stroganov. Resides in Italy from 1862 onward. (1819–1876)"
   },
   {
     "id": 63,
@@ -1229,7 +1255,7 @@ module.exports=[
     "posinbroz": 5,
     "born": "1822-08-30T17:02:55.000Z",
     "descriptionru": "Королева-консорт Вюртемберга (юго-запад Германии) в 1864–1891 годах. Считается одной из лучших невест в Европе за свою красоту и хорошее образование, но долго не может выйти замуж. В конце концов становится супругой короля Вюртемберга и уезжает из России. За границей занимается благотворительностью. (1822–1892)",
-    "descriptionen": "Though regarded as one of Europe’s most eligible princesses on account of her beauty and erudition, she long failed to marry; eventually, she wedded the King of Württemberg and left Russia. Once abroad, she became involved in charitable activities."
+    "descriptionen": "Queen-Consort of Württemberg (southwest Germany) from 1864 to 1891. Though regarded as one of Europe’s most eligible princesses on account of her beauty and erudition, she remains single for many years; eventually, she weds the King of Württemberg and leaves Russia. Once abroad, she becomes involved in charitable activities. (1822–1892)"
   },
   {
     "id": 64,
@@ -1243,7 +1269,7 @@ module.exports=[
     "posinbroz": 6,
     "born": "1825-06-11T17:02:55.000Z",
     "descriptionru": "Великая княжна. Любимица отца, талантливая певица. Умирает в 19 лет от туберкулеза. (1825–1844)",
-    "descriptionen": "Her father’s favourite daughter and a talented singer, she succumbed to tuberculosis at the age of 19. "
+    "descriptionen": "Grand Duchess. Her father’s favourite daughter and a talented singer, she succumbs to tuberculosis at the age of 19. (1825–1844)"
   },
   {
     "id": 65,
@@ -1256,7 +1282,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1838-05-01T17:02:55.000Z",
     "descriptionru": "Великая княгиня. В Петербурге открывает больницу, отделение для девочек-сирот, общину для сестер милосердия. С 1880 года живет в Киеве, где основывает Покровский монастырь. (1838–1900)",
-    "descriptionen": "Founded a hospital and a girls’ orphanage in St. Petersburg. In 1880, she settled in Kiev, where she founded the Pokrovsky Monastery. "
+    "descriptionen": "Grand Duchess. Founds a hospital and a girls’ orphanage in St. Petersburg. In 1880, she settles in Kiev, where she founds the Pokrovsky Monastery. (1838–1900)"
   },
   {
     "id": 66,
@@ -1269,7 +1295,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1839-09-07T17:02:55.000Z",
     "descriptionru": "Великая княгиня. Не занимается государственными делами, посвящает себя заботе о детях и муже. Около 20 лет живет на Кавказе, где открывает первую осетинскую школу для девочек. (1839–1891)",
-    "descriptionen": "She was not involved with state affairs as she was dedicating to caring for her husband and children. She spent 20 years of her life in the Caucasus, where she opened the first Ossetian school for girls."
+    "descriptionen": "Grand Duchess. Not involved with state affairs, as she is dedicating to caring for her husband and children. Spends 20 years of her life in the Caucasus, where she opens the first Ossetian school for girls. (1839–1891)"
   },
   {
     "id": 67,
@@ -1283,7 +1309,7 @@ module.exports=[
     "posinbroz": 3,
     "born": "1860-07-23T17:02:55.000Z",
     "descriptionru": "Принцесса Прусская, в замужестве герцогиня Саксен-Мейнингенская. После замужества пользуется популярностью в немецком обществе, несмотря на вздорный нрав и привычку распространять слухи. (1860–1919)",
-    "descriptionen": "Princess of Prussia, in marriage “The Duchess of Saxony-Meiningen”. After her marriage, she became popular in German society, despite her tendency to spread rumours and nonsense."
+    "descriptionen": "Princess of Prussia, in marriage “The Duchess of Saxony-Meiningen”. After her marriage, becomes popular in German society, despite her tendency to spread rumours and frivolous gossip. (1860–1919)"
   },
   {
     "id": 68,
@@ -1297,7 +1323,7 @@ module.exports=[
     "posinbroz": 2,
     "born": "1866-04-11T17:02:55.000Z",
     "descriptionru": "Прусская принцесса. В 1927 году повторно выходит замуж за русского авантюриста Александра Зубкова, который младше ее на 34 года. Скандальный брак спустя несколько месяцев распадается. Пишет мемуары, чтобы поддерживать свое материальное состояние. (1866–1929)",
-    "descriptionen": "Princess of Prussia. In 1927, she remarried to Russian adventurer Alexander Zubkov, who was 34 years her junior. The marriage, seen as scandalous by German society, disintegrated in a matter of months. She wrote memoirs in order to maintain her material lifestyle."
+    "descriptionen": "Princess of Prussia. In 1927, she remarries. Her new husband,  Russian adventurer Alexander Zubkov, is 34 years her junior. The marriage, seen as scandalous, disintegrates in a matter of months. She writes memoirs in order to maintain her former standard of living. (1866–1929)"
   },
   {
     "id": 69,
@@ -1311,7 +1337,7 @@ module.exports=[
     "posinbroz": 1,
     "born": "1872-04-21T17:02:55.000Z",
     "descriptionru": "Избранная королева Финляндии в октябре-декабре 1918 года. Первая мировая война лишает ее двух детей. Во время Второй мировой войны переживает личную трагедию из-за симпатий двух сыновей нацизму. (1872–1954)",
-    "descriptionen": "Queen consort of Finland from October – December 1918.  She lost two children in the First World War, and later endured a personal tragedy during the Second World War as her two sons were sympathetic to the Nazi regime."
+    "descriptionen": "Queen-Consort of Finland from October to December 1918.  She loses two children in the First World War, and later endures a personal tragedy during the Second World War, as her two sons are sympathetic to the Nazi regime. (1872–1954)"
   },
   {
     "id": 70,
@@ -1325,7 +1351,7 @@ module.exports=[
     "posinbroz": 1,
     "born": "1867-02-19T17:02:55.000Z",
     "descriptionru": "Урожденная Луиза Виктория Александра Дагмар. Королевская принцесса Великобритании. После смерти мужа Александра Даффа ведет затворническую жизнь, лишь изредка появляясь на публике. (1867–1931)",
-    "descriptionen": "Born “Louisa Victoria Alexandra Dagmar”. Princess Royal  of Great Britain. After the death of her husband Alexander Duff, she led a reclusive life, only occasionally appearing in public."
+    "descriptionen": "Born Louisa Victoria Alexandra Dagmar. Princess Royal  of Great Britain. After the death of her husband Alexander Duff, she leads a reclusive life, only occasionally appearing in public. (1867–1931)"
   },
   {
     "id": 71,
@@ -1339,7 +1365,7 @@ module.exports=[
     "posinbroz": 2,
     "born": "1868-07-05T17:02:55.000Z",
     "descriptionru": "Принцесса Великобритании. Любит искусство, особую страсть питает к фотографии, ее работы выставляются на выставке Kodak. Российский император Николай II в юности был в нее влюблен. (1868–1935)",
-    "descriptionen": "British Princess. She was an art lover, with a special passion for photography. Her works are displayed at the Kodak exhibition. In his youth, the Russian Emperor Nikolai II was in love with her, but she remained unmarried. "
+    "descriptionen": "British Princess. An art lover, with a special passion for photography. Her works are displayed at the Kodak exhibition. In his youth, the Russian Emperor Nikolay II was in love with her. (1868–1935)"
   },
   {
     "id": 72,
@@ -1353,7 +1379,7 @@ module.exports=[
     "posinbroz": 3,
     "born": "1869-11-25T17:02:55.000Z",
     "descriptionru": "Урожденная Мод Шарлотта Мария Виктория (Гарри). Первая за 600 лет королева-консорт Норвегии как самостоятельного государства (1905–1938 годы). Во время Первой мировой войны до максимума сокращает свои расходы, чтобы помогать нуждающимся одеждой и продуктами. (1869–1938)",
-    "descriptionen": "Born “Maud Charlotte Maria Victoria” (“Harry”). The first Queen-consort of an independent Norway (1905-1938) for 600 years. During the First World War, she reduced her expenses as much as possible in order to help provide the needy with clothes and food.",
+    "descriptionen": "Born Maud Charlotte Maria Victoria (Harry). The first Queen-Consort of an independent Norway from 1905 to 1938 for 600 years. During the First World War, she reduces her expenses as much as possible in order to help provide the needy with clothes and food. (1869–1938)",
     "profileru": "https://project1917.ru/persons/mod-glyuksburg"
   },
   {
@@ -1369,7 +1395,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1788-09-20T17:02:55.000Z",
     "descriptionru": "После разрыва с мужем Людвигом II в 1820 году живет отдельно со своим камергером. Рожает четырех детей, которых ее супруг вынужден признать официально под давлением европейских политиков. (1788–1836)",
-    "descriptionen": "After break up her husband Ludwig II in 1820, she lived separately with her chamberlain. She gave birth to four children, whom her spouse was forced to officially recognise under pressure from European politicians. "
+    "descriptionen": "After separating from her husband Ludwig II in 1820, she lives with her chamberlain. She gives birth to four children, whom her spouse is forced to officially recognise under pressure from European politicians. (1788–1836)"
   },
   {
     "id": 74,
@@ -1385,7 +1411,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1806-06-08T17:02:55.000Z",
     "descriptionru": "В молодости имеет либеральные взгляды. В 1838 году, став соправителем герцогства Гессен, резко поворачивает в сторону реакции. (1806–1877)",
-    "descriptionen": "The Grand Duke of Hesse. In his youth he was a proponent of liberalism, but his views sharply turned reactionary when he became co-regent of the Duke of Hesse In 1838."
+    "descriptionen": "In his youth he is a proponent of liberalism, but his views take a sharply reactionary turn when he becomes co-regent of the Duchy of Hesse In 1838. (1806–1877)"
   },
   {
     "id": 75,
@@ -1399,7 +1425,7 @@ module.exports=[
     "posinbroz": 2,
     "born": "1809-04-22T17:02:55.000Z",
     "descriptionru": "Принц Гессенский. Является наследником великогерцогского престола, но на престол вступает его старший сын Людвиг IV. (1809–1877)",
-    "descriptionen": "The Prince of Hesse. He was the heir to the Grand Duke’s throne, but it was in fact his eldest son, Ludwig IV, who ascended to the throne. "
+    "descriptionen": "The Prince of Hesse. He is the heir to the Grand Duke’s throne, but it is in fact his eldest son, Ludwig IV, who ascends to the throne. (1809–1877)"
   },
   {
     "id": 76,
@@ -1413,7 +1439,7 @@ module.exports=[
     "posinbroz": 3,
     "born": "1843-09-07T17:02:55.000Z",
     "descriptionru": "Великий князь, атаман всех казачьих войск, наследник российского престола. Любимец семьи, в особенности императрицы Марии Александровны и младшего брата, будущего императора Александра III. (1843–1865)",
-    "descriptionen": "Grand Duke, hetman of all Cossack troops, an heir to the Russian throne. He is the favorite of his family, and especially of Empress Maria Alexandrovna and younger brother, future Emperor Alexander III."
+    "descriptionen": "Grand Duke, hetman of all Cossack troops, heir to the Russian throne. The favorite of his family, and especially of Empress Maria Alexandrovna and of his younger brother, the future Emperor Alexander III. (1843–1865)"
   },
   {
     "id": 77,
@@ -1427,7 +1453,7 @@ module.exports=[
     "posinbroz": 4,
     "born": "1850-01-01T17:02:55.000Z",
     "descriptionru": "Великий князь. В 1881 году становится главным начальником флота и морского ведомства. Он вводит морской ценз, при нем разворачивается строительство новых броненосцев и крейсеров. Подает в отставку после поражения России в русско-японской войне. (1850–1908)",
-    "descriptionen": "Grand Duke. In 1881 becomes the head of the navy and the Admiralty. He introduces the fleet census, and begins the construction of new battleships and cruisers during his tenure. Resigns after Russia's defeat in the Russo-Japanese war."
+    "descriptionen": "Grand Duke. In 1881 becomes the head of the navy and the Admiralty. He introduces the fleet census, and begins the construction of new battleships and cruisers during his tenure. Resigns after Russia's defeat in the Russian-Japanese war. (1850–1908)"
   },
   {
     "id": 78,
@@ -1441,7 +1467,7 @@ module.exports=[
     "posinbroz": 3,
     "born": "1850-02-01T17:02:55.000Z",
     "descriptionru": "Великий князь. В 1874 году его высылают из Петербурга по обвинению в краже фамильных драгоценностей. С 1881 года живет в Ташкенте, где становится успешным предпринимателем. (1850–1918)",
-    "descriptionen": "Grand Duke. In 1874 he was exiled from Petersburg for a theft of family jewellery. Since 1881 lives in Tashkent where he becomes a successful businessman."
+    "descriptionen": "Grand Duke. Exiled from Petersburg in 1874 for the theft of family jewellery. From 1881 onward, lives in Tashkent, where he becomes a successful businessman. (1850–1918)"
   },
   {
     "id": 79,
@@ -1454,7 +1480,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1865-01-12T17:02:55.000Z",
     "descriptionru": "Елизавета Августа Мария Агнесса, урожденная принцесса Саксен-Альтенбургская. Выходит замуж за своего троюродного дядю, великого князя Константина Константиновича. Всю жизнь посвящает воспитанию девятерых детей. (1865–1927)",
-    "descriptionen": "Elizabeth Augusta Maria Agnes, born Princess of Saxe-Altenburg. Marries her third uncle, the great Duke Konstantin Konstantinovich. Dedicated all her life to bringing up nine children."
+    "descriptionen": "Elizabeth Augusta Maria Agnes, born Princess of Saxe-Altenburg. Marries her second cousin, the great Duke Konstantin Konstantinovich. Dedicates her life to bringing up nine children. (1865–1927)"
   },
   {
     "id": 80,
@@ -1471,7 +1497,7 @@ module.exports=[
     "posinbroz": 1,
     "born": "1863-04-04T17:02:55.000Z",
     "descriptionru": "Во время Франко-прусской войны 1870 года в госпитале готовит еду для солдат. Выходит замуж за немецкого принца Людвига Александра Баттенберга, во время Первой мировой войны отказывается от титула принцессы Баттенберг и становится маркизой Милфорд-Хейвен. (1863–1950)",
-    "descriptionen": "During the Franco-Prussian war of 1870 prepares food for soldiers at the hospital. Married a German Prince Ludwig Alexander Battenberg; during the war renounces her title of \"Princes Battenberg\" and becomes Marchioness Milford-Haven."
+    "descriptionen": "During the Franco-Prussian war of 1870 prepares food for soldiers at the hospital. Marries German Prince Ludwig Alexander Battenberg; during the war renounces her title of \"Princes Battenberg\" and becomes Marchioness Milford-Haven. (1863–1950)"
   },
   {
     "id": 81,
@@ -1490,7 +1516,7 @@ module.exports=[
     "posinbroz": 2,
     "born": "1872-06-05T17:02:55.000Z",
     "descriptionru": "Последняя российская императрица (с 1894 по 1917 год). Урожденная принцесса Виктория Алиса Елена Луиза Беатриса Гессен-Дармштадтская, любимая внучка британской королевы Виктории. Покровительствует более чем 30 благотворительным организациям, помогает раненым солдатам во время Первой мировой войны. (1872–1918)",
-    "descriptionen": "The last Russian Empress (from 1894 to 1917). Born Princess Victoria Alice Helen Louise Beatrice Hesse-Darmstadt, the favorite granddaughter of Queen Victoria. Supports more than 30 charity organizations, helps wounded soldiers during World War I.",
+    "descriptionen": "The last Russian Empress (from 1894 to 1917). Born Princess Victoria Alice Helen Louise Beatrice Hesse-Darmstadt, the favorite granddaughter of Queen Victoria. Supports more than 30 charity organizations, helps wounded soldiers during World War I. (1872–1918)",
     "profileru": "https://project1917.ru/persons/imperatritsa-aleksandra-fedorovna",
     "profileen": "https://project1917.com/persons/imperatrica_aleksandra_fedorovna"
   },
@@ -1511,7 +1537,7 @@ module.exports=[
     "posinbroz": 1,
     "born": "1868-05-05T17:02:55.000Z",
     "descriptionru": "Последний российский император (с 1894 по 1917 год). Любящий отец и муж. Главнокомандующий российскими войсками во время Первой мировой войны. Учреждает Государственную думу, проводит аграрную и военную реформы. В 1917 году отрекается от российского престола. (1868–1918)",
-    "descriptionen": "The last Russian Emperor (1894 to 1917). A loving father and husband. The chief commander of the Russian army during World War I. Creates the state Duma, carries out agricultural and military reform. In 1917 abdicates from the Russian throne.",
+    "descriptionen": "The last Russian Emperor (1894 to 1917). A loving father and husband. The chief commander of the Russian army during World War I. Creates the state Duma, carries out agricultural and military reform. In 1917 abdicates the Russian throne. (1868–1918)",
     "profileru": "https://project1917.ru/persons/imperator-nikolay-ii",
     "profileen": "https://project1917.com/persons/imperator_nikolaj_ii"
   },
@@ -1532,7 +1558,7 @@ module.exports=[
     "posinbroz": 4,
     "born": "1868-11-24T17:02:55.000Z",
     "descriptionru": "Великий герцог Гессенский и Рейнский. В 1918 году в результате революции в Германской империи отрекается от престола. Остается жить в Германии, где ведет размеренную жизнь и увлекается искусством. (1868–1937)",
-    "descriptionen": "The great Duke of Hesse and by Rhine. In 1918, as a result of a revolution in the German Empire, abdicates from the throne. Remains living in Germany where he leads a calm life and takes an interest in art."
+    "descriptionen": "Grand Duke of Hesse and by Rhine. In 1918, as a result of a revolution in the German Empire, abdicates the throne. Remains living in Germany where he leads a quiet life and takes an interest in art. (1868–1937)"
   },
   {
     "id": 84,
@@ -1547,7 +1573,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1874-10-14T17:02:55.000Z",
     "descriptionru": "Наследный принц Саксен-Кобург-Готский, внук Александра II. Служит в британской гвардии, умирает в возрасте 24 лет при невыясненных обстоятельствах. (1874–1899)",
-    "descriptionen": "The Prince of Saxe-Coburg and Gotha, the grandson of Alexander II. Serves in the British guards, dies at 24 in undetermined circumstances."
+    "descriptionen": "Hereditary Prince of Saxe-Coburg and Gotha, the grandson of Alexander II. Serves in the British guards, dies at 24 in unexplained circumstances. (1874–1899)"
   },
   {
     "id": 85,
@@ -1563,7 +1589,7 @@ module.exports=[
     "posinbroz": 3,
     "born": "1875-10-28T17:02:55.000Z",
     "descriptionru": "С 1914 по 1927 год — королева-консорт Румынии. Во время Первой мировой войны пишет книгу «Моя страна», чтобы профинансировать Красный Крест, работает медсестрой. Представляет страну во время подписания Версальского мирного договора. (1875–1938)",
-    "descriptionen": "From 1917 to 1927 Queen Consort of Romania. During World War I writes the book \"My Country\" in order to finance the Red Cross, works as a nurse. Represents her country at the signing of the Versailles Peace Treaty."
+    "descriptionen": "From 1914 to 1927 Queen Consort of Romania. During World War I writes the book \"My Country\" in order to finance the Red Cross, and works as a nurse. Represents her country at the signing of the Treaty of Versailles. (1875–1938)"
   },
   {
     "id": 86,
@@ -1581,7 +1607,7 @@ module.exports=[
     "posinbroz": 4,
     "born": "1876-11-24T17:02:55.000Z",
     "descriptionru": "Урожденная великая герцогиня Гессенская и Прирейнская. В 1905 году, не получая одобрения, выходит замуж за своего кузена, великого князя Кирилла Владимировича. Занимается благотворительностью. После революции 1917 года уезжает из России. (1876–1936)",
-    "descriptionen": "Born Grand Duchess of Hesse and the Pyrenees. In 1905, without receiving a blessing, marries her cousin, the Grand Duke Kirill Vladimirovich. Takes part in charity work. After the 1917 Revolution leaves Russia."
+    "descriptionen": "Born Grand Duchess of Hesse and the Pyrenees. In 1905, without receiving a blessing, marries her cousin, the Grand Duke Kirill Vladimirovich. Takes part in charity work. Leaves Russia after the 1917 Revolution. (1876–1936)"
   },
   {
     "id": 87,
@@ -1598,7 +1624,7 @@ module.exports=[
     "posinbroz": 1,
     "born": "1876-09-29T17:02:55.000Z",
     "descriptionru": "Великий князь. Его брак не признается императором, несколько лет живет за границей. Отказывается поддержать царя во время Февральской революции. В эмиграции помогает русским беженцам. (1876–1938)",
-    "descriptionen": "His marriage is not recognized by the Emperor, he lives abroad for several years. Refuses to support the czar during the February Revolution. In emigration helps Russian refugees.",
+    "descriptionen": "His marriage is not recognized by the Emperor, and he lives abroad for several years. Refuses to support the Emperor during the February Revolution. In emigration helps Russian refugees. (1876–1938)",
     "profileru": "https://project1917.ru/persons/velikiy-knyaz-kirill-vladimirovich",
     "profileen": "https://project1917.com/persons/velikiy-knyaz-kirill-vladimirovich"
   },
@@ -1616,7 +1642,7 @@ module.exports=[
     "posinbroz": 4,
     "born": "1878-11-21T17:02:55.000Z",
     "descriptionru": "Великий князь. Военачальник. Пытается спасти монархию, но во время Февральской революции 1917 года отрекается от престола и призывает подчиняться Временному правительству. Близок к Николаю II, не участвует в заговорах против него. (1878–1918)",
-    "descriptionen": "A military commander. Tries to save the monarchy, but during the February Revolution of 1917 abdicates from the throne and calls for compliance with the Provisional Government. Close to Nicholas II and does not participate in plots against him.",
+    "descriptionen": "A military commander. Tries to save the monarchy, but during the February Revolution of 1917 abdicates from the throne and calls for compliance with the Provisional Government. Close to Nicholas II and does not participate in plots against him. (1878–1918)",
     "profileru": "https://project1917.ru/persons/velikiy-knyaz-mikhail-aleksandrovich",
     "profileen": "https://project1917.com/persons/velikij_knyaz_mihail_aleksandrovich",
     "undefined": " отличается имя на сайте"
@@ -1635,7 +1661,7 @@ module.exports=[
     "posinbroz": 2,
     "born": "1875-03-24T17:02:55.000Z",
     "descriptionru": "Выходит замуж за двоюродного дядю, Александра Михайловича. Занимается благотворительностью. В 1919 году эмигрирует и до самой смерти живет в Великобритании. (1875–1960)",
-    "descriptionen": "Marries her cousin uncle Alexander Mikhailovich. Participates in charity work. In 1919 emigrates and lives until her death in Britain.",
+    "descriptionen": "ВыMarries her cousin uncle Alexander Mikhailovich. Participates in charity work. In 1919 emigrates and lives in Britain until her death. (1875–1960)",
     "profileru": "https://project1917.ru/persons/velikaya-knyaginya-kseniya-aleksandrovna"
   },
   {
@@ -1651,7 +1677,7 @@ module.exports=[
     "posinbroz": 3,
     "born": "1882-05-31T17:02:55.000Z",
     "descriptionru": "Последняя великая княгиня. Во время Первой мировой войны работает сестрой милосердия. С 1928 года живет в Дании, потом переезжает в Канаду. Занимается живописью, что позволяет ей заниматься благотворительностью и поддерживать семью. (1882–1960)",
-    "descriptionen": "The last Grand Duchess. During World War I works as a nurse. From 1928 lives in Denmark and then moves to Canada. Paints, which helps her carry out her charity work and to support her family.",
+    "descriptionen": "The last Grand Duchess. During World War I works as a nurse. From 1928 lives in Denmark and then moves to Canada. Her painting helps her carry out her charity work and to support her family. (1882–1960)",
     "profileru": "https://project1917.ru/persons/velikaya-knyaginya-olga-aleksandrovna",
     "profileen": "https://project1917.com/persons/velikaya-knyaginya-olga-aleksandrovna"
   },
@@ -1671,7 +1697,7 @@ module.exports=[
     "posinbroz": 3,
     "born": "1894-06-22T17:02:55.000Z",
     "descriptionru": "Король Великобритании с января по декабрь 1936 года. По одной из версий, отрекается от престола, чтобы жениться. После отречения путешествует по Европе, где лично встречается с Адольфом Гитлером. (1894–1972)",
-    "descriptionen": "King of Britain from January to December 1936. According to one version, abdicates from the throne in order to get married. After abdication travels around Europe and meets Adolph Hitler."
+    "descriptionen": "King of Britain from January to December 1936. Abdicates in order to get married. After abdication travels around Europe and meets Adolph Hitler. (1894–1972)"
   },
   {
     "id": 92,
@@ -1685,7 +1711,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1896-06-18T17:02:55.000Z",
     "descriptionru": "Дочь американского бизнесмена, с 1937 года — супруга герцога Виндзорского Эдуарда VIII. Становится «Человеком года», по версии Time. Любовь к Эдуарду VIII, их брак лежат в основе автобиографии «Сердцу не прикажешь». (1896–1986)",
-    "descriptionen": "Daughter of an American businessman, from 1937 the wife of Duke of Windsor, Edward VIII. Becomes the Time magazine \"Person of the Year.\" Her love for Edward and their marriage were the basis for her autobiography \"The Heart Has Its Reasons.”"
+    "descriptionen": "Daughter of an American businessman. From 1937, the wife of Duke of Windsor, Edward VIII. Announced \"Person of the Year\" by Time magazine Her love for Edward and their marriage form the basis for her autobiography \"The Heart Has Its Reasons.” (1896–1986)"
   },
   {
     "id": 93,
@@ -1702,7 +1728,8 @@ module.exports=[
     "mother": 30,
     "posinbroz": 4,
     "born": "1895-12-13T17:02:55.000Z",
-    "descriptionru": "Король Великобритании с 1936 по 1952 год. В его правление ускоряется процесс распада Британской империи, он является последним королем Ирландии и императором Индии. Во время Второй мировой войны не покидает Лондон, посещает солдат на передовой. (1895–1952)"
+    "descriptionru": "Король Великобритании с 1936 по 1952 год. В его правление ускоряется процесс распада Британской империи, он является последним королем Ирландии и императором Индии. Во время Второй мировой войны не покидает Лондон, посещает солдат на передовой. (1895–1952)",
+    "descriptionen": "King of Great Britain from 1936 to 1952. The disintegration of the British Empire accelerates during his reign; he is the last king of Ireland and the last Emperor of India. Stays in London during World War II; visits soldiers on the front lines. (1895–1952)"
   },
   {
     "id": 94,
@@ -1715,7 +1742,8 @@ module.exports=[
     "mother": 36,
     "posinbroz": 0,
     "born": "1860-05-18T17:02:55.000Z",
-    "descriptionru": "Страстно любит лошадей, что позволило ему построить карьеру в полках кавалерии. Владеет собственным конным заводом под Полтавой. Расстрелян большевиками в Петропавловской крепости в 1919 году. (1860–1919)"
+    "descriptionru": "Страстно любит лошадей, что позволило ему построить карьеру в полках кавалерии. Владеет собственным конным заводом под Полтавой. Расстрелян большевиками в Петропавловской крепости в 1919 году. (1860–1919)",
+    "descriptionen": "A passionate lover of horses, he built a career in the cavalry regiments. Owns a stud farm near Poltava. Shot by the Bolsheviks in the Peter and Paul Fortress in 1919. (1860–1919)"
   },
   {
     "id": 95,
@@ -1733,7 +1761,8 @@ module.exports=[
     "mother": 139,
     "posinbroz": 0,
     "born": "1926-04-20T17:00:00.000Z",
-    "descriptionru": "Королева Великобритании и Северной Ирландии с 1952 года. Самый долгоправящий монарх за всю историю Великобритании и в мире. Не дает интервью. Ввела моду на корги. Стала героиней одной из самых знаменитых песен панк-группы “Sex Pistols\". (1926–)"
+    "descriptionru": "Королева Великобритании и Северной Ирландии с 1952 года. Самый долгоправящий монарх за всю историю Великобритании и в мире. Не дает интервью. Ввела моду на корги. Стала героиней одной из самых знаменитых песен панк-группы “Sex Pistols\". (1926–)",
+    "descriptionen": "Queen of Great Britain and Northern Ireland since 1952. The longest-reigning living monarch, and the longest-reigning monarch in British history. Does not give interviews. Turned the corgi into a fashion accessory. Heroine of one of the most famous songs by the punk band \"The Sex Pistols\". (1926–)"
   },
   {
     "id": 96,
@@ -1747,7 +1776,8 @@ module.exports=[
     "mother": 30,
     "posinbroz": 0,
     "born": "1897-04-24T17:02:55.000Z",
-    "descriptionru": "Принцесса Великобритании и Северной Ирландии, в замужестве графиня Хэрвуд. Рождественский подарочный фонд принцессы Марии передал британским солдатам и матросам около 100 тысяч подарков на Рождество 1914 года. В 1920 году становится президентом Ассоциации девушек, занимается проблемами женщин. (1897–1965)"
+    "descriptionru": "Принцесса Великобритании и Северной Ирландии, в замужестве графиня Хэрвуд. Рождественский подарочный фонд принцессы Марии передал британским солдатам и матросам около 100 тысяч подарков на Рождество 1914 года. В 1920 году становится президентом Ассоциации девушек, занимается проблемами женщин. (1897–1965)",
+    "descriptionen": "Princess Royal and Countess of Harewood. Her Christmas Gift Fund for Christmas 1914 sends some £100,000 worth of gifts to British soldiers and sailors. . In 1920, becomes president of the Association of Girls, an organisation dealing with women’s issues. (1897–1965)"
   },
   {
     "id": 97,
@@ -1761,7 +1791,8 @@ module.exports=[
     "mother": 30,
     "posinbroz": 1,
     "born": "1900-03-30T17:02:55.000Z",
-    "descriptionru": "Был регентом Елизаветы II, однако так и не вступил на трон. С 1945 по 1947 год занимает пост генерал-губернатора Австралии. Во время Второй мировой войны часто находится в самом центре боевых событий, но не получает серьезных ранений. (1900–1974)"
+    "descriptionru": "Был регентом Елизаветы II, однако так и не вступил на трон. С 1945 по 1947 год занимает пост генерал-губернатора Австралии. Во время Второй мировой войны часто находится в самом центре боевых событий, но не получает серьезных ранений. (1900–1974)",
+    "descriptionen": "Regent designate until Princess Elizabeth comes of age in 1944. Governor-General of Australia from 1945 to 1947. Often in the thick of military operations during the Second World War, he escapes any serious injuries. (1900–1974)"
   },
   {
     "id": 98,
@@ -1779,7 +1810,8 @@ module.exports=[
     "mother": 30,
     "posinbroz": 5,
     "born": "1902-12-19T17:02:55.000Z",
-    "descriptionru": "Герцог Кентский с 1934 по 1942 год. Первым из королевской семьи пересек Атлантику по воздуху. Служит в Королевских военно-воздушных силах Великобритании. (1902–1942)"
+    "descriptionru": "Герцог Кентский с 1934 по 1942 год. Первым из королевской семьи пересек Атлантику по воздуху. Служит в Королевских военно-воздушных силах Великобритании. (1902–1942)",
+    "descriptionen": "Duke of Kent from 1934-1942. The first member of the royal family to cross the Atlantic by air. Serves in the RAF. (1902–1942)"
   },
   {
     "id": 99,
@@ -1795,7 +1827,8 @@ module.exports=[
     "mother": 47,
     "posinbroz": 0,
     "born": "1906-11-29T17:02:55.000Z",
-    "descriptionru": "Принцесса Греческая и Датская. Президент Уимблдонского клуба в течение 26 лет. После смерти мужа, британского принца Георга, продает все его имущество на аукционе, чтобы поддержать свое благосостояние. (1906–1968)"
+    "descriptionru": "Принцесса Греческая и Датская. Президент Уимблдонского клуба в течение 26 лет. После смерти мужа, британского принца Георга, продает все его имущество на аукционе, чтобы поддержать свое благосостояние. (1906–1968)",
+    "descriptionen": " Princess of Greece and Denmark. President of the Wimbledon Lawn Tennis Club for 26 years. After the death of her husband, Prince George, she sells off all his assets at auction. (1906–1968)"
   },
   {
     "id": 100,
@@ -1813,7 +1846,8 @@ module.exports=[
     "mother": 56,
     "posinbroz": 5,
     "born": "1845-12-23T17:02:55.000Z",
-    "descriptionru": "Король Греции с 1863 по 1913 год, основатель греческой династии Глюксбургов. В его правление страна укрепляет свои позиция на международной арене, появляется «Великая идея» — о фактическом восстановлении Византийской империи. (1845–1913)"
+    "descriptionru": "Король Греции с 1863 по 1913 год, основатель греческой династии Глюксбургов. В его правление страна укрепляет свои позиция на международной арене, появляется «Великая идея» — о фактическом восстановлении Византийской империи. (1845–1913)",
+    "descriptionen": "King of Greece from 1863 to 1913. Founder of the Greek Glücksburg dynasty. During his reign, the country strengthens its international position; the “Megali Idea” – which entailed the effective revival of the Byzantine Empire – dominates the country’s politics throughout the course of this period. (1845–1913)"
   },
   {
     "id": 101,
@@ -1826,7 +1860,8 @@ module.exports=[
     "mother": 36,
     "posinbroz": 2,
     "born": "1862-06-30T17:02:55.000Z",
-    "descriptionru": "Великий князь. Веселый мальчик с выдающимися музыкальными способностями. Умирает в 16 лет от менингита. (1862–1879)"
+    "descriptionru": "Великий князь. Веселый мальчик с выдающимися музыкальными способностями. Умирает в 16 лет от менингита. (1862–1879)",
+    "descriptionen": "Grand Duke. A cheerful boy with outstanding musical abilities, he succumbs to meningitis at the age of 16. (1862–1879)"
   },
   {
     "id": 102,
@@ -1840,7 +1875,8 @@ module.exports=[
     "mother": 14,
     "posinbroz": 4,
     "born": "1869-06-23T17:02:55.000Z",
-    "descriptionru": "Граф Корфский, Верховный комиссар Критского государства с 1898 по 1906 год. Выступает против присоединения Крита к Греции, что заставляет его эмигрировать во Францию, где он становится послом. В 1891 году в японском Оцу спасает Николая II от гибели при покушении городового. (1869–1957)"
+    "descriptionru": "Граф Корфский, Верховный комиссар Критского государства с 1898 по 1906 год. Выступает против присоединения Крита к Греции, что заставляет его эмигрировать во Францию, где он становится послом. В 1891 году в японском Оцу спасает Николая II от гибели при покушении городового. (1869–1957)",
+    "descriptionen": "High Commissioner of the Cretan State from 1898 to 1906. After opposing the annexation of Crete to Greece, he is forced to emigrate to France, where he becomes an ambassador. In 1891, saves the future Nicholas II from an assassination attempt in Japan (an affair now known as the Otsu incident). (1869–1957)"
   },
   {
     "id": 103,
@@ -1852,7 +1888,8 @@ module.exports=[
     "family": 2,
     "posinbroz": 0,
     "born": "1882-07-01T17:02:55.000Z",
-    "descriptionru": "Правнучка Люсьена Бонапарта, брата Наполеона Бонапарта. Одна из первых французских психоаналитиков, ученица Зигмунда Фрейда. В 1926 году учреждает Парижское психоаналитическое общество, спустя год создает первый психоаналитический журнал во Франции. (1882–1962)"
+    "descriptionru": "Правнучка Люсьена Бонапарта, брата Наполеона Бонапарта. Одна из первых французских психоаналитиков, ученица Зигмунда Фрейда. В 1926 году учреждает Парижское психоаналитическое общество, спустя год создает первый психоаналитический журнал во Франции. (1882–1962)",
+    "descriptionen": "Great-granddaughter of Lucien Bonaparte (brother of Napoleon Bonaparte). One of the first French psychoanalysts. A student of Sigmund Freud, she founds the Paris Psychoanalytic Society in 1926 and establishes France’s first psychoanalytic journal the following year. (1882–1962)"
   },
   {
     "id": 104,
@@ -1864,7 +1901,8 @@ module.exports=[
     "family": 4,
     "posinbroz": 0,
     "born": "1871-09-16T17:02:55.000Z",
-    "descriptionru": "Великая герцогиня Гессенская и Рейнская. Погибает в авиакатастрофе, когда летит в Лондон на свадьбу своего сына Людвига. (1871–1937)"
+    "descriptionru": "Великая герцогиня Гессенская и Рейнская. Погибает в авиакатастрофе, когда летит в Лондон на свадьбу своего сына Людвига. (1871–1937)",
+    "descriptionen": "Grand Duchess of Hesse and by Rhine. Killed in a plane crash en route to London for the wedding of her son Louis. (1871–1937)"
   },
   {
     "id": 105,
@@ -1878,7 +1916,8 @@ module.exports=[
     "family": 1,
     "posinbroz": 0,
     "born": "1865-08-23T17:02:55.000Z",
-    "descriptionru": "Король Румынии с 1914 по 1927 год. Будучи католиком, он управляет на то время православным государством, что подрывает его репутацию. Мало вовлечен в политику, увлекается ботаникой. (1865–1927)"
+    "descriptionru": "Король Румынии с 1914 по 1927 год. Будучи католиком, он управляет на то время православным государством, что подрывает его репутацию. Мало вовлечен в политику, увлекается ботаникой. (1865–1927)",
+    "descriptionen": "King of Romania from 1914 to 1927. A Catholic, he rules over what is at the time an Orthodox state, which serves to undermine his reputation. Little involved in politics, he is a keen botanist. (1865–1927)"
   },
   {
     "id": 106,
@@ -1891,7 +1930,8 @@ module.exports=[
     "mother": 10,
     "posinbroz": 1,
     "born": "1878-08-31T17:02:55.000Z",
-    "descriptionru": "Урожденная Александра Луиза Ольга Виктория Саксен-Кобург-Готская. После замужества переезжает в Германию, где и живет всю оставшуюся жизнь. Во время Первой мировой войны работает медсестрой в Красном Кресте. (1878–1942)"
+    "descriptionru": "Урожденная Александра Луиза Ольга Виктория Саксен-Кобург-Готская. После замужества переезжает в Германию, где и живет всю оставшуюся жизнь. Во время Первой мировой войны работает медсестрой в Красном Кресте. (1878–1942)",
+    "descriptionen": "After marrying, she moves to Germany, where she lives out the rest of her life. Serves as a nurse in the Red Cross during the First World War. (1878–1942)"
   },
   {
     "id": 107,
@@ -1904,7 +1944,8 @@ module.exports=[
     "mother": 10,
     "posinbroz": 2,
     "born": "1884-04-19T17:02:55.000Z",
-    "descriptionru": "Принцесса Великобританская и Саксен-Кобург-Готская. Супруга испанского инфанта дона Альфонсо. Несколько раз была вынуждена покидать Испанию из-за личных разногласий с королевским двором и политической ситуации в стране. (1884–1966)"
+    "descriptionru": "Принцесса Великобританская и Саксен-Кобург-Готская. Супруга испанского инфанта дона Альфонсо. Несколько раз была вынуждена покидать Испанию из-за личных разногласий с королевским двором и политической ситуации в стране. (1884–1966)",
+    "descriptionen": "Princess of Saxe-Coburg and Gotha. The wife of Alfonso de Orleans y Borbón, Infante of Spain, she is forced to leave Spain on several occasions due to personal disputes with the royal court and as a result of the political situation in the country. (1884–1966)"
   },
   {
     "id": 108,
@@ -1917,7 +1958,8 @@ module.exports=[
     "mother": 13,
     "posinbroz": 0,
     "born": "1871-04-26T17:02:55.000Z",
-    "descriptionru": "Великий князь. После воцарения Николая II является первым в очереди на престол, однако в 1899 году скоропостижно умирает от туберкулеза в возрасте 28 лет. (1871–1899)"
+    "descriptionru": "Великий князь. После воцарения Николая II является первым в очереди на престол, однако в 1899 году скоропостижно умирает от туберкулеза в возрасте 28 лет. (1871–1899)",
+    "descriptionen": "Grand Duke. First in line to the throne following the accession of Nicholas II, but dies suddenly from tuberculosis in 1899 at the age of 28. (1871–1899)"
   },
   {
     "id": 109,
@@ -1930,6 +1972,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1880-06-26T17:02:55.000Z",
     "descriptionru": "Брак с великим князем Михаилом стал третьим для нее. Брак заключен без разрешения императора Николая II, из-за чего супруги были вынуждены уехать из России, но в 1914 году вместе возвращаются на родину. Во время Первой мировой войны заведует госпиталями для раненых в Петербурге. (1880–1952)",
+    "descriptionen": "Her marriage to Grand Duke Mikhail was her third. The marriage takes place despite Emperor Nicholas II’s disapproval, which forces the pair to leave Russia, but in 1914 they return to their homeland. During World War I they run hospitals for the wounded in Petersburg. (1880–1952)",
     "profileru": "https://project1917.ru/persons/natalya-brasova",
     "profileen": "no"
   },
@@ -1946,7 +1989,8 @@ module.exports=[
     "family": 2,
     "mother": 26,
     "posinbroz": 2,
-    "descriptionru": "Король Греции в 1922–1924, 1935–1947 годах. Трижды был изгнан из Греции. На время его правления приходится Гражданская война в Греции, которая длится более трех лет. (1890–1947)"
+    "descriptionru": "Король Греции в 1922–1924, 1935–1947 годах. Трижды был изгнан из Греции. На время его правления приходится Гражданская война в Греции, которая длится более трех лет. (1890–1947)",
+    "descriptionen": "King of Greece from 1922 to 1924 and from 1935 to 1947. Banished from Greece three times. His rule sees the beginning of a civil war in Greece that lasts for more than 3 years. (1890–1947)"
   },
   {
     "id": 111,
@@ -1962,7 +2006,8 @@ module.exports=[
     "mother": 26,
     "posinbroz": 1,
     "born": "1893-07-31T17:02:55.000Z",
-    "descriptionru": "Король Греции с 1917 по 1920 год. Фактически не управляет страной, доверяя государственные дела премьер-министру. Он поддерживает боевой дух солдат на передовой. Умирает в возрасте 27 лет от сепсиса после укуса обезьяны. (1893–1920)"
+    "descriptionru": "Король Греции с 1917 по 1920 год. Фактически не управляет страной, доверяя государственные дела премьер-министру. Он поддерживает боевой дух солдат на передовой. Умирает в возрасте 27 лет от сепсиса после укуса обезьяны. (1893–1920)",
+    "descriptionen": "King of Greece from 1917 to 1920. Does not actually run the country, entrusting government affairs to the Prime Minister. Supports the fighting spirit of his soldiers on the front. Dies at the age of 27 from sepsis as a result of a monkey bite. (1893–1920)"
   },
   {
     "id": 112,
@@ -1978,7 +2023,8 @@ module.exports=[
     "mother": 26,
     "posinbroz": 0,
     "born": "1901-12-13T17:02:55.000Z",
-    "descriptionru": "Король Греции в 1947–1964 годах. Сторонники республики критикуют его за вмешательство в политику и большие расходы на содержание королевской семьи. На его правление приходится окончание Гражданской войны в Греции и признание Кипра самостоятельным государством. (1901–1964)"
+    "descriptionru": "Король Греции в 1947–1964 годах. Сторонники республики критикуют его за вмешательство в политику и большие расходы на содержание королевской семьи. На его правление приходится окончание Гражданской войны в Греции и признание Кипра самостоятельным государством. (1901–1964)",
+    "descriptionen": "King of Greece from 1947 to 1964. Supporters of the republic criticise him for meddling in politics and the high expenses needed for supporting the royal family. During his rule, the civil war in Greece comes to an end and Cyprus becomes an independent state. (1901–1964)"
   },
   {
     "id": 113,
@@ -1994,7 +2040,8 @@ module.exports=[
     "mother": 57,
     "posinbroz": 0,
     "born": "1870-09-25T17:02:55.000Z",
-    "descriptionru": "Король Дании с 1912 по 1947 год, король Исландии с 1918 по 1944 год. В начале правления не пользуется популярностью у датчан из-за отсутствия политического контакта с правительством. Однако его популярность возрастает во время фашистской оккупации. Он остается в Дании и становится символом сопротивления для народа. (1870–1947)"
+    "descriptionru": "Король Дании с 1912 по 1947 год, король Исландии с 1918 по 1944 год. В начале правления не пользуется популярностью у датчан из-за отсутствия политического контакта с правительством. Однако его популярность возрастает во время фашистской оккупации. Он остается в Дании и становится символом сопротивления для народа. (1870–1947)",
+    "descriptionen": "King of Denmark from 1912 to 1947, King of Iceland from 1918 to 1944. Unpopular  among the Danish people at the start of his reign because of a lack of connection with the government. However, during the Nazi occupation, his popularity grows. He stays in Denmark and becomes the symbol of resistance for the people. (1870–1947)"
   },
   {
     "id": 114,
@@ -2009,7 +2056,8 @@ module.exports=[
     "family": 2,
     "posinbroz": 0,
     "born": "1940-04-15T16:00:00.000Z",
-    "descriptionru": "Королева Дании с 1972 года. Не участвует в государственных делах, увлекается искусством. Является автором иллюстраций нескольких литературных произведений, костюмов и декораций к театральным постановкам. (1940–)"
+    "descriptionru": "Королева Дании с 1972 года. Не участвует в государственных делах, увлекается искусством. Является автором иллюстраций нескольких литературных произведений, костюмов и декораций к театральным постановкам. (1940–)",
+    "descriptionen": "Queen of Denmark from 1972. Does not participate in government, has an interest in art. Illustrates several books, and creates costumes and sets for theater productions. (1940–)"
   },
   {
     "id": 115,
@@ -2025,7 +2073,8 @@ module.exports=[
     "mother": 57,
     "posinbroz": 1,
     "born": "1872-08-02T17:02:55.000Z",
-    "descriptionru": "Король Норвегии с 1905 по 1957 год. Пользуется огромной поддержкой у народа, однако не участвует в политике. Во время фашистской оккупации возглавляет правительство в Лондоне, является символом норвежского движения Сопротивления. (1872–1957)"
+    "descriptionru": "Король Норвегии с 1905 по 1957 год. Пользуется огромной поддержкой у народа, однако не участвует в политике. Во время фашистской оккупации возглавляет правительство в Лондоне, является символом норвежского движения Сопротивления. (1872–1957)",
+    "descriptionen": "King of Norway from 1905 to 1957. Has strong support from the people, but does not participate in government. During Nazi occupation heads the government in London, becomes a symbol of Norway popular resistance movement. (1872–1957)"
   },
   {
     "id": 116,
@@ -2040,7 +2089,8 @@ module.exports=[
     "family": 2,
     "posinbroz": 0,
     "born": "1937-02-20T16:00:00.000Z",
-    "descriptionru": "Король Норвегии с 1991 года. Увлекается парусным спортом, трижды участвовал в Олимпийских играх. Несколько раз завоевывал призовые места на чемпионатах мира и Европы. В 2015 году стал первым действующим монархом в мире, посетившим Антарктиду. (1937–)"
+    "descriptionru": "Король Норвегии с 1991 года. Увлекается парусным спортом, трижды участвовал в Олимпийских играх. Несколько раз завоевывал призовые места на чемпионатах мира и Европы. В 2015 году стал первым действующим монархом в мире, посетившим Антарктиду. (1937–)",
+    "descriptionen": "King of Norway since 1991. A lover of sailing, he has participated in the Olympic games three times, and has achieved prizewinning positions several times at the European and World Championships. In 2015 he became the most active monarch in the world, having visited Antarctica. (1937–)"
   },
   {
     "id": 117,
@@ -2054,7 +2104,8 @@ module.exports=[
     "mother": 23,
     "posinbroz": 0,
     "born": "1882-05-05T17:02:55.000Z",
-    "descriptionru": "Кронпринц Германии и Пруссии с 1888 по 1918 год. Командует одной из армий во время Первой мировой войны. После поражения Германии живет в изгнании в Нидерландах. В 1932 году на выборах поддерживает Гитлера, но вскоре в нем разочаровывается. (1882–1951)"
+    "descriptionru": "Кронпринц Германии и Пруссии с 1888 по 1918 год. Командует одной из армий во время Первой мировой войны. После поражения Германии живет в изгнании в Нидерландах. В 1932 году на выборах поддерживает Гитлера, но вскоре в нем разочаровывается. (1882–1951)",
+    "descriptionen": "Crown Prince of Germany and Prussia from 1888 to 1918. Commander of one of the armies in the First World War. After Germany loses the war, he lives in exile in the Netherlands. In 1932, he supports Hitler in the elections, but quickly becomes disillusioned. (1882–1951)"
   },
   {
     "id": 118,
@@ -2067,7 +2118,8 @@ module.exports=[
     "mother": 23,
     "posinbroz": 1,
     "born": "1883-07-06T17:02:55.000Z",
-    "descriptionru": "Принц Прусский. Командует войсками во время Первой мировой войны, принимает участие в сражениях. Пишет музыку к военным маршам, один из них носит его имя. (1883–1942)"
+    "descriptionru": "Принц Прусский. Командует войсками во время Первой мировой войны, принимает участие в сражениях. Пишет музыку к военным маршам, один из них носит его имя. (1883–1942)",
+    "descriptionen": "Prince of Prussia. Commander of troops in the First World War, and an active participant in the battles. He writes music for military marches, one of which bears his name. (1883–1942)"
   },
   {
     "id": 119,
@@ -2080,7 +2132,8 @@ module.exports=[
     "mother": 23,
     "posinbroz": 2,
     "born": "1884-07-13T17:02:55.000Z",
-    "descriptionru": "Во время Первой мировой войны, как и его братья, участвует в сражениях на военных крейсерах. Не поддерживает фашистский режим в Германии и после распада империи не вовлечен в политические дела. (1884–1948)"
+    "descriptionru": "Во время Первой мировой войны, как и его братья, участвует в сражениях на военных крейсерах. Не поддерживает фашистский режим в Германии и после распада империи не вовлечен в политические дела. (1884–1948)",
+    "descriptionen": "During the First World War, fights in battles on board military cruisers, as do his brothers. He does not support the fascist regime in Germany and after the collapse of the empire,does not involve himself in political affairs. (1884–1948)"
   },
   {
     "id": 120,
@@ -2093,7 +2146,8 @@ module.exports=[
     "mother": 23,
     "posinbroz": 3,
     "born": "1887-01-28T17:02:55.000Z",
-    "descriptionru": "После падения монархии остается в Германии, работает в банке. Участвует в предвыборных кампаниях нацистов, позже открыто поддерживает политику Третьего рейха, но не принимает участие в государственных делах. (1887–1949)"
+    "descriptionru": "После падения монархии остается в Германии, работает в банке. Участвует в предвыборных кампаниях нацистов, позже открыто поддерживает политику Третьего рейха, но не принимает участие в государственных делах. (1887–1949)",
+    "descriptionen": "Following the collapse of the monarchy, remains in Germany and works at a bank. Takes part in the Nazi party’s pre-election campaigns, and later openly supports the Third Reich’s policies, but is not involved in the affairs of the state. (1887–1949)"
   },
   {
     "id": 121,
@@ -2106,7 +2160,8 @@ module.exports=[
     "mother": 23,
     "posinbroz": 4,
     "born": "1888-07-26T17:02:55.000Z",
-    "descriptionru": "Сопротивляется попыткам нацистов уничтожить Орден иоаннитов, существующий более 800 лет, что приводит к разногласиям с новым руководством страны. К началу Второй мировой войны имеет звание генерал-майора армии, но подает в отставку из-за давления Гитлера. (1888–1958)"
+    "descriptionru": "Сопротивляется попыткам нацистов уничтожить Орден иоаннитов, существующий более 800 лет, что приводит к разногласиям с новым руководством страны. К началу Второй мировой войны имеет звание генерал-майора армии, но подает в отставку из-за давления Гитлера. (1888–1958)",
+    "descriptionen": "Resists the Nazis’ attempts to destroy the Order of the Johannites, which had existed for over 800 years. This leads to disagreements with the new leaders. By the beginning of the Second World War, holds the rank of Major-General of the Army, but resigns under pressure from Hitler. (1888–1958)"
   },
   {
     "id": 122,
@@ -2119,7 +2174,8 @@ module.exports=[
     "mother": 23,
     "posinbroz": 5,
     "born": "1890-12-16T17:02:55.000Z",
-    "descriptionru": "Страдает эпилепсией, во время Первой мировой войны служит в армии. В 1920 году кончает жизнь самоубийством. (1890–1920)"
+    "descriptionru": "Страдает эпилепсией, во время Первой мировой войны служит в армии. В 1920 году кончает жизнь самоубийством. (1890–1920)",
+    "descriptionen": "Suffers from epilepsy, and serves in the army during the First World War. Commits suicide in 1920. (1890–1920)"
   },
   {
     "id": 123,
@@ -2132,7 +2188,8 @@ module.exports=[
     "mother": 23,
     "posinbroz": 6,
     "born": "1892-09-12T17:02:55.000Z",
-    "descriptionru": "С 1913 по 1953 год — герцогиня Брауншвейга. Ее свадьба с Эрнстом Августом Брауншвейгским становится крупнейшим событием для европейской знати перед началом Первой мировой войны. После Второй мировой войны посвящает себя проектам по восстановлению исторических зданий, занимается благотворительностью. (1892–1980)"
+    "descriptionru": "С 1913 по 1953 год — герцогиня Брауншвейга. Ее свадьба с Эрнстом Августом Брауншвейгским становится крупнейшим событием для европейской знати перед началом Первой мировой войны. После Второй мировой войны посвящает себя проектам по восстановлению исторических зданий, занимается благотворительностью. (1892–1980)",
+    "descriptionen": "The Duchess of Braunschweig from 1913-1953. Her wedding to Ernst Augustus Braunschweig is the biggest event among the European nobility before the outbreak of the First World War. After the Second World War, she dedicates herself to the restoration of historical buildings, and is involved with charity work. (1892–1980)"
   },
   {
     "id": 124,
@@ -2146,7 +2203,8 @@ module.exports=[
     "mother": 99,
     "posinbroz": 0,
     "born": "1935-10-08T16:00:00.000Z",
-    "descriptionru": "Является президентом Ассоциации бойскаутов, награждает победителя Уимблдонского турнира. Возглавляет масонскую ложу Англии и несколько общественных организаций. (1935–)"
+    "descriptionru": "Является президентом Ассоциации бойскаутов, награждает победителя Уимблдонского турнира. Возглавляет масонскую ложу Англии и несколько общественных организаций. (1935–)",
+    "descriptionen": "President of the Boy Scouts Association. Awards the trophy to the winner of Wimbledon. He heads several public organisations, including the Masonic Lodge of England. (1935–)"
   },
   {
     "id": 125,
@@ -2160,7 +2218,8 @@ module.exports=[
     "mother": 99,
     "posinbroz": 1,
     "born": "1936-12-24T16:00:00.000Z",
-    "descriptionru": "Покровительствует нескольким высшим учебным учреждениям и общественным организациям Великобритании. По состоянию на январь 2017 год занимает 50 место в очереди на наследование британского трона. (1936–)"
+    "descriptionru": "Покровительствует нескольким высшим учебным учреждениям и общественным организациям Великобритании. По состоянию на январь 2017 год занимает 50 место в очереди на наследование британского трона. (1936–)",
+    "descriptionen": "Patron of several Great British higher education establishments and public organisations. As of January 2017, she occupies 50th place in line to the throne. (1936–)"
   },
   {
     "id": 126,
@@ -2174,7 +2233,8 @@ module.exports=[
     "mother": 99,
     "posinbroz": 2,
     "born": "1942-07-03T16:00:00.000Z",
-    "descriptionru": "Занимается бизнесом и благотворительной деятельностью, в том числе и в России. В 2009 году стал кавалером российского ордена Дружбы. (1942–)"
+    "descriptionru": "Занимается бизнесом и благотворительной деятельностью, в том числе и в России. В 2009 году стал кавалером российского ордена Дружбы. (1942–)",
+    "descriptionen": "Businessman also involved in charitable initiatives, including some in Russia. In 2009 he became a knight of the Russian “Order of Friendship”. (1942–)"
   },
   {
     "id": 127,
@@ -2187,7 +2247,8 @@ module.exports=[
     "mother": 30,
     "posinbroz": 2,
     "born": "1905-07-11T17:02:55.000Z",
-    "descriptionru": "Болеет эпилепсией, из-за чего умирает в возрасте 13 лет. (1905–1919)"
+    "descriptionru": "Болеет эпилепсией, из-за чего умирает в возрасте 13 лет. (1905–1919)",
+    "descriptionen": "Suffers from epilepsy and dies at the age of 13 as a result. (1905–1919)"
   },
   {
     "id": 128,
@@ -2202,6 +2263,7 @@ module.exports=[
     "posinbroz": 3,
     "born": "1877-11-11T17:02:55.000Z",
     "descriptionru": "Строит военную карьеру и участвует в русско-японской войне. После революции 1917 года эмигрирует из России и живет во Франции. Из-за морганатического брака лишается права на наследование престола. (1877–1943)",
+    "descriptionen": "Builds a career in the military and takes part in the Russo-Japanese War. After the revolution of 1917, emigrates from Russia and lives in France. Forfeits his right to the throne due to his morganatic marriage. (1877–1943)",
     "profileru": "https://project1917.ru/persons/velikiy-knyaz-boris-vladimirovich",
     "profileen": "no"
   },
@@ -2215,7 +2277,8 @@ module.exports=[
     "family": 3,
     "posinbroz": 0,
     "born": "1896-11-02T17:02:55.000Z",
-    "descriptionru": "Любовница великого князя Бориса Владимировича, впоследствии его супруга. Борис стал ее вторым мужем, и этот брак не был одобрен царской семьей. Во время эмиграции во Франции занимается модельным бизнесом. (1896–1963)"
+    "descriptionru": "Любовница великого князя Бориса Владимировича, впоследствии его супруга. Борис стал ее вторым мужем, и этот брак не был одобрен царской семьей. Во время эмиграции во Франции занимается модельным бизнесом. (1896–1963)",
+    "descriptionen": "Mistress of Grand Duke Boris Vladimirovich, and later his wife. Boris becomes her second husband, and the marriage is not approved by the royal family. When she emigrates to France, she becomes involved in the modelling business. (1896–1963)"
   },
   {
     "id": 130,
@@ -2231,6 +2294,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1879-04-19T17:02:55.000Z",
     "descriptionru": "С 1920 года живет во Франции вместе с известной балериной Матильдой Кшесинской. С 1943 года и до своей смерти в 1956 году остается последним из великих князей, родившихся в царской России. (1879–1956)",
+    "descriptionen": "From 1920, lives in France with the famous ballerina Mathilde Kschessinska. From 1943 and until his death in 1956 is the last remaining Grand Duke born in Tsarist Russia. (1879–1956)",
     "profileru": "https://project1917.ru/persons/velikiy-knyaz-andrey-vladimirovich",
     "profileen": "https://project1917.com/persons/velikij_knyaz_andrej_vladimirovich",
     "undefined": "отличается имя"
@@ -2247,6 +2311,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1872-08-18T17:02:55.000Z",
     "descriptionru": "Самая известная балерина в Петербурге, выступает в Мариинском театре. Была любовницей Николая II до его помолвки. В эмиграции в Париже, куда она уезжает с Андреем Владимировичем, открывает свою балетную школу. (1872–1971)",
+    "descriptionen": "The most famous ballerina in Saint Petersburg, performs in the Mariinsky Theatre. Romantically involved with Nicholas II up until his engagement. She moves to Paris with Andrey Vladimirovich and opens her own ballet school. (1872–1971)",
     "profileru": "https://project1917.ru/persons/matilda-kshesinskaya",
     "profileen": "https://project1917.com/persons/matilda_kshesinskaya"
   },
@@ -2264,6 +2329,7 @@ module.exports=[
     "posinbroz": 0,
     "born": "1890-04-05T17:02:55.000Z",
     "descriptionru": "В 1908 году выходит замуж за шведского принца Вильгельма, однако вскоре возвращается в Россию. После революции 1917 года эмигрирует из страны и занимается «предпринимательством»: изготавливает вышивку и кружева, а также работает фотографом для модных журналов. (1890–1958)",
+    "descriptionen": "In 1908 marries Swedish prince Wilhelm, but returns to Russia soon after. After the revolution of 1917 leaves the country and becomes an “entrepreneur”: makes embroidery and lace and works as a photographer for fashion magazines. (1890–1958)",
     "profileru": "https://project1917.ru/persons/velikaya-knyaginya-mariya-pavlovna-mladshaya",
     "profileen": "https://project1917.com/persons/velikaya-knyaginya-mariya-pavlovna-mladshaya"
   },
@@ -2280,6 +2346,7 @@ module.exports=[
     "posinbroz": 1,
     "born": "1891-09-05T17:02:55.000Z",
     "descriptionru": "Принимает участие в Олимпийских играх 1912 года, распоряжается проводить в России ежегодные олимпиады. Революция побуждает его эмигрировать из страны, и несколько лет в Европе он состоит в различных патриотических и монархических движениях. (1891–1942)",
+    "descriptionen": "Takes part in the Olympic games of 1912 and orders the staging of annual Olympic games in Russia. Forced  to leave the country after the Revolution, he becomes a member of various patriotic and monarchic movements in Europe. (1891–1942)",
     "profileru": "https://project1917.ru/persons/velikiy-knyaz-dmitriy-pavlovich",
     "profileen": "https://project1917.com/persons/velikiy-knyaz-dmitriy-pavlovich",
     "undefined": "отличается имя"
@@ -2295,7 +2362,8 @@ module.exports=[
     "mother": 47,
     "posinbroz": 2,
     "born": "1903-06-10T17:02:55.000Z",
-    "descriptionru": "Принцесса Греческая и Датская с 1903 по 1923 год. После замужества становится принцессой Югославской, до 1997 года. Несколько лет живет вместе с супругом в изгнании в Африке из-за сложной политической ситуации в Югославии. (1903–1997)"
+    "descriptionru": "Принцесса Греческая и Датская с 1903 по 1923 год. После замужества становится принцессой Югославской, до 1997 года. Несколько лет живет вместе с супругом в изгнании в Африке из-за сложной политической ситуации в Югославии. (1903–1997)",
+    "descriptionen": "Princess of Greece and Denmark from 1903 to 1923. After her marriage, becomes Princess of Yugoslavia until 1997. Spends several years with her husband in exile in Africa due to the complicated political situation in Yugoslavia. (1903–1997)"
   },
   {
     "id": 135,
@@ -2308,7 +2376,8 @@ module.exports=[
     "mother": 47,
     "posinbroz": 1,
     "born": "1904-05-23T17:02:55.000Z",
-    "descriptionru": "Славится своей красотой, имеет прозвище Wolly из-за своих темно-каштановых волос. Увлекается живописью и конным спортом. После замужества получает титул графини фон Терринг-Йеттенбах. (1904–1955)"
+    "descriptionru": "Славится своей красотой, имеет прозвище Wolly из-за своих темно-каштановых волос. Увлекается живописью и конным спортом. После замужества получает титул графини фон Терринг-Йеттенбах. (1904–1955)",
+    "descriptionen": "Famed for her beauty, nicknamed Wolly because of her dark chestnut hair. Her hobbies are painting and equestrian sport. After her marriage, becomes Duchess von Turing-Jettenbach. (1904–1955)"
   },
   {
     "id": 136,
@@ -2323,7 +2392,8 @@ module.exports=[
     "mother": 18,
     "posinbroz": 0,
     "born": "1857-04-28T17:02:55.000Z",
-    "descriptionru": "В 1894 году занимает должность в Государственном совете, с 1891 года — московский генерал-губернатор. Занимается благоустройством города, но теряет популярность из-за давки на Ходынском поле. (1857–1905)"
+    "descriptionru": "В 1894 году занимает должность в Государственном совете, с 1891 года — московский генерал-губернатор. Занимается благоустройством города, но теряет популярность из-за давки на Ходынском поле. (1857–1905)",
+    "descriptionen": "In 1894 takes up a post in the Upper Chamber. From 1891 holds the post of Governor General of Moscow. Improves the quality of life in the city, but loses public support after the stampede at Khodynka Field. (1857–1905)"
   },
   {
     "id": 137,
@@ -2338,7 +2408,8 @@ module.exports=[
     "mother": 5,
     "posinbroz": 0,
     "born": "1864-10-31T17:02:55.000Z",
-    "descriptionru": "Урожденная принцесса Гессен-Дармштадтская. Основывает в Москве Марфо-Мариинскую обитель. После смерти супруга становится председательницей Московского управления Красного Креста. Помогает малоимущим, занимается благотворительностью. (1864–1918)"
+    "descriptionru": "Урожденная принцесса Гессен-Дармштадтская. Основывает в Москве Марфо-Мариинскую обитель. После смерти супруга становится председательницей Московского управления Красного Креста. Помогает малоимущим, занимается благотворительностью. (1864–1918)",
+    "descriptionen": "Born Princess of Hesse-Darmstadt. Founds the Marfo-Mariinsky convent in Moscow. After the death of her husband becomes Chair of the Moscow Red Cross. Helps the less fortunate, engages in charitable work. (1864–1918)"
   },
   {
     "id": 138,
@@ -2353,7 +2424,8 @@ module.exports=[
     "mother": 0,
     "posinbroz": 0,
     "born": "1811-09-29T17:02:55.000Z",
-    "descriptionru": "Императрица-консорт Германской империи с 1871 по 1888 год. Получает хорошее образование, увлекается искусством. Занимается политикой и общественной деятельностью — учреждает больницы, помогает получившим ранения солдатам. Выступает за мирное объединение Германии. (1811–1890)"
+    "descriptionru": "Императрица-консорт Германской империи с 1871 по 1888 год. Получает хорошее образование, увлекается искусством. Занимается политикой и общественной деятельностью — учреждает больницы, помогает получившим ранения солдатам. Выступает за мирное объединение Германии. (1811–1890)",
+    "descriptionen": "Empress-Consort of the German Empire from 1871 to 1888. She receives a good education and  is passionate about art. Engages in politics and public work – founds hospitals, helps wounded soldiers. Supports the peaceful unification of Germany. (1811–1890)"
   },
   {
     "id": 139,
@@ -2369,7 +2441,8 @@ module.exports=[
     "family": 1,
     "posinbroz": 0,
     "born": "1900-08-03T17:02:55.000Z",
-    "descriptionru": "Урожденная Елизавета Ангела Маргарет Боуз-Лайон, «королева-мать». Королева-консорт Британской империи с 1936 по 1952 год. В годы Второй мировой войны отказывается покидать Лондон, становится моральным авторитетом и символом борьбы для британцев. (1900–2002)"
+    "descriptionru": "Урожденная Елизавета Ангела Маргарет Боуз-Лайон, «королева-мать». Королева-консорт Британской империи с 1936 по 1952 год. В годы Второй мировой войны отказывается покидать Лондон, становится моральным авторитетом и символом борьбы для британцев. (1900–2002)",
+    "descriptionen": "Born Elizabeth Angela Marguerite Bowes-Lyon, “The Queen Mother”. Queen-Consort of the British Empire from 1936 to 1952. During the Second World War, refuses to leave London, becomes a figure of moral authority and symbol of resistance for the British people. (1900–2002)"
   }
 ]
 },{}],5:[function(require,module,exports){
